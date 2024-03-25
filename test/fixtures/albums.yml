@@ -2,12 +2,14 @@
 
 one:
   eid: MyString
+  artist: one
   name: MyString
   year: 1
   image_url: MyString
 
 two:
   eid: MyString
+  artist: two
   name: MyString
   year: 1
   image_url: MyString
