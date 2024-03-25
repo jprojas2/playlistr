@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  song: one
+  started_at: 2024-03-25 15:31:10
+  paused_at: 1
+
+two:
+  song: two
+  started_at: 2024-03-25 15:31:10
+  paused_at: 1
