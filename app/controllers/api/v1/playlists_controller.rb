@@ -50,6 +50,6 @@ class Api::V1::PlaylistsController < Api::V1::ApiController
 
     # Only allow a list of trusted parameters through.
     def playlist_params
-      params.require(:playlist).permit(:user_id, :name)
+      params.require(:playlist).permit(:name)
     end
 end
