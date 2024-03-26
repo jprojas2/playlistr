@@ -8,6 +8,14 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
     login
   end
 
+  test 'should not be able to access auth protected actions without a authorization' do
+    assert_auth_endpoint(:get, api_v1_artists_url)
+    assert_auth_endpoint(:post, api_v1_artists_url)
+    assert_auth_endpoint(:get, api_v1_artist_url(@artist))
+    assert_auth_endpoint(:patch, api_v1_artist_url(@artist))
+    assert_auth_endpoint(:delete, api_v1_artist_url(@artist))
+  end
+
   test "should get index" do
     get api_v1_artists_url, as: :json, headers: @headers
     assert_response :success

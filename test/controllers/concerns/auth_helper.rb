@@ -12,4 +12,9 @@ module Minitest::AuthHelper
   def logout
     @token = nil
   end
+
+  def assert_auth_endpoint(method, url, params = nil)
+    send(method, url, params: params, as: :json, headers: { Authorization: "Bearer " + "invalid_token" })
+    assert_response :unauthorized
+  end
 end

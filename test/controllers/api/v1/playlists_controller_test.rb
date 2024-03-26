@@ -9,6 +9,14 @@ class PlaylistsControllerTest < ActionDispatch::IntegrationTest
     login_as(@user)
   end
 
+  test 'should not be able to access auth protected actions without a authorization' do
+    assert_auth_endpoint(:get, api_v1_playlists_url)
+    assert_auth_endpoint(:post, api_v1_playlists_url)
+    assert_auth_endpoint(:get, api_v1_playlist_url(@playlist))
+    assert_auth_endpoint(:patch, api_v1_playlist_url(@playlist))
+    assert_auth_endpoint(:delete, api_v1_playlist_url(@playlist))
+  end
+
   test "should get index of current user's playlists" do
     get api_v1_playlists_url, as: :json, headers: @headers
 
