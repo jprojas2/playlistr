@@ -4,15 +4,17 @@ class PlaylistsControllerTest < ActionDispatch::IntegrationTest
   include Minitest::AuthHelper
   
   setup do
+    @user = users(:one)
     @playlist = playlists(:one)
-    login
+    login_as(@user)
   end
 
-  test "should get index" do
+  test "should get index of current user's playlists" do
     get api_v1_playlists_url, as: :json, headers: @headers
-    #should get playlists belonging to the user
-    
+
     assert_response :success
+    
+    assert_equal @user.playlists.map(&:id), response.parsed_body.map { |playlist| playlist["id"] }
   end
 
   test "should create playlist" do
