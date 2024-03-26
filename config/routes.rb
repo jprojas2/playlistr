@@ -15,7 +15,6 @@ Rails.application.routes.draw do
       resources :artists
       resources :albums
       resources :playlists
-      resources :create_playlists
       resources :users, param: :_username, except: %[i new]
     end
   end
