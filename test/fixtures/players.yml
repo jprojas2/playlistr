@@ -3,11 +3,13 @@
 one:
   user: one
   song: one
-  started_at: 2024-03-26 17:34:06
+  playing: false
+  started_at: 2024-03-26 18:00:28
   paused_at: 1
 
 two:
   user: two
   song: two
-  started_at: 2024-03-26 17:34:06
+  playing: false
+  started_at: 2024-03-26 18:00:28
   paused_at: 1

@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_185813) do
   create_table "players", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "song_id"
+    t.boolean "playing", default: false, null: false
     t.datetime "started_at"
     t.integer "paused_at"
     t.index ["song_id"], name: "index_players_on_song_id"

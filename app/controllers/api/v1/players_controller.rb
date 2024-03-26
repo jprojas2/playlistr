@@ -47,6 +47,6 @@ class Api::V1::PlayersController < Api::V1::ApiController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:user_id, :song_id, :started_at, :paused_at)
+      params.require(:player).permit(:user_id, :song_id, :playing, :started_at, :paused_at)
     end
 end
