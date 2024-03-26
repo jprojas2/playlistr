@@ -1,22 +1,15 @@
 class Api::V1::PlayersController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_player, only: %i[ show update destroy ]
+  before_action :set_player
 
-  # GET /players
-  def index
-    @players = Player.all
-
-    render json: @players
-  end
-
-  # GET /players/1
+  # GET /player
   def show
     render json: @player
   end
 
-  # POST /players
+  # POST /player
   def create
-    @player = Player.new(player_params)
+    @player.assign_attributes(player_params)
 
     if @player.save
       render json: @player, status: :created, location: [:api, :v1, @player]
@@ -25,7 +18,7 @@ class Api::V1::PlayersController < Api::V1::ApiController
     end
   end
 
-  # PATCH/PUT /players/1
+  # PATCH/PUT /player
   def update
     if @player.update(player_params)
       render json: @player
@@ -34,7 +27,7 @@ class Api::V1::PlayersController < Api::V1::ApiController
     end
   end
 
-  # DELETE /players/1
+  # DELETE /player
   def destroy
     @player.destroy!
   end
@@ -42,11 +35,11 @@ class Api::V1::PlayersController < Api::V1::ApiController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_player
-      @player = Player.find(params[:id])
+      @player = Player.find_or_initialize_by(user_id: @current_user.id)
     end
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:user_id, :song_id, :playing, :started_at, :paused_at)
+      params.require(:player).permit(:song_id, :playing, :started_at, :paused_at)
     end
 end

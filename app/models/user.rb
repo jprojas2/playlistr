@@ -8,4 +8,5 @@ class User < ApplicationRecord
             if: -> { new_record? || !password.nil? }
   has_many :playlists, dependent: :destroy
   has_many :songs, through: :playlists
+  has_one :player, dependent: :destroy
 end
