@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  user: one
   song: one
-  started_at: 2024-03-25 15:31:10
+  started_at: 2024-03-26 17:34:06
   paused_at: 1
 
 two:
+  user: two
   song: two
-  started_at: 2024-03-25 15:31:10
+  started_at: 2024-03-26 17:34:06
   paused_at: 1

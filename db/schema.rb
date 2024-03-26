@@ -31,10 +31,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_185813) do
   end
 
   create_table "players", force: :cascade do |t|
+    t.integer "user_id", null: false
     t.integer "song_id"
     t.datetime "started_at"
     t.integer "paused_at"
     t.index ["song_id"], name: "index_players_on_song_id"
+    t.index ["user_id"], name: "index_players_on_user_id"
   end
 
   create_table "playlists", force: :cascade do |t|
@@ -80,6 +82,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_185813) do
 
   add_foreign_key "albums", "artists"
   add_foreign_key "players", "songs"
+  add_foreign_key "players", "users"
   add_foreign_key "playlists", "users"
   add_foreign_key "playlists_songs", "playlists"
   add_foreign_key "playlists_songs", "songs"
