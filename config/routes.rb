@@ -16,7 +16,10 @@ Rails.application.routes.draw do
       resources :albums
       resources :playlists
       resources :users, param: :_username, except: %[i new]
+      get '/search', to: 'search#index'
     end
   end
+
+
   get '/*a', to: 'application#not_found'
 end

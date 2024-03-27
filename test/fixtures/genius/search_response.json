@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "status": 200
+  },
+  "response": {
+    "hits": [
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 11,
+          "api_path": "/songs/76654",
+          "artist_names": "Oasis",
+          "full_title": "Wonderwall by Oasis",
+          "header_image_thumbnail_url": "https://images.genius.com/522cab9f59ce52549253af282498e31a.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/522cab9f59ce52549253af282498e31a.1000x1000x1.jpg",
+          "id": 76654,
+          "instrumental": false,
+          "lyrics_owner_id": 1850,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1710649067,
+          "path": "/Oasis-wonderwall-lyrics",
+          "pyongs_count": 204,
+          "relationships_index_url": "https://genius.com/Oasis-wonderwall-sample",
+          "release_date_components": {
+            "year": 1995,
+            "month": 10,
+            "day": 30
+          },
+          "release_date_for_display": "October 30, 1995",
+          "release_date_with_abbreviated_month_for_display": "Oct. 30, 1995",
+          "song_art_image_thumbnail_url": "https://images.genius.com/85c10032353fd7d6af341b02876b0d53.300x300x1.png",
+          "song_art_image_url": "https://images.genius.com/85c10032353fd7d6af341b02876b0d53.1000x1000x1.png",
+          "stats": {
+            "unreviewed_annotations": 6,
+            "hot": false,
+            "pageviews": 1654669
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall",
+          "updated_by_human_at": 1711252179,
+          "url": "https://genius.com/Oasis-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 0,
+          "api_path": "/songs/3001894",
+          "artist_names": "Zella Day",
+          "full_title": "Wonderwall by Zella Day",
+          "header_image_thumbnail_url": "https://images.genius.com/ed018e29e3140e63956d0c5082213259.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/ed018e29e3140e63956d0c5082213259.1000x1000x1.jpg",
+          "id": 3001894,
+          "instrumental": false,
+          "lyrics_owner_id": 104344,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1578410350,
+          "path": "/Zella-day-wonderwall-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Zella-day-wonderwall-sample",
+          "release_date_components": {
+            "year": 2017,
+            "month": 2,
+            "day": 24
+          },
+          "release_date_for_display": "February 24, 2017",
+          "release_date_with_abbreviated_month_for_display": "Feb. 24, 2017",
+          "song_art_image_thumbnail_url": "https://images.genius.com/ed018e29e3140e63956d0c5082213259.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/ed018e29e3140e63956d0c5082213259.1000x1000x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall",
+          "updated_by_human_at": 1625405560,
+          "url": "https://genius.com/Zella-day-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/184842",
+            "header_image_url": "https://images.genius.com/83104ce92ea5d51dafc8946abb568b86.1000x429x1.jpg",
+            "id": 184842,
+            "image_url": "https://images.genius.com/3c5bdb30d85a658455dd767116dbc86c.1000x1000x1.png",
+            "index_character": "z",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Zella Day",
+            "slug": "Zella-day",
+            "url": "https://genius.com/artists/Zella-day"
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 0,
+          "api_path": "/songs/5888679",
+          "artist_names": "Lucifer Cast (Ft. Lesley-Ann Brandt)",
+          "full_title": "Wonderwall by Lucifer Cast (Ft. Lesley-Ann Brandt)",
+          "header_image_thumbnail_url": "https://images.genius.com/c208b060aaf3d0afbb7b5b28d0f5e269.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/c208b060aaf3d0afbb7b5b28d0f5e269.1000x1000x1.jpg",
+          "id": 5888679,
+          "instrumental": false,
+          "lyrics_owner_id": 4274810,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1621944975,
+          "path": "/Lucifer-cast-wonderwall-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Lucifer-cast-wonderwall-sample",
+          "release_date_components": {
+            "year": 2020,
+            "month": 8,
+            "day": 21
+          },
+          "release_date_for_display": "August 21, 2020",
+          "release_date_with_abbreviated_month_for_display": "Aug. 21, 2020",
+          "song_art_image_thumbnail_url": "https://images.genius.com/c208b060aaf3d0afbb7b5b28d0f5e269.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/c208b060aaf3d0afbb7b5b28d0f5e269.1000x1000x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall (Ft. Lesley-Ann Brandt)",
+          "updated_by_human_at": 1662187776,
+          "url": "https://genius.com/Lucifer-cast-wonderwall-lyrics",
+          "featured_artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/2367224",
+              "header_image_url": "https://images.genius.com/e9f976591bfe8801325564ea7c3ca578.800x800x1.jpg",
+              "id": 2367224,
+              "image_url": "https://images.genius.com/e9f976591bfe8801325564ea7c3ca578.800x800x1.jpg",
+              "index_character": "l",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Lesley-Ann Brandt",
+              "slug": "Lesley-ann-brandt",
+              "url": "https://genius.com/artists/Lesley-ann-brandt"
+            }
+          ],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/2367225",
+            "header_image_url": "https://images.genius.com/81728d5dae65dd1eede6e069df185dbf.400x400x1.jpg",
+            "id": 2367225,
+            "image_url": "https://images.genius.com/2d22d308bbe18afa5860e8046777c2fc.200x200x1.jpg",
+            "index_character": "l",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Lucifer Cast",
+            "slug": "Lucifer-cast",
+            "url": "https://genius.com/artists/Lucifer-cast"
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 1,
+          "api_path": "/songs/188283",
+          "artist_names": "One Direction",
+          "full_title": "Wonderwall by One Direction",
+          "header_image_thumbnail_url": "https://images.genius.com/979ca68f42c391dd79d505e03e14aeb5.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/979ca68f42c391dd79d505e03e14aeb5.1000x1000x1.jpg",
+          "id": 188283,
+          "instrumental": false,
+          "lyrics_owner_id": 225672,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1641771607,
+          "path": "/One-direction-wonderwall-lyrics",
+          "pyongs_count": 3,
+          "relationships_index_url": "https://genius.com/One-direction-wonderwall-sample",
+          "release_date_components": null,
+          "release_date_for_display": null,
+          "release_date_with_abbreviated_month_for_display": null,
+          "song_art_image_thumbnail_url": "https://images.genius.com/979ca68f42c391dd79d505e03e14aeb5.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/979ca68f42c391dd79d505e03e14aeb5.1000x1000x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall",
+          "updated_by_human_at": 1641771607,
+          "url": "https://genius.com/One-direction-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/19657",
+            "header_image_url": "https://images.genius.com/d556360ef2b1a2f6a80d526a9a957a80.1000x709x1.jpg",
+            "id": 19657,
+            "image_url": "https://images.genius.com/979ca68f42c391dd79d505e03e14aeb5.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "One Direction",
+            "slug": "One-direction",
+            "url": "https://genius.com/artists/One-direction"
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 0,
+          "api_path": "/songs/3528652",
+          "artist_names": "Joji",
+          "full_title": "Wonderwall by Joji",
+          "header_image_thumbnail_url": "https://images.genius.com/f006d8ff38c87a188fedaf56c87a5555.300x300x1.png",
+          "header_image_url": "https://images.genius.com/f006d8ff38c87a188fedaf56c87a5555.768x768x1.png",
+          "id": 3528652,
+          "instrumental": false,
+          "lyrics_owner_id": 5618439,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1518798393,
+          "path": "/Joji-wonderwall-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Joji-wonderwall-sample",
+          "release_date_components": {
+            "year": 2017,
+            "month": 5,
+            "day": 14
+          },
+          "release_date_for_display": "May 14, 2017",
+          "release_date_with_abbreviated_month_for_display": "May. 14, 2017",
+          "song_art_image_thumbnail_url": "https://images.genius.com/f006d8ff38c87a188fedaf56c87a5555.300x300x1.png",
+          "song_art_image_url": "https://images.genius.com/f006d8ff38c87a188fedaf56c87a5555.768x768x1.png",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall",
+          "updated_by_human_at": 1693095937,
+          "url": "https://genius.com/Joji-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/630470",
+            "header_image_url": "https://images.genius.com/53b67897a63d1dff1f369907168e4261.1000x1000x1.jpg",
+            "id": 630470,
+            "image_url": "https://images.genius.com/d20ee1f900287060716f7594ccba7ea3.1000x1000x1.jpg",
+            "index_character": "j",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Joji",
+            "slug": "Joji",
+            "url": "https://genius.com/artists/Joji",
+            "iq": 20272
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 1,
+          "api_path": "/songs/5718089",
+          "artist_names": "The Kid LAROI",
+          "full_title": "Wonderwall (Remix) by The Kid LAROI",
+          "header_image_thumbnail_url": "https://images.genius.com/cc9d3faad985ded0fb1ee60cbbbda70f.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/cc9d3faad985ded0fb1ee60cbbbda70f.1000x1000x1.jpg",
+          "id": 5718089,
+          "instrumental": false,
+          "lyrics_owner_id": 6237500,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1658955030,
+          "path": "/The-kid-laroi-wonderwall-remix-lyrics",
+          "pyongs_count": 3,
+          "relationships_index_url": "https://genius.com/The-kid-laroi-wonderwall-remix-sample",
+          "release_date_components": null,
+          "release_date_for_display": null,
+          "release_date_with_abbreviated_month_for_display": null,
+          "song_art_image_thumbnail_url": "https://images.genius.com/cc9d3faad985ded0fb1ee60cbbbda70f.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/cc9d3faad985ded0fb1ee60cbbbda70f.1000x1000x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false,
+            "pageviews": 9186
+          },
+          "title": "Wonderwall (Remix)",
+          "title_with_featured": "Wonderwall (Remix)",
+          "updated_by_human_at": 1658955030,
+          "url": "https://genius.com/The-kid-laroi-wonderwall-remix-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/1546645",
+            "header_image_url": "https://images.genius.com/73a06d5f6f69b907b9041e63e3a3f6b7.1000x753x1.jpg",
+            "id": 1546645,
+            "image_url": "https://images.genius.com/cc9d3faad985ded0fb1ee60cbbbda70f.1000x1000x1.jpg",
+            "index_character": "k",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "The Kid LAROI",
+            "slug": "The-kid-laroi",
+            "url": "https://genius.com/artists/The-kid-laroi",
+            "iq": 1334
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 5,
+          "api_path": "/songs/64028",
+          "artist_names": "Mike Posner (Ft. Big K.R.I.T.)",
+          "full_title": "Wonderwall (Drive to This) by Mike Posner (Ft. Big K.R.I.T.)",
+          "header_image_thumbnail_url": "https://images.genius.com/aac185253d61ab39765c8c515b8af8de.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/aac185253d61ab39765c8c515b8af8de.961x961x1.jpg",
+          "id": 64028,
+          "instrumental": false,
+          "lyrics_owner_id": 60559,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1524093674,
+          "path": "/Mike-posner-wonderwall-drive-to-this-lyrics",
+          "pyongs_count": 1,
+          "relationships_index_url": "https://genius.com/Mike-posner-wonderwall-drive-to-this-sample",
+          "release_date_components": {
+            "year": 2011,
+            "month": 11,
+            "day": 20
+          },
+          "release_date_for_display": "November 20, 2011",
+          "release_date_with_abbreviated_month_for_display": "Nov. 20, 2011",
+          "song_art_image_thumbnail_url": "https://images.genius.com/aac185253d61ab39765c8c515b8af8de.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/aac185253d61ab39765c8c515b8af8de.961x961x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Wonderwall (Drive to This)",
+          "title_with_featured": "Wonderwall (Drive to This) (Ft. Big K.R.I.T.)",
+          "updated_by_human_at": 1546010376,
+          "url": "https://genius.com/Mike-posner-wonderwall-drive-to-this-lyrics",
+          "featured_artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/491",
+              "header_image_url": "https://images.genius.com/c2b3ccc3cb38302640b35bf5fc795c69.564x296x1.jpg",
+              "id": 491,
+              "image_url": "https://images.genius.com/502994a09a730898aee4703439b6d8c7.750x750x1.jpg",
+              "index_character": "b",
+              "is_meme_verified": true,
+              "is_verified": true,
+              "name": "Big K.R.I.T.",
+              "slug": "Big-krit",
+              "url": "https://genius.com/artists/Big-krit",
+              "iq": 6275
+            }
+          ],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/654",
+            "header_image_url": "https://images.genius.com/5d138a9d7ad89701e7a0183550dfe2e6.1000x333x1.jpg",
+            "id": 654,
+            "image_url": "https://images.genius.com/e135e6d5b9f53f5588706780e84be5f7.400x400x1.jpg",
+            "index_character": "m",
+            "is_meme_verified": true,
+            "is_verified": true,
+            "name": "Mike Posner",
+            "slug": "Mike-posner",
+            "url": "https://genius.com/artists/Mike-posner",
+            "iq": 16707
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 0,
+          "api_path": "/songs/6081210",
+          "artist_names": "Sylow, Pierre Leck & Kingsley Q",
+          "full_title": "There Is No Wonderwall by Sylow, Pierre Leck & Kingsley Q",
+          "header_image_thumbnail_url": "https://images.genius.com/ab4171c8678e8c953db1300fef597adc.300x300x1.png",
+          "header_image_url": "https://images.genius.com/ab4171c8678e8c953db1300fef597adc.1000x1000x1.png",
+          "id": 6081210,
+          "instrumental": false,
+          "lyrics_owner_id": 9435755,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1682551454,
+          "path": "/Sylow-pierre-leck-and-kingsley-q-there-is-no-wonderwall-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Sylow-pierre-leck-and-kingsley-q-there-is-no-wonderwall-sample",
+          "release_date_components": {
+            "year": 2020,
+            "month": 10,
+            "day": 23
+          },
+          "release_date_for_display": "October 23, 2020",
+          "release_date_with_abbreviated_month_for_display": "Oct. 23, 2020",
+          "song_art_image_thumbnail_url": "https://images.genius.com/ab4171c8678e8c953db1300fef597adc.300x300x1.png",
+          "song_art_image_url": "https://images.genius.com/ab4171c8678e8c953db1300fef597adc.1000x1000x1.png",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "There Is No Wonderwall",
+          "title_with_featured": "There Is No Wonderwall",
+          "updated_by_human_at": 1697512797,
+          "url": "https://genius.com/Sylow-pierre-leck-and-kingsley-q-there-is-no-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/2442420",
+            "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1711488083",
+            "id": 2442420,
+            "image_url": "https://assets.genius.com/images/default_avatar_300.png?1711488083",
+            "index_character": "s",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Sylow, Pierre Leck & Kingsley Q",
+            "slug": "Sylow-pierre-leck-and-kingsley-q",
+            "url": "https://genius.com/artists/Sylow-pierre-leck-and-kingsley-q"
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 1,
+          "api_path": "/songs/1538779",
+          "artist_names": "Wonderwall",
+          "full_title": "Just More by Wonderwall",
+          "header_image_thumbnail_url": "https://images.genius.com/d15b209fe0bd86d2e471dece197ad1cd.300x300x1.jpg",
+          "header_image_url": "https://images.genius.com/d15b209fe0bd86d2e471dece197ad1cd.599x599x1.jpg",
+          "id": 1538779,
+          "instrumental": false,
+          "lyrics_owner_id": 1549345,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1429895417,
+          "path": "/Wonderwall-just-more-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Wonderwall-just-more-sample",
+          "release_date_components": {
+            "year": 2002,
+            "month": null,
+            "day": null
+          },
+          "release_date_for_display": "2002",
+          "release_date_with_abbreviated_month_for_display": "2002",
+          "song_art_image_thumbnail_url": "https://images.genius.com/d15b209fe0bd86d2e471dece197ad1cd.300x300x1.jpg",
+          "song_art_image_url": "https://images.genius.com/d15b209fe0bd86d2e471dece197ad1cd.599x599x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false
+          },
+          "title": "Just More",
+          "title_with_featured": "Just More",
+          "updated_by_human_at": 1684748761,
+          "url": "https://genius.com/Wonderwall-just-more-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/364030",
+            "header_image_url": "https://images.genius.com/470cd23ce933fe7c85259ea5929767cb.454x454x1.jpg",
+            "id": 364030,
+            "image_url": "https://images.genius.com/470cd23ce933fe7c85259ea5929767cb.454x454x1.jpg",
+            "index_character": "w",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Wonderwall",
+            "slug": "Wonderwall",
+            "url": "https://genius.com/artists/Wonderwall"
+          }
+        }
+      },
+      {
+        "highlights": [],
+        "index": "song",
+        "type": "song",
+        "result": {
+          "_type": "song",
+          "annotation_count": 0,
+          "api_path": "/songs/1647609",
+          "artist_names": "Ryan Adams",
+          "full_title": "Wonderwall by Ryan Adams",
+          "header_image_thumbnail_url": "https://images.genius.com/2d0db6c02a24614f7263fba37798dd85.300x306x1.jpg",
+          "header_image_url": "https://images.genius.com/2d0db6c02a24614f7263fba37798dd85.465x475x1.jpg",
+          "id": 1647609,
+          "instrumental": false,
+          "lyrics_owner_id": 6752037,
+          "lyrics_state": "complete",
+          "lyrics_updated_at": 1561314505,
+          "path": "/Ryan-adams-wonderwall-lyrics",
+          "pyongs_count": null,
+          "relationships_index_url": "https://genius.com/Ryan-adams-wonderwall-sample",
+          "release_date_components": {
+            "year": 2003,
+            "month": 11,
+            "day": 4
+          },
+          "release_date_for_display": "November 4, 2003",
+          "release_date_with_abbreviated_month_for_display": "Nov. 4, 2003",
+          "song_art_image_thumbnail_url": "https://images.genius.com/2d0db6c02a24614f7263fba37798dd85.300x306x1.jpg",
+          "song_art_image_url": "https://images.genius.com/2d0db6c02a24614f7263fba37798dd85.465x475x1.jpg",
+          "stats": {
+            "unreviewed_annotations": 0,
+            "hot": false,
+            "pageviews": 6341
+          },
+          "title": "Wonderwall",
+          "title_with_featured": "Wonderwall",
+          "updated_by_human_at": 1599566667,
+          "url": "https://genius.com/Ryan-adams-wonderwall-lyrics",
+          "featured_artists": [],
+          "primary_artist": {
+            "_type": "artist",
+            "api_path": "/artists/39052",
+            "header_image_url": "https://images.genius.com/61c0f3af7bd5e9cff4376fb379a9ef14.500x334x1.jpg",
+            "id": 39052,
+            "image_url": "https://images.genius.com/96e147c1dd2a8b4b2d34ddb5991bf129.630x630x1.jpg",
+            "index_character": "r",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Ryan Adams",
+            "slug": "Ryan-adams",
+            "url": "https://genius.com/artists/Ryan-adams"
+          }
+        }
+      }
+    ]
+  }
+}
