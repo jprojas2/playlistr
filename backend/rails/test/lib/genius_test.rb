@@ -24,4 +24,13 @@ class GeniusTest < ActiveSupport::TestCase
       assert_equal genius_client.artist("123")["_type"], "artist"
     end
   end
+
+  test "lyrics should return lyrics text" do
+    genius_client = Genius.new
+    Net::HTTP.stub :get, File.read("test/fixtures/genius/song.html") do
+      genius_client.stub :request, JSON.parse(File.read("test/fixtures/genius/song_response.json")) do
+        assert_equal genius_client.lyrics("123"), File.read("test/fixtures/genius/lyrics.txt")
+      end
+    end
+  end
 end

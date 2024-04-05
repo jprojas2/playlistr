@@ -54,6 +54,43 @@ class Genius
     )&.dig("response", "artist")
   end
 
+  def lyrics song_id
+    song = song(song_id)
+    return nil if song.nil?
+
+    lyrics_url = song(song_id)&.dig("path")
+    html = Net::HTTP.get(URI("https://genius.com#{lyrics_url}"))
+    doc = Nokogiri::HTML(html)
+    doc.css("[data-lyrics-container='true']").map do |lc|
+      lc.children.map do |e|
+        if e.children.length > 0
+          e.children.map do |c|
+            if c.children.length > 0
+              c.children.map do |cc|
+                if cc.content.present?
+                  cc.content
+                elsif cc.name == "br"
+                  "\n"
+                end
+              end.compact.join
+            elsif c.content.present?
+              c.content
+            elsif e.name == "br"
+              "\n"
+            end
+          end.compact.join
+        elsif e.content.present?
+          e.content
+        elsif e.name == "br"
+          "\n"
+        end
+      end.compact.join
+    end.compact.join.gsub(/\[.*\]\n/, "")
+  rescue => e
+    Rails.logger.error e.message
+    nil
+  end
+
   private
   def login
     bearer = request(
