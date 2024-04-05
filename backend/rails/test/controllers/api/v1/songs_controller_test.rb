@@ -30,12 +30,15 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should show song" do
+    Song.expects(:find_or_initialize_by_eid).with(@song.eid).once.returns(@song)
+
     get api_v1_song_url(@song), as: :json, headers: @headers
     assert_response :success
+    assert_equal @song.eid, JSON.parse(response.body)["eid"]
   end
 
   test "should update song" do
-    patch api_v1_song_url(@song), params: { song: { album_id: @song.album_id, artist_id: @song.artist_id, duration: @song.duration, eid: @song.eid, favorite: @song.favorite, image_url: @song.image_url, lyrics: @song.lyrics, name: @song.name } }, as: :json, headers: @headers
+    patch api_v1_song_url(@song), params: { song: { album_id: @song.album_id, artist_id: @song.artist_id, duration: @song.duration, favorite: @song.favorite, image_url: @song.image_url, lyrics: @song.lyrics, name: @song.name } }, as: :json, headers: @headers
     assert_response :success
   end
 

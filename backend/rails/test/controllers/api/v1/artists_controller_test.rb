@@ -30,12 +30,13 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should show artist" do
+    Artist.expects(:find_or_initialize_by_eid).with(@artist.eid).once.returns(@artist)
     get api_v1_artist_url(@artist), as: :json, headers: @headers
     assert_response :success
   end
 
   test "should update artist" do
-    patch api_v1_artist_url(@artist), params: { artist: { eid: @artist.eid, image_url: @artist.image_url, name: @artist.name } }, as: :json, headers: @headers
+    patch api_v1_artist_url(@artist), params: { artist: { image_url: @artist.image_url, name: @artist.name } }, as: :json, headers: @headers
     assert_response :success
   end
 

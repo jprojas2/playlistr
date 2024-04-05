@@ -1,6 +1,7 @@
 class Api::V1::ArtistsController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_artist, only: %i[ show update destroy ]
+  before_action :set_artist, only: %i[ show ]
+  before_action :set_persisted_artist, only: %i[ update destroy ]
 
   # GET /artists
   def index
@@ -40,9 +41,12 @@ class Api::V1::ArtistsController < Api::V1::ApiController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_artist
-      @artist = Artist.find_or_initialize_by(eid: params[:eid])
+      @artist = Artist.find_or_initialize_by_eid(params[:eid])
+    end
+
+    def set_persisted_artist
+      @artist = Artist.find_by!(eid: params[:eid])
     end
 
     # Only allow a list of trusted parameters through.
