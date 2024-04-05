@@ -23,7 +23,7 @@ class AlbumsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create album" do
     assert_difference("Album.count") do
-      post api_v1_albums_url, params: { album: { eid: @album.eid, image_url: @album.image_url, name: @album.name, year: @album.year } }, as: :json, headers: @headers
+      post api_v1_albums_url, params: { album: { eid: "1234", image_url: @album.image_url, name: @album.name, year: @album.year } }, as: :json, headers: @headers
     end
 
     assert_response :created

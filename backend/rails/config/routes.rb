@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resource :player
-      resources :songs
-      resources :artists
-      resources :albums
+      resources :songs, param: :eid
+      resources :artists, param: :eid
+      resources :albums, param: :eid
       resources :playlists
       resources :users, param: :_username, except: %[i new]
       get '/search', to: 'search#index'

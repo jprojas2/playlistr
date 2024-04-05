@@ -27,7 +27,7 @@ class Api::V1::AlbumsController < Api::V1::ApiController
 
   # PATCH/PUT /albums/1
   def update
-    if @album.update(album_params)
+    if @album.update(album_params.except(:eid))
       render json: @album
     else
       render json: @album.errors, status: :unprocessable_entity
@@ -42,7 +42,7 @@ class Api::V1::AlbumsController < Api::V1::ApiController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_album
-      @album = Album.find(params[:id])
+      @album = Album.find_by!(eid: params[:eid])
     end
 
     # Only allow a list of trusted parameters through.

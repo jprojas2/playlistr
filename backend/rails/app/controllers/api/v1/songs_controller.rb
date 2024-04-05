@@ -27,7 +27,7 @@ class Api::V1::SongsController < Api::V1::ApiController
 
   # PATCH/PUT /songs/1
   def update
-    if @song.update(song_params)
+    if @song.update(song_params.except(:eid))
       render json: @song
     else
       render json: @song.errors, status: :unprocessable_entity
@@ -42,7 +42,7 @@ class Api::V1::SongsController < Api::V1::ApiController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_song
-      @song = Song.find(params[:id])
+      @song = Song.find_or_initialize_by(eid: params[:eid])
     end
 
     # Only allow a list of trusted parameters through.

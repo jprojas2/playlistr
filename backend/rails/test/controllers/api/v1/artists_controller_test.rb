@@ -23,7 +23,7 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create artist" do
     assert_difference("Artist.count") do
-      post api_v1_artists_url, params: { artist: { eid: @artist.eid, image_url: @artist.image_url, name: @artist.name } }, as: :json, headers: @headers
+      post api_v1_artists_url, params: { artist: { eid: "1234", image_url: @artist.image_url, name: @artist.name } }, as: :json, headers: @headers
     end
 
     assert_response :created

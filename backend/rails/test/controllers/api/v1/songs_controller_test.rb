@@ -23,7 +23,7 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create song" do
     assert_difference("Song.count") do
-      post api_v1_songs_url, params: { song: { album_id: @song.album_id, artist_id: @song.artist_id, duration: @song.duration, eid: @song.eid, favorite: @song.favorite, image_url: @song.image_url, lyrics: @song.lyrics, name: @song.name } }, as: :json, headers: @headers
+      post api_v1_songs_url, params: { song: { album_id: @song.album_id, artist_id: @song.artist_id, duration: @song.duration, eid: "1234", favorite: @song.favorite, image_url: @song.image_url, lyrics: @song.lyrics, name: @song.name } }, as: :json, headers: @headers
     end
 
     assert_response :created

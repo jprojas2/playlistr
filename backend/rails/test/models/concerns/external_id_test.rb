@@ -1,0 +1,26 @@
+require 'test_helper'
+
+class ExternalIdTest < ActiveSupport::TestCase
+  test "should validate eid uniqueness" do
+    DummyClass.create(eid: "123")
+    dummy_instance = DummyClass.create(eid: "123")
+    assert_not dummy_instance.valid?
+    assert_includes dummy_instance.errors.map{|e| [e.attribute, e.type]}, [:eid, :taken]
+  end
+
+  test "should validate eid presence" do
+    dummy_instance = DummyClass.create
+    assert_not dummy_instance.valid?
+    assert_includes dummy_instance.errors.map{|e| [e.attribute, e.type]}, [:eid, :blank]
+  end
+
+  test "should return eid as param" do
+    dummy_instance = DummyClass.create(eid: "123")
+    assert_equal dummy_instance.to_param, "123"
+  end
+end
+
+class DummyClass < ApplicationRecord
+  include ExternalId
+  self.table_name = "songs"
+end

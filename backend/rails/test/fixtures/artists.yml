@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  eid: MyString
+  eid: MyString1
   name: MyString
   image_url: MyString
 
 two:
-  eid: MyString
+  eid: MyString2
   name: MyString
   image_url: MyString

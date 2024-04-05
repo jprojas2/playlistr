@@ -27,7 +27,7 @@ class Api::V1::ArtistsController < Api::V1::ApiController
 
   # PATCH/PUT /artists/1
   def update
-    if @artist.update(artist_params)
+    if @artist.update(artist_params.except(:eid))
       render json: @artist
     else
       render json: @artist.errors, status: :unprocessable_entity
@@ -42,7 +42,7 @@ class Api::V1::ArtistsController < Api::V1::ApiController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_artist
-      @artist = Artist.find(params[:id])
+      @artist = Artist.find_or_initialize_by(eid: params[:eid])
     end
 
     # Only allow a list of trusted parameters through.
