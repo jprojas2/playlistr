@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resource :player
-      resources :songs, param: :eid
+      resources :songs, param: :eid do
+        member do
+          get :lyrics
+        end
+      end
       resources :artists, param: :eid
       resources :albums, param: :eid
       resources :playlists

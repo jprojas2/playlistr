@@ -49,4 +49,13 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :no_content
   end
+
+  test "should get lyrics" do
+    Song.expects(:find_or_initialize_by_eid).with(@song.eid).once.returns(@song)
+    Song.any_instance.expects(:get_lyrics).once
+    get lyrics_api_v1_song_url(@song), as: :json, headers: @headers
+
+    assert JSON.parse(response.body).key?("lyrics")
+    assert_response :success
+  end
 end

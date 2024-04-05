@@ -1,6 +1,6 @@
 class Api::V1::SongsController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_song, only: %i[ show ]
+  before_action :set_song, only: %i[ show lyrics ]
   before_action :set_persisted_song, only: %i[ update destroy ]
 
   # GET /songs
@@ -38,6 +38,12 @@ class Api::V1::SongsController < Api::V1::ApiController
   # DELETE /songs/1
   def destroy
     @song.destroy!
+  end
+
+  def lyrics
+    @song.get_lyrics
+
+    render json: { lyrics: @song.lyrics }
   end
 
   private

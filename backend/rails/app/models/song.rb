@@ -32,4 +32,11 @@ class Song < ApplicationRecord
     
     song
   end
+
+  def get_lyrics
+    return lyrics if lyrics.present?
+    
+    self.lyrics = Genius.new.lyrics(eid)
+    save unless new_record?
+  end
 end

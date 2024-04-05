@@ -17,4 +17,36 @@ class SongTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test "when lyrics are present get_lyrics should return lyrics and not get them from genius" do
+    Genius.any_instance.expects(:lyrics).never
+    song = songs(:one)
+    song_lyrics = song.lyrics
+    assert song_lyrics.present?
+
+    song.get_lyrics
+    assert_equal song.lyrics, song_lyrics
+  end
+
+  test "when lyrics are not present get_lyrics should get lyrics from genius" do
+    song = songs(:one)
+    mock = Minitest::Mock.new
+    mock.expect :lyrics, "lyrics", [song.eid]
+    genius_client = Genius.stub :new, mock do
+      song.lyrics = nil
+      song.get_lyrics
+      assert_equal song.lyrics, "lyrics"
+    end
+  end
+
+  test "when lyrics are not present get_lyrics get_lyrics should save the song if it is not a new record" do
+    song = songs(:one)
+    mock = Minitest::Mock.new
+    mock.expect :lyrics, "lyrics", [song.eid]
+    genius_client = Genius.stub :new, mock do
+      song.lyrics = nil
+      song.expects(:save)
+      song.get_lyrics
+    end
+  end
 end
