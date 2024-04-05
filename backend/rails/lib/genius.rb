@@ -58,7 +58,7 @@ class Genius
     song = song(song_id)
     return nil if song.nil?
 
-    lyrics_url = song(song_id)&.dig("path")
+    lyrics_url = song&.dig("path")
     html = Net::HTTP.get(URI("https://genius.com#{lyrics_url}"))
     doc = Nokogiri::HTML(html)
     doc.css("[data-lyrics-container='true']").map do |lc|
