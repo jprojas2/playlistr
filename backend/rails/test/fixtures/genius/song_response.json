@@ -1,0 +1,3544 @@
+{
+  "meta": {
+    "status": 200
+  },
+  "response": {
+    "song": {
+      "_type": "song",
+      "annotation_count": 11,
+      "api_path": "/songs/106380",
+      "apple_music_id": "373859989",
+      "apple_music_player_url": "https://genius.com/songs/106380/apple_music_player",
+      "artist_names": "Oasis",
+      "comment_count": 25,
+      "custom_header_image_url": "https://images.genius.com/a5b04672c2a4bcce059be1c62deeb9c2.500x500x1.jpg",
+      "custom_song_art_image_url": "https://images.rapgenius.com/5d876c78305137f6888bd017725435b8.318x313x1.jpg",
+      "description": {
+        "dom": {
+          "tag": "root",
+          "children": [
+            {
+              "tag": "p",
+              "children": [
+                "“Don’t Look Back in Anger” was released as the fourth single off of ",
+                {
+                  "tag": "em",
+                  "children": [
+                    "(What’s The Story) Morning Glory?"
+                  ]
+                },
+                ", February 19th 1996. In 2006, it was included in the “Best Of”-compilation ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/Oasis/Stop-the-clocks",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/80251"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Stop The Clocks"
+                      ]
+                    }
+                  ]
+                },
+                " and in 2010 it was included in the singles collection ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/Oasis/Time-flies-19942009",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/122913"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Time Flies… 1994-2009"
+                      ]
+                    }
+                  ]
+                },
+                "."
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "Noel Gallagher also admits that he was under the influence of illegal substances when he wrote the song and to this day he ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "http://www.contactmusic.net/noel-gallagher/news/gallagher-i-have-no-idea-what-my-songs-mean",
+                    "rel": "noopener nofollow"
+                  },
+                  "children": [
+                    "claims he does not know what the lyrics mean."
+                  ]
+                }
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "In late May 2017, the song became a symbol for the Manchester’s spirit and resistance following the terrorist attacks during an ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Ariana-grande",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/26507"
+                  },
+                  "children": [
+                    "Ariana Grande"
+                  ]
+                },
+                " concert, when a crowd of Mancunians started singing it, at the end of a minute of silence to honour the victims of the attack."
+              ]
+            }
+          ]
+        }
+      },
+      "description_preview": "“Don’t Look Back in Anger” was released as the fourth single off of (What’s The Story) Morning Glory?, February 19th 1996. In 2006, it was included in the “Best Of”-compilation Stop The Clocks and in 2010 it was included in the singles collection Time Flies… 1994-2009.\n\nNoel Gallagher also admits that he was under the influence of illegal substances when he wrote the song and to this day he claims he does not know what the lyrics mean.\n\nIn late May 2017, the song became a symbol for the Manchester’s spirit and resistance following the terrorist attacks during an Ariana Grande concert, when a crowd of Mancunians started singing it, at the end of a minute of silence to honour the victims of the attack.",
+      "embed_content": "\u003Cdiv id='rg_embed_link_106380' class='rg_embed_link' data-song-id='106380'\u003ERead \u003Ca href='https://genius.com/Oasis-dont-look-back-in-anger-lyrics'\u003E“Don't Look Back in Anger” by Oasis\u003C/a\u003E on Genius\u003C/div\u003E \u003Cscript crossorigin src='//genius.com/songs/106380/embed.js'\u003E\u003C/script\u003E",
+      "explicit": false,
+      "facebook_share_message_without_url": "Oasis – Don't Look Back in Anger",
+      "featured_video": true,
+      "full_title": "Don't Look Back in Anger by Oasis",
+      "has_instagram_reel_annotations": null,
+      "header_image_thumbnail_url": "https://images.genius.com/a5b04672c2a4bcce059be1c62deeb9c2.300x300x1.jpg",
+      "header_image_url": "https://images.genius.com/a5b04672c2a4bcce059be1c62deeb9c2.500x500x1.jpg",
+      "hidden": false,
+      "id": 106380,
+      "instrumental": false,
+      "is_music": true,
+      "language": "en",
+      "lyrics_owner_id": 1850,
+      "lyrics_placeholder_reason": null,
+      "lyrics_state": "complete",
+      "lyrics_updated_at": 1707472649,
+      "lyrics_verified": false,
+      "metadata_fields_na": {
+        "albums": false,
+        "song_meaning": false
+      },
+      "path": "/Oasis-dont-look-back-in-anger-lyrics",
+      "pending_lyrics_edits_count": 0,
+      "published": false,
+      "pusher_channel": "song-106380",
+      "pyongs_count": 95,
+      "recording_location": "Rockfield Studios, Wye Valley, Monmouthshire, Wales",
+      "relationships_index_url": "https://genius.com/Oasis-dont-look-back-in-anger-sample",
+      "release_date": "1996-02-19",
+      "release_date_components": {
+        "year": 1996,
+        "month": 2,
+        "day": 19
+      },
+      "release_date_for_display": "February 19, 1996",
+      "release_date_with_abbreviated_month_for_display": "Feb. 19, 1996",
+      "share_url": "https://genius.com/Oasis-dont-look-back-in-anger-lyrics",
+      "song_art_image_thumbnail_url": "https://images.rapgenius.com/5d876c78305137f6888bd017725435b8.300x295x1.jpg",
+      "song_art_image_url": "https://images.rapgenius.com/5d876c78305137f6888bd017725435b8.318x313x1.jpg",
+      "soundcloud_url": null,
+      "spotify_uuid": "7CVYxHq1L0Z4G84jTDS6Jl",
+      "stats": {
+        "accepted_annotations": 10,
+        "contributors": 87,
+        "iq_earners": 87,
+        "transcribers": 2,
+        "unreviewed_annotations": 0,
+        "verified_annotations": 0,
+        "concurrents": 15,
+        "hot": false,
+        "pageviews": 1523153
+      },
+      "title": "Don’t Look Back in Anger",
+      "title_with_featured": "Don't Look Back in Anger",
+      "tracking_data": [
+        {
+          "key": "Song ID",
+          "value": 106380
+        },
+        {
+          "key": "Title",
+          "value": "Don't Look Back in Anger"
+        },
+        {
+          "key": "Primary Artist",
+          "value": "Oasis"
+        },
+        {
+          "key": "Primary Artist ID",
+          "value": 21100
+        },
+        {
+          "key": "Primary Album",
+          "value": "(What's the Story) Morning Glory?"
+        },
+        {
+          "key": "Primary Album ID",
+          "value": 17740
+        },
+        {
+          "key": "Tag",
+          "value": "rock"
+        },
+        {
+          "key": "Primary Tag",
+          "value": "rock"
+        },
+        {
+          "key": "Primary Tag ID",
+          "value": 567
+        },
+        {
+          "key": "Music?",
+          "value": true
+        },
+        {
+          "key": "Annotatable Type",
+          "value": "Song"
+        },
+        {
+          "key": "Annotatable ID",
+          "value": 106380
+        },
+        {
+          "key": "featured_video",
+          "value": true
+        },
+        {
+          "key": "cohort_ids",
+          "value": []
+        },
+        {
+          "key": "has_verified_callout",
+          "value": false
+        },
+        {
+          "key": "has_featured_annotation",
+          "value": true
+        },
+        {
+          "key": "created_at",
+          "value": "2013-01-02T20:28:12Z"
+        },
+        {
+          "key": "created_month",
+          "value": "2013-01-01"
+        },
+        {
+          "key": "created_year",
+          "value": 2013
+        },
+        {
+          "key": "song_tier",
+          "value": "B"
+        },
+        {
+          "key": "Has Recirculated Articles",
+          "value": true
+        },
+        {
+          "key": "Lyrics Language",
+          "value": "en"
+        },
+        {
+          "key": "Has Apple Match",
+          "value": true
+        },
+        {
+          "key": "Release Date",
+          "value": "1996-02-19"
+        },
+        {
+          "key": "NRM Tier",
+          "value": null
+        },
+        {
+          "key": "NRM Target Date",
+          "value": null
+        },
+        {
+          "key": "Has Description",
+          "value": true
+        },
+        {
+          "key": "Has Youtube URL",
+          "value": true
+        },
+        {
+          "key": "Has Translation Q&A",
+          "value": false
+        },
+        {
+          "key": "Comment Count",
+          "value": 25
+        },
+        {
+          "key": "hot",
+          "value": false
+        },
+        {
+          "key": "has_recommendations",
+          "value": true
+        },
+        {
+          "key": "has_stubhub_artist",
+          "value": true
+        },
+        {
+          "key": "has_stubhub_link",
+          "value": false
+        },
+        {
+          "key": "Translation",
+          "value": false
+        },
+        {
+          "key": "recommendation_strategy",
+          "value": "mixpanel"
+        }
+      ],
+      "tracking_paths": {
+        "aggregate": "/Oasis-dont-look-back-in-anger-lyrics",
+        "concurrent": "/Oasis-dont-look-back-in-anger-lyrics"
+      },
+      "transcription_priority": "normal",
+      "twitter_share_message": "Oasis – Don't Look Back in Anger @oasis https://genius.com/Oasis-dont-look-back-in-anger-lyrics",
+      "twitter_share_message_without_url": "Oasis – Don't Look Back in Anger @oasis",
+      "updated_by_human_at": 1711252153,
+      "url": "https://genius.com/Oasis-dont-look-back-in-anger-lyrics",
+      "viewable_by_roles": [],
+      "vttp_id": null,
+      "youtube_start": "0",
+      "youtube_url": "http://www.youtube.com/watch?v=YZG7z4FOn0g",
+      "current_user_metadata": {
+        "permissions": [
+          "follow",
+          "see_pageviews",
+          "pyong",
+          "add_community_annotation_to",
+          "view_apple_music_player",
+          "view_relationships_page",
+          "create_comment",
+          "create_annotation",
+          "view_song_story_gallery",
+          "propose_lyrics_edit",
+          "create_question"
+        ],
+        "excluded_permissions": [
+          "award_transcription_iq",
+          "remove_transcription_iq",
+          "edit_lyrics",
+          "view_annotation_engagement_data",
+          "publish",
+          "unpublish",
+          "edit_spotify_details",
+          "hide",
+          "unhide",
+          "toggle_featured_video",
+          "add_pinned_annotation_to",
+          "destroy",
+          "mark_as_not_spam",
+          "edit_spotify_annotations_for",
+          "verify_lyrics",
+          "unverify_lyrics",
+          "edit_anything",
+          "edit_any_media",
+          "edit",
+          "rename",
+          "edit_tags",
+          "reindex",
+          "view_lyrics_synchronization",
+          "enable_media",
+          "disable_media",
+          "edit_lyrics_or_annotation_brackets",
+          "see_editorial_indicators",
+          "view_attribution_visualization",
+          "edit_annotation_brackets",
+          "preview_lyrics_for_export",
+          "hide_apple_player",
+          "unhide_apple_player",
+          "trigger_apple_match",
+          "mark_lyrics_evaluation_as_complete",
+          "mark_lyrics_evaluation_as_staff_approved",
+          "unmark_lyrics_evaluation_as_complete",
+          "mark_lyrics_evaluation_as_un_staff_approved",
+          "view_transcriber_media_player",
+          "override_apple_match",
+          "set_song_color_gradient",
+          "mark_as_hot",
+          "unmark_as_hot",
+          "view_recommendations",
+          "use_mark_complete_button",
+          "edit_youtube_url",
+          "edit_soundcloud_url",
+          "edit_spotify_uuid",
+          "edit_vevo_url",
+          "moderate_annotations",
+          "see_short_id",
+          "manage_chart_item",
+          "create_tag",
+          "view_lyrics_edit_proposals_on_song",
+          "answer_question_with_source",
+          "create_additional_role",
+          "add_qa",
+          "pin_qa"
+        ],
+        "interactions": {
+          "pyong": false,
+          "following": false
+        },
+        "relationships": {
+          "pinned_role": null
+        },
+        "iq_by_action": {
+          "edit_metadata": {
+            "primary": {
+              "multiplier": 1,
+              "base": 2,
+              "applicable": true
+            }
+          },
+          "answer_question": {
+            "primary": {
+              "multiplier": 1,
+              "base": 5,
+              "applicable": true
+            }
+          }
+        }
+      },
+      "album": {
+        "_type": "album",
+        "api_path": "/albums/17740",
+        "cover_art_thumbnail_url": "https://images.genius.com/e0c32f22364b0a4ed4c89e3d811802e6.300x300x1.jpg",
+        "cover_art_url": "https://images.genius.com/e0c32f22364b0a4ed4c89e3d811802e6.1000x1000x1.jpg",
+        "full_title": "(What's the Story) Morning Glory? by Oasis",
+        "id": 17740,
+        "name": "(What’s the Story) Morning Glory?",
+        "name_with_artist": "(What's the Story) Morning Glory? (artist: Oasis)",
+        "release_date_components": {
+          "year": 1995,
+          "month": 10,
+          "day": 2
+        },
+        "release_date_for_display": "October 2, 1995",
+        "url": "https://genius.com/albums/Oasis/What-s-the-story-morning-glory",
+        "artist": {
+          "_type": "artist",
+          "api_path": "/artists/21100",
+          "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+          "id": 21100,
+          "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+          "index_character": "o",
+          "is_meme_verified": false,
+          "is_verified": true,
+          "name": "Oasis",
+          "slug": "Oasis",
+          "url": "https://genius.com/artists/Oasis",
+          "iq": 111
+        }
+      },
+      "albums": [
+        {
+          "_type": "album",
+          "api_path": "/albums/17740",
+          "cover_art_thumbnail_url": "https://images.genius.com/e0c32f22364b0a4ed4c89e3d811802e6.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/e0c32f22364b0a4ed4c89e3d811802e6.1000x1000x1.jpg",
+          "full_title": "(What's the Story) Morning Glory? by Oasis",
+          "id": 17740,
+          "name": "(What’s the Story) Morning Glory?",
+          "name_with_artist": "(What's the Story) Morning Glory? (artist: Oasis)",
+          "release_date_components": {
+            "year": 1995,
+            "month": 10,
+            "day": 2
+          },
+          "release_date_for_display": "October 2, 1995",
+          "url": "https://genius.com/albums/Oasis/What-s-the-story-morning-glory",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/80251",
+          "cover_art_thumbnail_url": "https://images.genius.com/5a09a9b55e4bbf4cebdfbd6b9d19ff2b.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/5a09a9b55e4bbf4cebdfbd6b9d19ff2b.1000x1000x1.jpg",
+          "full_title": "Stop the Clocks by Oasis",
+          "id": 80251,
+          "name": "Stop the Clocks",
+          "name_with_artist": "Stop the Clocks (artist: Oasis)",
+          "release_date_components": {
+            "year": 2006,
+            "month": 11,
+            "day": 20
+          },
+          "release_date_for_display": "November 20, 2006",
+          "url": "https://genius.com/albums/Oasis/Stop-the-clocks",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/122913",
+          "cover_art_thumbnail_url": "https://images.genius.com/bd8fc74bc095f89df2b6ad6ef55e5c7b.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/bd8fc74bc095f89df2b6ad6ef55e5c7b.1000x1000x1.jpg",
+          "full_title": "Time Flies... 1994–2009 by Oasis",
+          "id": 122913,
+          "name": "Time Flies... 1994–2009",
+          "name_with_artist": "Time Flies... 1994–2009 (artist: Oasis)",
+          "release_date_components": {
+            "year": 2010,
+            "month": 6,
+            "day": 14
+          },
+          "release_date_for_display": "June 14, 2010",
+          "url": "https://genius.com/albums/Oasis/Time-flies-19942009",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/361226",
+          "cover_art_thumbnail_url": "https://images.genius.com/a614e87f3697fb336996685b19d18c77.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/a614e87f3697fb336996685b19d18c77.925x925x1.jpg",
+          "full_title": "Salsa e Merengue: Internacional by Som Livre",
+          "id": 361226,
+          "name": "Salsa e Merengue: Internacional",
+          "name_with_artist": "Salsa e Merengue: Internacional (artist: Som Livre)",
+          "release_date_components": {
+            "year": 1996,
+            "month": 12,
+            "day": null
+          },
+          "release_date_for_display": "December 1996",
+          "url": "https://genius.com/albums/Som-livre/Salsa-e-merengue-internacional",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/1105118",
+            "header_image_url": "https://images.genius.com/60c9adb25d3406a61e7a320323c00e3f.851x315x1.jpg",
+            "id": 1105118,
+            "image_url": "https://images.genius.com/46b0925c508857137f50d7ff4a28fcda.900x900x1.jpg",
+            "index_character": "s",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Som Livre",
+            "slug": "Som-livre",
+            "url": "https://genius.com/artists/Som-livre"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/542320",
+          "cover_art_thumbnail_url": "https://images.genius.com/9134f90418a90448e9916376baff8994.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/9134f90418a90448e9916376baff8994.457x457x1.jpg",
+          "full_title": "NOW That’s What I Call Legends [UK] by NOW That's What I Call Music!",
+          "id": 542320,
+          "name": "NOW That’s What I Call Legends [UK]",
+          "name_with_artist": "NOW That’s What I Call Legends [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2014,
+            "month": 12,
+            "day": 2
+          },
+          "release_date_for_display": "December 2, 2014",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-thats-what-i-call-legends-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/570033",
+          "cover_art_thumbnail_url": "https://images.genius.com/f900dd6d9f20052512e3669c706c8b45.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/f900dd6d9f20052512e3669c706c8b45.355x355x1.jpg",
+          "full_title": "NOW That’s What I Call Drivetime [UK] by NOW That's What I Call Music!",
+          "id": 570033,
+          "name": "NOW That’s What I Call Drivetime [UK]",
+          "name_with_artist": "NOW That’s What I Call Drivetime [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2016,
+            "month": 9,
+            "day": 23
+          },
+          "release_date_for_display": "September 23, 2016",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-thats-what-i-call-drivetime-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/570243",
+          "cover_art_thumbnail_url": "https://images.genius.com/6971fd32312de32f53ced120f45a0939.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/6971fd32312de32f53ced120f45a0939.1000x1000x1.jpg",
+          "full_title": "NOW That’s What I Call NOW! [UK] by NOW That's What I Call Music!",
+          "id": 570243,
+          "name": "NOW That’s What I Call NOW! [UK]",
+          "name_with_artist": "NOW That’s What I Call NOW! [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2018,
+            "month": 11,
+            "day": 9
+          },
+          "release_date_for_display": "November 9, 2018",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-thats-what-i-call-now-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/571962",
+          "cover_art_thumbnail_url": "https://images.genius.com/ffdb3b60e9a5434cd6aa1d5fa89a66cc.295x295x1.jpg",
+          "cover_art_url": "https://images.genius.com/ffdb3b60e9a5434cd6aa1d5fa89a66cc.295x295x1.jpg",
+          "full_title": "50 Years Of The Greatest Hit Singles by Various Artists",
+          "id": 571962,
+          "name": "50 Years Of The Greatest Hit Singles",
+          "name_with_artist": "50 Years Of The Greatest Hit Singles (artist: Various Artists)",
+          "release_date_components": {
+            "year": 2002,
+            "month": 11,
+            "day": 11
+          },
+          "release_date_for_display": "November 11, 2002",
+          "url": "https://genius.com/albums/Various-artists/50-years-of-the-greatest-hit-singles",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/768",
+            "header_image_url": "https://images.genius.com/10da268551e38fd18cf057ac25bb1ac6.563x177x1.png",
+            "id": 768,
+            "image_url": "https://images.genius.com/058d7a1c280c0465ba0c108be8951ba2.594x594x1.png",
+            "index_character": "v",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Various Artists",
+            "slug": "Various-artists",
+            "url": "https://genius.com/artists/Various-artists"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/603342",
+          "cover_art_thumbnail_url": "https://images.genius.com/2e0c71c6645c2566dfa5265c128863fc.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/2e0c71c6645c2566dfa5265c128863fc.598x598x1.jpg",
+          "full_title": "The Best Pub Jukebox … Ever! by Various Artists",
+          "id": 603342,
+          "name": "The Best Pub Jukebox … Ever!",
+          "name_with_artist": "The Best Pub Jukebox … Ever! (artist: Various Artists)",
+          "release_date_components": {
+            "year": 2004,
+            "month": null,
+            "day": null
+          },
+          "release_date_for_display": "2004",
+          "url": "https://genius.com/albums/Various-artists/The-best-pub-jukebox-ever",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/768",
+            "header_image_url": "https://images.genius.com/10da268551e38fd18cf057ac25bb1ac6.563x177x1.png",
+            "id": 768,
+            "image_url": "https://images.genius.com/058d7a1c280c0465ba0c108be8951ba2.594x594x1.png",
+            "index_character": "v",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Various Artists",
+            "slug": "Various-artists",
+            "url": "https://genius.com/artists/Various-artists"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/753691",
+          "cover_art_thumbnail_url": "https://images.genius.com/37e80f266c7e3a35c1f2b6816ad55244.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/37e80f266c7e3a35c1f2b6816ad55244.600x600x1.jpg",
+          "full_title": "NOW 100 Hits 90s No.1s [UK] by NOW That's What I Call Music!",
+          "id": 753691,
+          "name": "NOW 100 Hits 90s No.1s [UK]",
+          "name_with_artist": "NOW 100 Hits 90s No.1s [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2020,
+            "month": 11,
+            "day": 13
+          },
+          "release_date_for_display": "November 13, 2020",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-100-hits-90s-no-1s-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/801481",
+          "cover_art_thumbnail_url": "https://images.genius.com/ec653c6d25f5760ffe2442cf9e7f6832.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/ec653c6d25f5760ffe2442cf9e7f6832.600x600x1.jpg",
+          "full_title": "Just Great Songs: Volume 3 by Various Artists",
+          "id": 801481,
+          "name": "Just Great Songs: Volume 3",
+          "name_with_artist": "Just Great Songs: Volume 3 (artist: Various Artists)",
+          "release_date_components": {
+            "year": 2009,
+            "month": null,
+            "day": null
+          },
+          "release_date_for_display": "2009",
+          "url": "https://genius.com/albums/Various-artists/Just-great-songs-volume-3",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/768",
+            "header_image_url": "https://images.genius.com/10da268551e38fd18cf057ac25bb1ac6.563x177x1.png",
+            "id": 768,
+            "image_url": "https://images.genius.com/058d7a1c280c0465ba0c108be8951ba2.594x594x1.png",
+            "index_character": "v",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Various Artists",
+            "slug": "Various-artists",
+            "url": "https://genius.com/artists/Various-artists"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/833052",
+          "cover_art_thumbnail_url": "https://images.genius.com/88d6124920d1448c3076c2827f440b9a.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/88d6124920d1448c3076c2827f440b9a.599x599x1.jpg",
+          "full_title": "Teen Spirit by Various Artists",
+          "id": 833052,
+          "name": "Teen Spirit",
+          "name_with_artist": "Teen Spirit (artist: Various Artists)",
+          "release_date_components": {
+            "year": 2001,
+            "month": null,
+            "day": null
+          },
+          "release_date_for_display": "2001",
+          "url": "https://genius.com/albums/Various-artists/Teen-spirit",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/768",
+            "header_image_url": "https://images.genius.com/10da268551e38fd18cf057ac25bb1ac6.563x177x1.png",
+            "id": 768,
+            "image_url": "https://images.genius.com/058d7a1c280c0465ba0c108be8951ba2.594x594x1.png",
+            "index_character": "v",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Various Artists",
+            "slug": "Various-artists",
+            "url": "https://genius.com/artists/Various-artists"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/842515",
+          "cover_art_thumbnail_url": "https://images.genius.com/69a59b1d12850e618ffb0af0ac621d46.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/69a59b1d12850e618ffb0af0ac621d46.953x953x1.jpg",
+          "full_title": "Don’t Look Back in Anger - Single by Oasis",
+          "id": 842515,
+          "name": "Don’t Look Back in Anger - Single",
+          "name_with_artist": "Don’t Look Back in Anger - Single (artist: Oasis)",
+          "release_date_components": {
+            "year": 1996,
+            "month": 2,
+            "day": 19
+          },
+          "release_date_for_display": "February 19, 1996",
+          "url": "https://genius.com/albums/Oasis/Dont-look-back-in-anger-single",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/992832",
+          "cover_art_thumbnail_url": "https://images.genius.com/03b839b4bda7db97ee80bf2c17fc035e.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/03b839b4bda7db97ee80bf2c17fc035e.800x800x1.jpg",
+          "full_title": "NOW #1s [UK] by NOW That's What I Call Music!",
+          "id": 992832,
+          "name": "NOW #1s [UK]",
+          "name_with_artist": "NOW #1s [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2022,
+            "month": 11,
+            "day": 11
+          },
+          "release_date_for_display": "November 11, 2022",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-1s-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/1014838",
+          "cover_art_thumbnail_url": "https://images.genius.com/1ed671c5cb0042ff1281487febdb9420.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/1ed671c5cb0042ff1281487febdb9420.600x600x1.jpg",
+          "full_title": "Top 4000 (2020) by Various Artists",
+          "id": 1014838,
+          "name": "Top 4000 (2020)",
+          "name_with_artist": "Top 4000 (2020) (artist: Various Artists)",
+          "release_date_components": {
+            "year": 2020,
+            "month": 11,
+            "day": 27
+          },
+          "release_date_for_display": "November 27, 2020",
+          "url": "https://genius.com/albums/Various-artists/Top-4000-2020",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/768",
+            "header_image_url": "https://images.genius.com/10da268551e38fd18cf057ac25bb1ac6.563x177x1.png",
+            "id": 768,
+            "image_url": "https://images.genius.com/058d7a1c280c0465ba0c108be8951ba2.594x594x1.png",
+            "index_character": "v",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Various Artists",
+            "slug": "Various-artists",
+            "url": "https://genius.com/artists/Various-artists"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/1041325",
+          "cover_art_thumbnail_url": "https://images.genius.com/63a7a536df272a2f1b0a15750e394cd4.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/63a7a536df272a2f1b0a15750e394cd4.1000x1000x1.jpg",
+          "full_title": "NOW That’s What I Call Legendary [UK] by NOW That's What I Call Music!",
+          "id": 1041325,
+          "name": "NOW That’s What I Call Legendary [UK]",
+          "name_with_artist": "NOW That’s What I Call Legendary [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2023,
+            "month": 5,
+            "day": 26
+          },
+          "release_date_for_display": "May 26, 2023",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-thats-what-i-call-legendary-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/1094017",
+          "cover_art_thumbnail_url": "https://images.genius.com/841aea2d46d14b9522af2e1b1ab89615.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/841aea2d46d14b9522af2e1b1ab89615.1000x1000x1.jpg",
+          "full_title": "NOW That’s What I Call 40 Years [UK] by NOW That's What I Call Music!",
+          "id": 1094017,
+          "name": "NOW That’s What I Call 40 Years [UK]",
+          "name_with_artist": "NOW That’s What I Call 40 Years [UK] (artist: NOW That's What I Call Music!)",
+          "release_date_components": {
+            "year": 2023,
+            "month": 11,
+            "day": 24
+          },
+          "release_date_for_display": "November 24, 2023",
+          "url": "https://genius.com/albums/Now-thats-what-i-call-music/Now-thats-what-i-call-40-years-uk",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/578675",
+            "header_image_url": "https://images.genius.com/75dc2b1f96ca4962c7622043335e1b99.960x960x1.jpg",
+            "id": 578675,
+            "image_url": "https://images.genius.com/09699e5ca37d9eaa502442d96b088362.400x400x1.jpg",
+            "index_character": "n",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "NOW That’s What I Call Music!",
+            "slug": "Now-thats-what-i-call-music",
+            "url": "https://genius.com/artists/Now-thats-what-i-call-music"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/1119893",
+          "cover_art_thumbnail_url": "https://images.genius.com/e5550d4454e4311247c1f722c45761ce.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/e5550d4454e4311247c1f722c45761ce.393x393x1.jpg",
+          "full_title": "Ö3 Greatest Hits Vol. 19 by Hitradio Ö3",
+          "id": 1119893,
+          "name": "Ö3 Greatest Hits Vol. 19",
+          "name_with_artist": "Ö3 Greatest Hits Vol. 19 (artist: Hitradio Ö3)",
+          "release_date_components": {
+            "year": 2002,
+            "month": 9,
+            "day": 30
+          },
+          "release_date_for_display": "September 30, 2002",
+          "url": "https://genius.com/albums/Hitradio-o3/O3-greatest-hits-vol-19",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/3736982",
+            "header_image_url": "https://images.genius.com/649477b0e75a367087184ec8c526e1e5.256x256x1.jpg",
+            "id": 3736982,
+            "image_url": "https://images.genius.com/292900e5a7aea7d47521a7b9990a60fd.599x599x1.jpg",
+            "index_character": "h",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Hitradio Ö3",
+            "slug": "Hitradio-o3",
+            "url": "https://genius.com/artists/Hitradio-o3"
+          }
+        },
+        {
+          "_type": "album",
+          "api_path": "/albums/1135038",
+          "cover_art_thumbnail_url": "https://images.genius.com/daafdbfdf33d99240887c770272ccfe3.300x300x1.jpg",
+          "cover_art_url": "https://images.genius.com/daafdbfdf33d99240887c770272ccfe3.600x600x1.jpg",
+          "full_title": "(What’s The Story) Morning Glory? (Deluxe Remastered Edition) by Oasis",
+          "id": 1135038,
+          "name": "(What’s The Story) Morning Glory? (Deluxe Remastered Edition)",
+          "name_with_artist": "(What’s The Story) Morning Glory? (Deluxe Remastered Edition) (artist: Oasis)",
+          "release_date_components": {
+            "year": 2014,
+            "month": 9,
+            "day": 26
+          },
+          "release_date_for_display": "September 26, 2014",
+          "url": "https://genius.com/albums/Oasis/Whats-the-story-morning-glory-deluxe-remastered-edition",
+          "artist": {
+            "_type": "artist",
+            "api_path": "/artists/21100",
+            "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+            "id": 21100,
+            "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+            "index_character": "o",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Oasis",
+            "slug": "Oasis",
+            "url": "https://genius.com/artists/Oasis",
+            "iq": 111
+          }
+        }
+      ],
+      "custom_performances": [
+        {
+          "label": "Synthesised Strings",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/41605",
+              "header_image_url": "https://images.genius.com/bbc865984950337175a81988378c46cc.600x400x1.jpg",
+              "id": 41605,
+              "image_url": "https://images.genius.com/236e17176c3ed3ff6b996b15a32d7bb6.400x400x1.jpg",
+              "index_character": "o",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Owen Morris",
+              "slug": "Owen-morris",
+              "url": "https://genius.com/artists/Owen-morris"
+            }
+          ]
+        },
+        {
+          "label": "Label",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/1147458",
+              "header_image_url": "https://images.genius.com/58c3b8d71df43458f3ee4f599b9be841.1000x1000x1.png",
+              "id": 1147458,
+              "image_url": "https://images.genius.com/dc3938836c09b0d3d67ef7ca3de816c1.1000x1000x1.png",
+              "index_character": "c",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Creation Records",
+              "slug": "Creation-records",
+              "url": "https://genius.com/artists/Creation-records"
+            }
+          ]
+        },
+        {
+          "label": "Mellotron",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/69347",
+              "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "id": 69347,
+              "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "index_character": "n",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Noel Gallagher",
+              "slug": "Noel-gallagher",
+              "url": "https://genius.com/artists/Noel-gallagher"
+            }
+          ]
+        },
+        {
+          "label": "Drums",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/1018124",
+              "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+              "id": 1018124,
+              "image_url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+              "index_character": "a",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Alan White (Oasis)",
+              "slug": "Alan-white-oasis",
+              "url": "https://genius.com/artists/Alan-white-oasis"
+            }
+          ]
+        },
+        {
+          "label": "Bass",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/1018857",
+              "header_image_url": "https://images.genius.com/1f9d0d743a83d3f720c78be84798e7b9.1000x1000x1.png",
+              "id": 1018857,
+              "image_url": "https://images.genius.com/e9731bbb190fe22898eaee422cda4be0.291x291x1.jpg",
+              "index_character": "p",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Paul “Guigsy” McGuigan",
+              "slug": "Paul-guigsy-mcguigan",
+              "url": "https://genius.com/artists/Paul-guigsy-mcguigan"
+            }
+          ]
+        },
+        {
+          "label": "Rhythm Guitar",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/651080",
+              "header_image_url": "https://images.genius.com/d4be0341068269ef54c271b0eb321d32.250x300x1.jpg",
+              "id": 651080,
+              "image_url": "https://images.genius.com/d4be0341068269ef54c271b0eb321d32.250x300x1.jpg",
+              "index_character": "p",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Paul “Bonehead” Arthurs",
+              "slug": "Paul-bonehead-arthurs",
+              "url": "https://genius.com/artists/Paul-bonehead-arthurs"
+            }
+          ]
+        },
+        {
+          "label": "Lead guitar",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/69347",
+              "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "id": 69347,
+              "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "index_character": "n",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Noel Gallagher",
+              "slug": "Noel-gallagher",
+              "url": "https://genius.com/artists/Noel-gallagher"
+            }
+          ]
+        },
+        {
+          "label": "Piano",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/651080",
+              "header_image_url": "https://images.genius.com/d4be0341068269ef54c271b0eb321d32.250x300x1.jpg",
+              "id": 651080,
+              "image_url": "https://images.genius.com/d4be0341068269ef54c271b0eb321d32.250x300x1.jpg",
+              "index_character": "p",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Paul “Bonehead” Arthurs",
+              "slug": "Paul-bonehead-arthurs",
+              "url": "https://genius.com/artists/Paul-bonehead-arthurs"
+            }
+          ]
+        },
+        {
+          "label": "E-Bow",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/69347",
+              "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "id": 69347,
+              "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "index_character": "n",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Noel Gallagher",
+              "slug": "Noel-gallagher",
+              "url": "https://genius.com/artists/Noel-gallagher"
+            }
+          ]
+        },
+        {
+          "label": "Tambourine",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/56368",
+              "header_image_url": "https://images.genius.com/003933251eeb2db3a3f026188bcae41a.1000x635x1.jpg",
+              "id": 56368,
+              "image_url": "https://images.genius.com/3774ebf5a05c01b5368ddb224e572a05.635x635x1.jpg",
+              "index_character": "l",
+              "is_meme_verified": false,
+              "is_verified": true,
+              "name": "Liam Gallagher",
+              "slug": "Liam-gallagher",
+              "url": "https://genius.com/artists/Liam-gallagher",
+              "iq": 100
+            }
+          ]
+        },
+        {
+          "label": "Vocals",
+          "artists": [
+            {
+              "_type": "artist",
+              "api_path": "/artists/69347",
+              "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "id": 69347,
+              "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "index_character": "n",
+              "is_meme_verified": false,
+              "is_verified": false,
+              "name": "Noel Gallagher",
+              "slug": "Noel-gallagher",
+              "url": "https://genius.com/artists/Noel-gallagher"
+            }
+          ]
+        }
+      ],
+      "description_annotation": {
+        "_type": "referent",
+        "annotator_id": 1850,
+        "annotator_login": "Alex_Koenig",
+        "api_path": "/referents/3820432",
+        "classification": "accepted",
+        "fragment": "Don’t Look Back in Anger",
+        "id": 3820432,
+        "ios_app_url": "genius://referents/3820432",
+        "is_description": true,
+        "is_image": false,
+        "path": "/3820432/Oasis-dont-look-back-in-anger/Dont-look-back-in-anger",
+        "range": {
+          "content": "Don't Look Back in Anger"
+        },
+        "song_id": 106380,
+        "url": "https://genius.com/3820432/Oasis-dont-look-back-in-anger/Dont-look-back-in-anger",
+        "verified_annotator_ids": [],
+        "current_user_metadata": {
+          "permissions": [],
+          "excluded_permissions": [
+            "add_pinned_annotation_to",
+            "add_community_annotation_to"
+          ],
+          "relationships": {
+            "pinned_role": null
+          }
+        },
+        "tracking_paths": {
+          "aggregate": "/3820432/Oasis-dont-look-back-in-anger/Dont-look-back-in-anger",
+          "concurrent": "/Oasis-dont-look-back-in-anger-lyrics"
+        },
+        "twitter_share_message": "““Don’t Look Back in Anger” was released as the fourth single off of (What’s The Story) Morning G…” —@Genius",
+        "annotatable": {
+          "_type": "song",
+          "api_path": "/songs/106380",
+          "client_timestamps": {
+            "updated_by_human_at": 1711252153,
+            "lyrics_updated_at": 1707472649
+          },
+          "context": "Oasis",
+          "id": 106380,
+          "image_url": "https://images.rapgenius.com/5d876c78305137f6888bd017725435b8.318x313x1.jpg",
+          "link_title": "Don’t Look Back in Anger by Oasis",
+          "title": "Don't Look Back in Anger",
+          "type": "Song",
+          "url": "https://genius.com/Oasis-dont-look-back-in-anger-lyrics"
+        },
+        "annotations": [
+          {
+            "_type": "annotation",
+            "api_path": "/annotations/3820432",
+            "being_created": false,
+            "body": {
+              "dom": {
+                "tag": "root",
+                "children": [
+                  {
+                    "tag": "p",
+                    "children": [
+                      "“Don’t Look Back in Anger” was released as the fourth single off of ",
+                      {
+                        "tag": "em",
+                        "children": [
+                          "(What’s The Story) Morning Glory?"
+                        ]
+                      },
+                      ", February 19th 1996. In 2006, it was included in the “Best Of”-compilation ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/Oasis/Stop-the-clocks",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/80251"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Stop The Clocks"
+                            ]
+                          }
+                        ]
+                      },
+                      " and in 2010 it was included in the singles collection ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/Oasis/Time-flies-19942009",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/122913"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Time Flies… 1994-2009"
+                            ]
+                          }
+                        ]
+                      },
+                      "."
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "Noel Gallagher also admits that he was under the influence of illegal substances when he wrote the song and to this day he ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "http://www.contactmusic.net/noel-gallagher/news/gallagher-i-have-no-idea-what-my-songs-mean",
+                          "rel": "noopener nofollow"
+                        },
+                        "children": [
+                          "claims he does not know what the lyrics mean."
+                        ]
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "In late May 2017, the song became a symbol for the Manchester’s spirit and resistance following the terrorist attacks during an ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Ariana-grande",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/26507"
+                        },
+                        "children": [
+                          "Ariana Grande"
+                        ]
+                      },
+                      " concert, when a crowd of Mancunians started singing it, at the end of a minute of silence to honour the victims of the attack."
+                    ]
+                  }
+                ]
+              }
+            },
+            "comment_count": 0,
+            "community": true,
+            "created_at": 1357158626,
+            "custom_preview": null,
+            "deleted": false,
+            "embed_content": "\u003Cblockquote class='rg_standalone_container' data-src='//genius.com/annotations/3820432/standalone_embed'\u003E\u003Ca href='https://genius.com/3820432/Oasis-dont-look-back-in-anger/Dont-look-back-in-anger'\u003EDon&#39;t Look Back in Anger\u003C/a\u003E\u003Cbr\u003E\u003Ca href='https://genius.com/Oasis-dont-look-back-in-anger-lyrics'\u003E&#8213; Oasis – Don't Look Back in Anger\u003C/a\u003E\u003C/blockquote\u003E\u003Cscript async crossorigin src='//genius.com/annotations/load_standalone_embeds.js'\u003E\u003C/script\u003E",
+            "has_voters": true,
+            "id": 3820432,
+            "needs_exegesis": false,
+            "pinned": false,
+            "proposed_edit_count": 0,
+            "pyongs_count": null,
+            "referent_id": 3820432,
+            "share_url": "https://genius.com/3820432",
+            "source": null,
+            "state": "accepted",
+            "twitter_share_message": "““Don’t Look Back in Anger” was released as the fourth single off of (What’s The Story) Morning Glory?, F…” —@Genius",
+            "url": "https://genius.com/3820432/Oasis-dont-look-back-in-anger/Dont-look-back-in-anger",
+            "verified": false,
+            "votes_total": 229,
+            "current_user_metadata": {
+              "permissions": [
+                "vote",
+                "propose_edit_to",
+                "create_comment"
+              ],
+              "excluded_permissions": [
+                "edit",
+                "cosign",
+                "uncosign",
+                "destroy",
+                "accept",
+                "reject",
+                "see_unreviewed",
+                "clear_votes",
+                "pin_to_profile",
+                "unpin_from_profile",
+                "update_source",
+                "edit_custom_preview"
+              ],
+              "interactions": {
+                "cosign": false,
+                "pyong": false,
+                "vote": null
+              },
+              "iq_by_action": {
+                "accept": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 10,
+                    "applicable": true
+                  }
+                },
+                "reject": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 2,
+                    "applicable": true
+                  }
+                },
+                "delete": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 5,
+                    "applicable": true
+                  }
+                }
+              }
+            },
+            "accepted_by": {
+              "_type": "user",
+              "about_me_summary": "Retired Co-founder of Rock Genius.",
+              "api_path": "/users/1850",
+              "avatar": {
+                "tiny": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 16,
+                    "height": 16
+                  }
+                },
+                "thumb": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 32,
+                    "height": 32
+                  }
+                },
+                "small": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/small/1358288164_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "medium": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 300,
+                    "height": 400
+                  }
+                }
+              },
+              "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+              "human_readable_role_for_display": "Contributor",
+              "id": 1850,
+              "iq": 196794,
+              "is_meme_verified": false,
+              "is_verified": false,
+              "login": "Alex_Koenig",
+              "name": "Alex Koenig",
+              "role_for_display": "contributor",
+              "url": "https://genius.com/Alex_Koenig",
+              "current_user_metadata": {
+                "permissions": [
+                  "follow"
+                ],
+                "excluded_permissions": [],
+                "interactions": {
+                  "following": false
+                }
+              }
+            },
+            "authors": [
+              {
+                "_type": "user_attribution",
+                "attribution": 0.343511450381679,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Retired Co-founder of Rock Genius.",
+                  "api_path": "/users/1850",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/1850_coolmtv.jpg",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/1358288163_1850_coolmtv.jpg",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/small/1358288164_1850_coolmtv.jpg",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 1850,
+                  "iq": 196794,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "Alex_Koenig",
+                  "name": "Alex Koenig",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/Alex_Koenig",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.251908396946565,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Danish Genius Editor previously going under the nicks “melballe,” and “Mazm.”\n\n\n\nIf I rejected or deleted your annotation/suggestion, please take the time to read this guideline. If you’re still unsure why it was rejected/deleted, hit me up and I’ll talk you through it :-)\n\n\n\nBuy CDs. Be nice to animals. Follow No Crowd.\n\nMy CD Collection.\nMy Concert Diary.\n\n\n\nAchievements:\n\n\nWinner of Scribe-A-Thon March 2015 Edition (155 songs)\n11/04 2015 – First time having a transcribed song displayed on the Genius frontpage.\n18/04 2015 – Editored, ScopeY TAUGHT ME.\n04/05 2015 – 10K IQ\n09/12 2016 – 25K IQ\n03/01 2017 – 30K IQ\n08/01 2017 – Nr. 36 Rock Top Genius Scholar – OF ALL TIME!\n05/05 2017 – 40K IQ\n09/08 2017 – 50K IQ\n04/12 2017 – 60K IQ\n23/04 2018 – 70K IQ\n27/07 2018 – 80K IQ\n02/05 2019 – 90K IQ\n\n\n\n\n\nMy Projects:\n\nWhat I’m working on\n\n\n\nI REALLY KINDA LIKE THESE artists:\n\n\nOasis\nKanyeWest\nNoelGallaghersHighFlyingBirds\nQueensoftheStoneAge\nAC/DC\nArcticMonkeys\ntheSmiths\nMorrissey\nNephew – theStrokes – theFloorIsMadeofLava – theKillers – SpleenUnited – PeterSommer – Kasabian – Audioslave – Metallica – FooFighters – theWhiteStripes – Eminem – Suspekt – Mew – theGame – BonIver – KingsOfLeon – DaftPunk – Justice – TenaciousD – PushaT – Outkast – JohnMayer – Wu-TangClan – GhostfaceKillah – Raekwon – Drake – KendrickLamar – theKillers",
+                  "api_path": "/users/721779",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/eM4MQGEISUGa5YyqrcwW_american%20psycho%20huey%20lewis%20and%20the%20news%201.jpg",
+                  "human_readable_role_for_display": "Editor",
+                  "id": 721779,
+                  "iq": 120164,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "m4ths",
+                  "name": "m4ths",
+                  "role_for_display": "editor",
+                  "url": "https://genius.com/m4ths",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.244274809160305,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "",
+                  "api_path": "/users/4438528",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/f99955a314e6abb850e41e329848c81c",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/f99955a314e6abb850e41e329848c81c",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/f99955a314e6abb850e41e329848c81c",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/f99955a314e6abb850e41e329848c81c",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://images.genius.com/avatars/medium/f99955a314e6abb850e41e329848c81c",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 4438528,
+                  "iq": 630,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "BG_Sofia",
+                  "name": "BG_Sofia",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/BG_Sofia",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.083969465648855,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "",
+                  "api_path": "/users/149810",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/WKxybLSBTG229duNSZd5.jpg",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/WKxybLSBTG229duNSZd5.jpg",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/small/WKxybLSBTG229duNSZd5.jpg",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/WKxybLSBTG229duNSZd5.jpg",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/WKxybLSBTG229duNSZd5.jpg",
+                  "human_readable_role_for_display": "Editor",
+                  "id": 149810,
+                  "iq": 191744,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "perfectrhyme",
+                  "name": "Perfectrhyme",
+                  "role_for_display": "editor",
+                  "url": "https://genius.com/perfectrhyme",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.0610687022900763,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "",
+                  "api_path": "/users/1184902",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/5d027d26f3bab373cba4cb8802ea0ecd",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/5d027d26f3bab373cba4cb8802ea0ecd",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/5d027d26f3bab373cba4cb8802ea0ecd",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/5d027d26f3bab373cba4cb8802ea0ecd",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://images.genius.com/avatars/medium/5d027d26f3bab373cba4cb8802ea0ecd",
+                  "human_readable_role_for_display": null,
+                  "id": 1184902,
+                  "iq": 139,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "bello73",
+                  "name": "bello73",
+                  "role_for_display": null,
+                  "url": "https://genius.com/bello73",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.0152671755725191,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Half afraid, half amazed, all insane.",
+                  "api_path": "/users/269182",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/3GmrMEUaTVW5V3WEham0_Foto0079.jpg",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 269182,
+                  "iq": 432096,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "igordebraga",
+                  "name": "​igordebraga",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/igordebraga",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              }
+            ],
+            "cosigned_by": [],
+            "created_by": {
+              "_type": "user",
+              "about_me_summary": "Retired Co-founder of Rock Genius.",
+              "api_path": "/users/1850",
+              "avatar": {
+                "tiny": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 16,
+                    "height": 16
+                  }
+                },
+                "thumb": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 32,
+                    "height": 32
+                  }
+                },
+                "small": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/small/1358288164_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "medium": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 300,
+                    "height": 400
+                  }
+                }
+              },
+              "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+              "human_readable_role_for_display": "Contributor",
+              "id": 1850,
+              "iq": 196794,
+              "is_meme_verified": false,
+              "is_verified": false,
+              "login": "Alex_Koenig",
+              "name": "Alex Koenig",
+              "role_for_display": "contributor",
+              "url": "https://genius.com/Alex_Koenig",
+              "current_user_metadata": {
+                "permissions": [
+                  "follow"
+                ],
+                "excluded_permissions": [],
+                "interactions": {
+                  "following": false
+                }
+              }
+            },
+            "rejection_comment": null,
+            "top_comment": null,
+            "verified_by": null
+          }
+        ]
+      },
+      "featured_artists": [],
+      "lyrics_marked_complete_by": {
+        "_type": "user",
+        "about_me_summary": "",
+        "api_path": "/users/184781",
+        "avatar": {
+          "tiny": {
+            "url": "https://assets.genius.com/images/default_avatar_16.png?1712086395",
+            "bounding_box": {
+              "width": 16,
+              "height": 16
+            }
+          },
+          "thumb": {
+            "url": "https://assets.genius.com/images/default_avatar_32.png?1712086395",
+            "bounding_box": {
+              "width": 32,
+              "height": 32
+            }
+          },
+          "small": {
+            "url": "https://assets.genius.com/images/default_avatar_100.png?1712086395",
+            "bounding_box": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          "medium": {
+            "url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+            "bounding_box": {
+              "width": 300,
+              "height": 400
+            }
+          }
+        },
+        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+        "human_readable_role_for_display": "Editor",
+        "id": 184781,
+        "iq": 1456,
+        "is_meme_verified": false,
+        "is_verified": false,
+        "login": "MartinlutherBBking",
+        "name": "MartinlutherBBking",
+        "role_for_display": "editor",
+        "url": "https://genius.com/MartinlutherBBking",
+        "current_user_metadata": {
+          "permissions": [
+            "follow"
+          ],
+          "excluded_permissions": [],
+          "interactions": {
+            "following": false
+          }
+        }
+      },
+      "lyrics_marked_staff_approved_by": null,
+      "media": [
+        {
+          "provider": "youtube",
+          "start": 0,
+          "type": "video",
+          "url": "http://www.youtube.com/watch?v=YZG7z4FOn0g"
+        },
+        {
+          "native_uri": "spotify:track:7CVYxHq1L0Z4G84jTDS6Jl",
+          "provider": "spotify",
+          "type": "audio",
+          "url": "https://open.spotify.com/track/7CVYxHq1L0Z4G84jTDS6Jl"
+        }
+      ],
+      "primary_artist": {
+        "_type": "artist",
+        "api_path": "/artists/21100",
+        "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+        "id": 21100,
+        "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+        "index_character": "o",
+        "is_meme_verified": false,
+        "is_verified": true,
+        "name": "Oasis",
+        "slug": "Oasis",
+        "url": "https://genius.com/artists/Oasis",
+        "iq": 111
+      },
+      "primary_tag": {
+        "_type": "tag",
+        "id": 567,
+        "name": "Rock",
+        "primary": true,
+        "url": "https://genius.com/tags/rock"
+      },
+      "producer_artists": [
+        {
+          "_type": "artist",
+          "api_path": "/artists/41605",
+          "header_image_url": "https://images.genius.com/bbc865984950337175a81988378c46cc.600x400x1.jpg",
+          "id": 41605,
+          "image_url": "https://images.genius.com/236e17176c3ed3ff6b996b15a32d7bb6.400x400x1.jpg",
+          "index_character": "o",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Owen Morris",
+          "slug": "Owen-morris",
+          "url": "https://genius.com/artists/Owen-morris"
+        },
+        {
+          "_type": "artist",
+          "api_path": "/artists/69347",
+          "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+          "id": 69347,
+          "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+          "index_character": "n",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Noel Gallagher",
+          "slug": "Noel-gallagher",
+          "url": "https://genius.com/artists/Noel-gallagher"
+        }
+      ],
+      "song_relationships": [
+        {
+          "_type": "song_relationship",
+          "relationship_type": "samples",
+          "type": "samples",
+          "url": "https://genius.com/Gorillaz-empire-ants-sample/samples",
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "sampled_in",
+          "type": "sampled_in",
+          "url": null,
+          "songs": [
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/5914694",
+              "artist_names": "Dean Aguiar",
+              "full_title": "Don't Look Back On The Sun by Dean Aguiar",
+              "header_image_thumbnail_url": "https://images.genius.com/469e273c887296ad38772b4a4a7d5eb9.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/469e273c887296ad38772b4a4a7d5eb9.1000x1000x1.jpg",
+              "id": 5914694,
+              "instrumental": false,
+              "lyrics_owner_id": 10776627,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1598750397,
+              "path": "/Dean-aguiar-dont-look-back-on-the-sun-annotated",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Dean-aguiar-dont-look-back-on-the-sun-sample",
+              "release_date_components": {
+                "year": 2020,
+                "month": 8,
+                "day": 19
+              },
+              "release_date_for_display": "August 19, 2020",
+              "release_date_with_abbreviated_month_for_display": "Aug. 19, 2020",
+              "song_art_image_thumbnail_url": "https://images.genius.com/469e273c887296ad38772b4a4a7d5eb9.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/469e273c887296ad38772b4a4a7d5eb9.1000x1000x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 1,
+                "hot": false
+              },
+              "title": "Don’t Look Back On The Sun",
+              "title_with_featured": "Don't Look Back On The Sun",
+              "updated_by_human_at": 1598750428,
+              "url": "https://genius.com/Dean-aguiar-dont-look-back-on-the-sun-annotated",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1827801",
+                "header_image_url": "https://images.genius.com/007192127626ad008e503b2bf9897671.800x600x1.jpg",
+                "id": 1827801,
+                "image_url": "https://images.genius.com/71465abb287a30c89bdd6e2d16d05f1f.600x600x1.jpg",
+                "index_character": "d",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Dean Aguiar",
+                "slug": "Dean-aguiar",
+                "url": "https://genius.com/artists/Dean-aguiar"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/3282933",
+              "artist_names": "Diego Rotondo",
+              "full_title": "When i'm not ok by Diego Rotondo",
+              "header_image_thumbnail_url": "https://images.genius.com/956a989348ffe52e88a4b6d1dec887b2.300x129x1.jpg",
+              "header_image_url": "https://images.genius.com/956a989348ffe52e88a4b6d1dec887b2.1000x429x1.jpg",
+              "id": 3282933,
+              "instrumental": false,
+              "lyrics_owner_id": 5356300,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1508599126,
+              "path": "/Diego-rotondo-when-im-not-ok-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Diego-rotondo-when-im-not-ok-sample",
+              "release_date_components": {
+                "year": 2017,
+                "month": 9,
+                "day": 1
+              },
+              "release_date_for_display": "September 1, 2017",
+              "release_date_with_abbreviated_month_for_display": "Sep. 1, 2017",
+              "song_art_image_thumbnail_url": "https://images.genius.com/9291117b4e338b772915056b4d5448f3.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/9291117b4e338b772915056b4d5448f3.1000x1000x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 1,
+                "hot": false
+              },
+              "title": "When i’m not ok",
+              "title_with_featured": "When i'm not ok",
+              "updated_by_human_at": 1508634958,
+              "url": "https://genius.com/Diego-rotondo-when-im-not-ok-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1243450",
+                "header_image_url": "https://images.genius.com/956a989348ffe52e88a4b6d1dec887b2.1000x429x1.jpg",
+                "id": 1243450,
+                "image_url": "https://images.genius.com/85624c5e83d3304bff4c55c1c66affd3.1000x1000x1.jpg",
+                "index_character": "d",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Diego Rotondo",
+                "slug": "Diego-rotondo",
+                "url": "https://genius.com/artists/Diego-rotondo"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/9530339",
+              "artist_names": "Cacola",
+              "full_title": "Sally Can Wait by Cacola",
+              "header_image_thumbnail_url": "https://images.genius.com/f196616214c0d222fab7fea74b7203cc.300x300x1.png",
+              "header_image_url": "https://images.genius.com/f196616214c0d222fab7fea74b7203cc.1000x1000x1.png",
+              "id": 9530339,
+              "instrumental": false,
+              "lyrics_owner_id": 7318918,
+              "lyrics_state": "incomplete",
+              "lyrics_updated_at": null,
+              "path": "/Cacola-sally-can-wait-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Cacola-sally-can-wait-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/f196616214c0d222fab7fea74b7203cc.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/f196616214c0d222fab7fea74b7203cc.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Sally Can Wait",
+              "title_with_featured": "Sally Can Wait",
+              "updated_by_human_at": 1694968222,
+              "url": "https://genius.com/Cacola-sally-can-wait-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1631423",
+                "header_image_url": "https://images.genius.com/8b8376e55340d78208d00e20f637e906.400x400x1.jpg",
+                "id": 1631423,
+                "image_url": "https://images.genius.com/141a960ff1dc376468b33054caa64d91.400x400x1.jpg",
+                "index_character": "c",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Cacola",
+                "slug": "Cacola",
+                "url": "https://genius.com/artists/Cacola"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "interpolates",
+          "type": "interpolates",
+          "url": "https://genius.com/Talib-kweli-get-by-sample/interpolations",
+          "songs": [
+            {
+              "_type": "song",
+              "annotation_count": 8,
+              "api_path": "/songs/63416",
+              "artist_names": "John Lennon",
+              "full_title": "Imagine by John Lennon",
+              "header_image_thumbnail_url": "https://images.genius.com/3bab5534723365e697b77f2da89c6976.300x399x1.jpg",
+              "header_image_url": "https://images.genius.com/3bab5534723365e697b77f2da89c6976.548x728x1.jpg",
+              "id": 63416,
+              "instrumental": false,
+              "lyrics_owner_id": 7,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1666706349,
+              "path": "/John-lennon-imagine-lyrics",
+              "pyongs_count": 145,
+              "relationships_index_url": "https://genius.com/John-lennon-imagine-sample",
+              "release_date_components": {
+                "year": 1971,
+                "month": 10,
+                "day": 11
+              },
+              "release_date_for_display": "October 11, 1971",
+              "release_date_with_abbreviated_month_for_display": "Oct. 11, 1971",
+              "song_art_image_thumbnail_url": "https://images.genius.com/f1b06a571fd41d11092e3d7bbaeaae7b.300x301x1.jpg",
+              "song_art_image_url": "https://images.genius.com/f1b06a571fd41d11092e3d7bbaeaae7b.600x602x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "concurrents": 3,
+                "hot": false,
+                "pageviews": 1837752
+              },
+              "title": "Imagine",
+              "title_with_featured": "Imagine",
+              "updated_by_human_at": 1709680240,
+              "url": "https://genius.com/John-lennon-imagine-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/16450",
+                "header_image_url": "https://images.genius.com/5c9694cde0a122851f8bab2eb8dee16b.1000x142x1.jpg",
+                "id": 16450,
+                "image_url": "https://images.genius.com/de14b272004b51dea8071e7cba21cbac.1000x1000x1.jpg",
+                "index_character": "j",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "John Lennon",
+                "slug": "John-lennon",
+                "url": "https://genius.com/artists/John-lennon"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "interpolated_by",
+          "type": "interpolated_by",
+          "url": "https://genius.com/Oasis-dont-look-back-in-anger-sample/interpolations",
+          "songs": [
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/5962002",
+              "artist_names": "Dustin the Turkey",
+              "full_title": "Quoasis Medley by Dustin the Turkey",
+              "header_image_thumbnail_url": "https://images.genius.com/04d2740fa2905144677763f1dca362b6.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/04d2740fa2905144677763f1dca362b6.640x640x1.jpg",
+              "id": 5962002,
+              "instrumental": false,
+              "lyrics_owner_id": 2965317,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1666697707,
+              "path": "/Dustin-the-turkey-quoasis-medley-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Dustin-the-turkey-quoasis-medley-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/04d2740fa2905144677763f1dca362b6.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/04d2740fa2905144677763f1dca362b6.640x640x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Quoasis Medley",
+              "title_with_featured": "Quoasis Medley",
+              "updated_by_human_at": 1666697835,
+              "url": "https://genius.com/Dustin-the-turkey-quoasis-medley-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/2161215",
+                "header_image_url": "https://images.genius.com/8a5fbbf6511bf72a1fd03ae53f972590.1000x563x1.jpg",
+                "id": 2161215,
+                "image_url": "https://images.genius.com/b716e8bd573dc8a540658a86afa91f0c.674x674x1.jpg",
+                "index_character": "d",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Dustin the Turkey",
+                "slug": "Dustin-the-turkey",
+                "url": "https://genius.com/artists/Dustin-the-turkey"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/7848288",
+              "artist_names": "Hot Milk",
+              "full_title": "Bad Influence by Hot Milk",
+              "header_image_thumbnail_url": "https://images.genius.com/7be846519819355f40ddebb1bbb792b3.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/7be846519819355f40ddebb1bbb792b3.1000x1000x1.jpg",
+              "id": 7848288,
+              "instrumental": false,
+              "lyrics_owner_id": 6005055,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1648848773,
+              "path": "/Hot-milk-bad-influence-lyrics",
+              "pyongs_count": 1,
+              "relationships_index_url": "https://genius.com/Hot-milk-bad-influence-sample",
+              "release_date_components": {
+                "year": 2022,
+                "month": 3,
+                "day": 29
+              },
+              "release_date_for_display": "March 29, 2022",
+              "release_date_with_abbreviated_month_for_display": "Mar. 29, 2022",
+              "song_art_image_thumbnail_url": "https://images.genius.com/7be846519819355f40ddebb1bbb792b3.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/7be846519819355f40ddebb1bbb792b3.1000x1000x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Bad Influence",
+              "title_with_featured": "Bad Influence",
+              "updated_by_human_at": 1648848786,
+              "url": "https://genius.com/Hot-milk-bad-influence-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1700597",
+                "header_image_url": "https://images.genius.com/079f4508db81cd11c792c94f5051edc7.1000x666x1.png",
+                "id": 1700597,
+                "image_url": "https://images.genius.com/27633b601d6971a23e3a2a24d8b629f9.1000x1000x1.png",
+                "index_character": "h",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Hot Milk",
+                "slug": "Hot-milk",
+                "url": "https://genius.com/artists/Hot-milk"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 3,
+              "api_path": "/songs/4507256",
+              "artist_names": "Peter Doherty & The Puta Madres",
+              "full_title": "Someone Else To Be by Peter Doherty & The Puta Madres",
+              "header_image_thumbnail_url": "https://images.genius.com/a4f8fe216ad563518f6e3f2c592825f3.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/a4f8fe216ad563518f6e3f2c592825f3.350x350x1.jpg",
+              "id": 4507256,
+              "instrumental": false,
+              "lyrics_owner_id": 1105499,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1576259243,
+              "path": "/Peter-doherty-and-the-puta-madres-someone-else-to-be-lyrics",
+              "pyongs_count": 1,
+              "relationships_index_url": "https://genius.com/Peter-doherty-and-the-puta-madres-someone-else-to-be-sample",
+              "release_date_components": {
+                "year": 2019,
+                "month": 4,
+                "day": 26
+              },
+              "release_date_for_display": "April 26, 2019",
+              "release_date_with_abbreviated_month_for_display": "Apr. 26, 2019",
+              "song_art_image_thumbnail_url": "https://images.genius.com/a4f8fe216ad563518f6e3f2c592825f3.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/a4f8fe216ad563518f6e3f2c592825f3.350x350x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false,
+                "pageviews": 6307
+              },
+              "title": "Someone Else To Be",
+              "title_with_featured": "Someone Else To Be",
+              "updated_by_human_at": 1576259243,
+              "url": "https://genius.com/Peter-doherty-and-the-puta-madres-someone-else-to-be-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1715208",
+                "header_image_url": "https://images.genius.com/d7d8f5d2f027b425da004252b5091337.350x350x1.jpg",
+                "id": 1715208,
+                "image_url": "https://images.genius.com/00446aaa2b52f62caacbafd151d6a39c.349x349x1.jpg",
+                "index_character": "p",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Peter Doherty & The Puta Madres",
+                "slug": "Peter-doherty-and-the-puta-madres",
+                "url": "https://genius.com/artists/Peter-doherty-and-the-puta-madres"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "cover_of",
+          "type": "cover_of",
+          "url": null,
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "covered_by",
+          "type": "covered_by",
+          "url": "https://genius.com/Oasis-dont-look-back-in-anger-sample/covers",
+          "songs": [
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/7690931",
+              "artist_names": "ROSÉ",
+              "full_title": "Don't Look Back In Anger by ROSÉ",
+              "header_image_thumbnail_url": "https://images.genius.com/32211db95cf3c3a8a42af4e35a1f1aed.268x268x1.jpg",
+              "header_image_url": "https://images.genius.com/32211db95cf3c3a8a42af4e35a1f1aed.268x268x1.jpg",
+              "id": 7690931,
+              "instrumental": false,
+              "lyrics_owner_id": 6005055,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1708554501,
+              "path": "/Rose-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Rose-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2022,
+                "month": 2,
+                "day": 11
+              },
+              "release_date_for_display": "February 11, 2022",
+              "release_date_with_abbreviated_month_for_display": "Feb. 11, 2022",
+              "song_art_image_thumbnail_url": "https://images.genius.com/32211db95cf3c3a8a42af4e35a1f1aed.268x268x1.jpg",
+              "song_art_image_url": "https://images.genius.com/32211db95cf3c3a8a42af4e35a1f1aed.268x268x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger",
+              "updated_by_human_at": 1711110431,
+              "url": "https://genius.com/Rose-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1032508",
+                "header_image_url": "https://images.genius.com/261f687f400fc06bc69c58175b71575e.852x336x1.jpg",
+                "id": 1032508,
+                "image_url": "https://images.genius.com/361bf69819ebfa362746dc35d8059e4b.799x799x1.jpg",
+                "index_character": "r",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "ROSÉ",
+                "slug": "Rose",
+                "url": "https://genius.com/artists/Rose"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/7287229",
+              "artist_names": "Since September",
+              "full_title": "Don't Look Back In Anger / Survivor (Cover) by Since September",
+              "header_image_thumbnail_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.400x400x1.jpg",
+              "id": 7287229,
+              "instrumental": false,
+              "lyrics_owner_id": 13273252,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1634213585,
+              "path": "/Since-september-dont-look-back-in-anger-survivor-cover-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Since-september-dont-look-back-in-anger-survivor-cover-sample",
+              "release_date_components": {
+                "year": 2020,
+                "month": 11,
+                "day": 7
+              },
+              "release_date_for_display": "November 7, 2020",
+              "release_date_with_abbreviated_month_for_display": "Nov. 7, 2020",
+              "song_art_image_thumbnail_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.400x400x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger / Survivor (Cover)",
+              "title_with_featured": "Don't Look Back In Anger / Survivor (Cover)",
+              "updated_by_human_at": 1655206281,
+              "url": "https://genius.com/Since-september-dont-look-back-in-anger-survivor-cover-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/2722020",
+                "header_image_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.400x400x1.jpg",
+                "id": 2722020,
+                "image_url": "https://images.genius.com/16959830c9c66e699ee85468c281d462.400x400x1.jpg",
+                "index_character": "s",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Since September",
+                "slug": "Since-september",
+                "url": "https://genius.com/artists/Since-september"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/6969885",
+              "artist_names": "Portugal. The Man",
+              "full_title": "Don't Look Back in Anger (Live/Stripped Session) by Portugal. The Man",
+              "header_image_thumbnail_url": "https://images.genius.com/a5c8a629f21a18aafaac6c907d6b1614.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/a5c8a629f21a18aafaac6c907d6b1614.1000x1000x1.jpg",
+              "id": 6969885,
+              "instrumental": false,
+              "lyrics_owner_id": 7650027,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1625580036,
+              "path": "/Portugal-the-man-dont-look-back-in-anger-live-stripped-session-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Portugal-the-man-dont-look-back-in-anger-live-stripped-session-sample",
+              "release_date_components": {
+                "year": 2021,
+                "month": 6,
+                "day": 16
+              },
+              "release_date_for_display": "June 16, 2021",
+              "release_date_with_abbreviated_month_for_display": "Jun. 16, 2021",
+              "song_art_image_thumbnail_url": "https://images.genius.com/a5c8a629f21a18aafaac6c907d6b1614.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/a5c8a629f21a18aafaac6c907d6b1614.1000x1000x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger (Live/Stripped Session)",
+              "title_with_featured": "Don't Look Back in Anger (Live/Stripped Session)",
+              "updated_by_human_at": 1625580039,
+              "url": "https://genius.com/Portugal-the-man-dont-look-back-in-anger-live-stripped-session-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/52078",
+                "header_image_url": "https://images.genius.com/9b2130ca1bc807b9b68a7974cb19cec7.1000x165x1.png",
+                "id": 52078,
+                "image_url": "https://images.genius.com/bd128d03e5d85d3b81565bee841726c5.1000x1000x1.jpg",
+                "index_character": "p",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Portugal. The Man",
+                "slug": "Portugal-the-man",
+                "url": "https://genius.com/artists/Portugal-the-man",
+                "iq": 1271
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/6836480",
+              "artist_names": "Tim Hicks",
+              "full_title": "Don't Look Back in Anger by Tim Hicks",
+              "header_image_thumbnail_url": "https://images.genius.com/3a266a9900031548fcaad876b241a846.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/3a266a9900031548fcaad876b241a846.600x600x1.jpg",
+              "id": 6836480,
+              "instrumental": false,
+              "lyrics_owner_id": 2349910,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1621641267,
+              "path": "/Tim-hicks-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Tim-hicks-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/3a266a9900031548fcaad876b241a846.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/3a266a9900031548fcaad876b241a846.600x600x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger",
+              "title_with_featured": "Don't Look Back in Anger",
+              "updated_by_human_at": 1621641468,
+              "url": "https://genius.com/Tim-hicks-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/331800",
+                "header_image_url": "https://images.genius.com/337ad14bff5e1ff2c5f11cad2212fcd9.1000x555x1.jpg",
+                "id": 331800,
+                "image_url": "https://images.genius.com/2ee51bebd808245ad4cd5201dec2d8de.1000x1000x1.jpg",
+                "index_character": "t",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Tim Hicks",
+                "slug": "Tim-hicks",
+                "url": "https://genius.com/artists/Tim-hicks"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/5994788",
+              "artist_names": "Smith & Myers",
+              "full_title": "DON'T LOOK BACK IN ANGER by Smith & Myers",
+              "header_image_thumbnail_url": "https://images.genius.com/966dc61e4533587c503d0e113ef12a58.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/966dc61e4533587c503d0e113ef12a58.544x544x1.jpg",
+              "id": 5994788,
+              "instrumental": false,
+              "lyrics_owner_id": 7104974,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1603668298,
+              "path": "/Smith-and-myers-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Smith-and-myers-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/966dc61e4533587c503d0e113ef12a58.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/966dc61e4533587c503d0e113ef12a58.544x544x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "DON’T LOOK BACK IN ANGER",
+              "title_with_featured": "DON'T LOOK BACK IN ANGER",
+              "updated_by_human_at": 1667025054,
+              "url": "https://genius.com/Smith-and-myers-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/454230",
+                "header_image_url": "https://images.genius.com/d25e2bc2711d763a971d0e487d479ae4.1000x1000x1.jpg",
+                "id": 454230,
+                "image_url": "https://images.genius.com/891cb81362388c86d7573c1ce6ae1f43.1000x1000x1.jpg",
+                "index_character": "s",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Smith & Myers",
+                "slug": "Smith-and-myers",
+                "url": "https://genius.com/artists/Smith-and-myers"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/3780377",
+              "artist_names": "Kyle Falconer",
+              "full_title": "Don't Look Back In Anger (Oasis Cover) by Kyle Falconer",
+              "header_image_thumbnail_url": "https://images.genius.com/b6a510dfd9c9a5b3bf2b49d2172d10c0.300x214x1.jpg",
+              "header_image_url": "https://images.genius.com/b6a510dfd9c9a5b3bf2b49d2172d10c0.707x504x1.jpg",
+              "id": 3780377,
+              "instrumental": false,
+              "lyrics_owner_id": 3569418,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1532683307,
+              "path": "/Kyle-falconer-dont-look-back-in-anger-oasis-cover-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Kyle-falconer-dont-look-back-in-anger-oasis-cover-sample",
+              "release_date_components": {
+                "year": 2009,
+                "month": 3,
+                "day": 30
+              },
+              "release_date_for_display": "March 30, 2009",
+              "release_date_with_abbreviated_month_for_display": "Mar. 30, 2009",
+              "song_art_image_thumbnail_url": "https://images.genius.com/b6a510dfd9c9a5b3bf2b49d2172d10c0.300x214x1.jpg",
+              "song_art_image_url": "https://images.genius.com/b6a510dfd9c9a5b3bf2b49d2172d10c0.707x504x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger (Oasis Cover)",
+              "title_with_featured": "Don't Look Back In Anger (Oasis Cover)",
+              "updated_by_human_at": 1532683307,
+              "url": "https://genius.com/Kyle-falconer-dont-look-back-in-anger-oasis-cover-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/983223",
+                "header_image_url": "https://images.genius.com/0d3340a8e442f37961a48ac1630ad7bb.620x375x1.jpg",
+                "id": 983223,
+                "image_url": "https://images.genius.com/f0b0803bf7bc4c91e75949f204853a3e.960x960x1.jpg",
+                "index_character": "k",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Kyle Falconer",
+                "slug": "Kyle-falconer",
+                "url": "https://genius.com/artists/Kyle-falconer"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/3310321",
+              "artist_names": "Portugal. The Man",
+              "full_title": "Don't Look Back In Anger by Portugal. The Man",
+              "header_image_thumbnail_url": "https://images.genius.com/bb7367f47317787bfcce33e05314d3f5.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/bb7367f47317787bfcce33e05314d3f5.960x960x1.jpg",
+              "id": 3310321,
+              "instrumental": false,
+              "lyrics_owner_id": 93685,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1540143940,
+              "path": "/Portugal-the-man-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Portugal-the-man-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2017,
+                "month": 9,
+                "day": 13
+              },
+              "release_date_for_display": "September 13, 2017",
+              "release_date_with_abbreviated_month_for_display": "Sep. 13, 2017",
+              "song_art_image_thumbnail_url": "https://images.genius.com/bb7367f47317787bfcce33e05314d3f5.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/bb7367f47317787bfcce33e05314d3f5.960x960x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger",
+              "updated_by_human_at": 1552184462,
+              "url": "https://genius.com/Portugal-the-man-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/52078",
+                "header_image_url": "https://images.genius.com/9b2130ca1bc807b9b68a7974cb19cec7.1000x165x1.png",
+                "id": 52078,
+                "image_url": "https://images.genius.com/bd128d03e5d85d3b81565bee841726c5.1000x1000x1.jpg",
+                "index_character": "p",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Portugal. The Man",
+                "slug": "Portugal-the-man",
+                "url": "https://genius.com/artists/Portugal-the-man",
+                "iq": 1271
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/2867139",
+              "artist_names": "Coldplay (Ft. Ariana Grande)",
+              "full_title": "Don't Look Back In Anger by Coldplay (Ft. Ariana Grande)",
+              "header_image_thumbnail_url": "https://images.genius.com/824478e8f9fa16aad016419b9aefbe77.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/824478e8f9fa16aad016419b9aefbe77.640x640x1.jpg",
+              "id": 2867139,
+              "instrumental": false,
+              "lyrics_owner_id": 269182,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1543439732,
+              "path": "/Coldplay-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Coldplay-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2017,
+                "month": 6,
+                "day": 4
+              },
+              "release_date_for_display": "June 4, 2017",
+              "release_date_with_abbreviated_month_for_display": "Jun. 4, 2017",
+              "song_art_image_thumbnail_url": "https://images.genius.com/824478e8f9fa16aad016419b9aefbe77.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/824478e8f9fa16aad016419b9aefbe77.640x640x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false,
+                "pageviews": 27923
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger (Ft. Ariana Grande)",
+              "updated_by_human_at": 1691430762,
+              "url": "https://genius.com/Coldplay-dont-look-back-in-anger-lyrics",
+              "featured_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/26507",
+                  "header_image_url": "https://images.genius.com/f08b7d95c253ce80de3746ed027d9df4.1000x563x1.png",
+                  "id": 26507,
+                  "image_url": "https://images.genius.com/8fae8e0677aaf539a7dde3b9793a10ca.1000x1000x1.jpg",
+                  "index_character": "a",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Ariana Grande",
+                  "slug": "Ariana-grande",
+                  "url": "https://genius.com/artists/Ariana-grande",
+                  "iq": 2762
+                }
+              ],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/8351",
+                "header_image_url": "https://images.genius.com/310ee675ff679bb138b220a3b18f64e5.1000x267x150.gif",
+                "id": 8351,
+                "image_url": "https://images.genius.com/824478e8f9fa16aad016419b9aefbe77.640x640x1.jpg",
+                "index_character": "c",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Coldplay",
+                "slug": "Coldplay",
+                "url": "https://genius.com/artists/Coldplay"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/290141",
+              "artist_names": "Scott Bradlee's Postmodern Jukebox (Ft. Maiya Sykes)",
+              "full_title": "Don't Look Back in Anger by Scott Bradlee's Postmodern Jukebox (Ft. Maiya Sykes)",
+              "header_image_thumbnail_url": "https://images.genius.com/be496e0ced40300374a731eaefc9af5c.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/be496e0ced40300374a731eaefc9af5c.1000x1000x1.jpg",
+              "id": 290141,
+              "instrumental": false,
+              "lyrics_owner_id": 269182,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1488479634,
+              "path": "/Scott-bradlees-postmodern-jukebox-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Scott-bradlees-postmodern-jukebox-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2017,
+                "month": 4,
+                "day": 6
+              },
+              "release_date_for_display": "April 6, 2017",
+              "release_date_with_abbreviated_month_for_display": "Apr. 6, 2017",
+              "song_art_image_thumbnail_url": "https://images.genius.com/be496e0ced40300374a731eaefc9af5c.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/be496e0ced40300374a731eaefc9af5c.1000x1000x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger",
+              "title_with_featured": "Don't Look Back in Anger (Ft. Maiya Sykes)",
+              "updated_by_human_at": 1527621497,
+              "url": "https://genius.com/Scott-bradlees-postmodern-jukebox-dont-look-back-in-anger-lyrics",
+              "featured_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/612515",
+                  "header_image_url": "https://images.genius.com/8624564892675e2593429c57af4b3379.400x400x1.jpg",
+                  "id": 612515,
+                  "image_url": "https://images.genius.com/557f76925ce4c9ffc15d3d3f8e0859e1.400x400x1.jpg",
+                  "index_character": "m",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Maiya Sykes",
+                  "slug": "Maiya-sykes",
+                  "url": "https://genius.com/artists/Maiya-sykes"
+                }
+              ],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/523216",
+                "header_image_url": "https://images.genius.com/cba9980f0a6387fdc88b1d74386f5881.1000x653x1.jpg",
+                "id": 523216,
+                "image_url": "https://images.genius.com/2d424bf3c3c7a60294829949e341cf7f.900x900x1.jpg",
+                "index_character": "s",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Scott Bradlee’s Postmodern Jukebox",
+                "slug": "Scott-bradlees-postmodern-jukebox",
+                "url": "https://genius.com/artists/Scott-bradlees-postmodern-jukebox"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/2227285",
+              "artist_names": "The Killers",
+              "full_title": "Don't Look Back In Anger by The Killers",
+              "header_image_thumbnail_url": "https://images.genius.com/ad27f7c9ab26bfaac18916dbf5c2e534.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/ad27f7c9ab26bfaac18916dbf5c2e534.584x584x1.jpg",
+              "id": 2227285,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1437080762,
+              "path": "/The-killers-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/The-killers-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/ad27f7c9ab26bfaac18916dbf5c2e534.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/ad27f7c9ab26bfaac18916dbf5c2e534.584x584x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 1,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger",
+              "updated_by_human_at": 1477706374,
+              "url": "https://genius.com/The-killers-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/599",
+                "header_image_url": "https://images.genius.com/44b7a99ebf5cd2da83ab8c861bf7fedd.1000x268x1.png",
+                "id": 599,
+                "image_url": "https://images.genius.com/ad27f7c9ab26bfaac18916dbf5c2e534.584x584x1.jpg",
+                "index_character": "k",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "The Killers",
+                "slug": "The-killers",
+                "url": "https://genius.com/artists/The-killers"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/2187182",
+              "artist_names": "Style project",
+              "full_title": "Don't Look Back in Anger by Style project",
+              "header_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1712086395",
+              "header_image_url": "https://assets.genius.com/images/default_cover_image.png?1712086395",
+              "id": 2187182,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1436816323,
+              "path": "/Style-project-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Style-project-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1712086395",
+              "song_art_image_url": "https://assets.genius.com/images/default_cover_image.png?1712086395",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger",
+              "title_with_featured": "Don't Look Back in Anger",
+              "updated_by_human_at": 1447111365,
+              "url": "https://genius.com/Style-project-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/491169",
+                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+                "id": 491169,
+                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1712086395",
+                "index_character": "s",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Style project",
+                "slug": "Style-project",
+                "url": "https://genius.com/artists/Style-project"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/1963727",
+              "artist_names": "Devendra Banhart",
+              "full_title": "Don't Look Back In Anger by Devendra Banhart",
+              "header_image_thumbnail_url": "https://images.genius.com/15729ef31a85e0f52d9c49a3eb09df9a.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/15729ef31a85e0f52d9c49a3eb09df9a.300x300x1.jpg",
+              "id": 1963727,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1432926371,
+              "path": "/Devendra-banhart-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Devendra-banhart-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2007,
+                "month": 9,
+                "day": 4
+              },
+              "release_date_for_display": "September 4, 2007",
+              "release_date_with_abbreviated_month_for_display": "Sep. 4, 2007",
+              "song_art_image_thumbnail_url": "https://images.genius.com/15729ef31a85e0f52d9c49a3eb09df9a.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/15729ef31a85e0f52d9c49a3eb09df9a.300x300x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger",
+              "updated_by_human_at": 1531765476,
+              "url": "https://genius.com/Devendra-banhart-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/71175",
+                "header_image_url": "https://images.genius.com/4b750237ada1fb35ab5a4b49229846e5.885x410x1.jpg",
+                "id": 71175,
+                "image_url": "https://images.genius.com/0319ce65f7104409a715944e0430082d.752x752x1.jpg",
+                "index_character": "d",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Devendra Banhart",
+                "slug": "Devendra-banhart",
+                "url": "https://genius.com/artists/Devendra-banhart"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/1978592",
+              "artist_names": "Daniel Norberg",
+              "full_title": "Don't look back in anger by Daniel Norberg",
+              "header_image_thumbnail_url": "https://images.genius.com/1657dc8d007203682ae4e8c666154fcb.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/1657dc8d007203682ae4e8c666154fcb.500x500x1.jpg",
+              "id": 1978592,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1432932459,
+              "path": "/Daniel-norberg-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Daniel-norberg-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2011,
+                "month": 10,
+                "day": 17
+              },
+              "release_date_for_display": "October 17, 2011",
+              "release_date_with_abbreviated_month_for_display": "Oct. 17, 2011",
+              "song_art_image_thumbnail_url": "https://images.genius.com/1657dc8d007203682ae4e8c666154fcb.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/1657dc8d007203682ae4e8c666154fcb.500x500x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t look back in anger",
+              "title_with_featured": "Don't look back in anger",
+              "updated_by_human_at": 1622805117,
+              "url": "https://genius.com/Daniel-norberg-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/2760220",
+                "header_image_url": "https://images.genius.com/df4c0e84da2d5bf4d5b405e98920b805.1000x1000x1.jpg",
+                "id": 2760220,
+                "image_url": "https://images.genius.com/df4c0e84da2d5bf4d5b405e98920b805.1000x1000x1.jpg",
+                "index_character": "d",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Daniel Norberg",
+                "slug": "Daniel-norberg",
+                "url": "https://genius.com/artists/Daniel-norberg"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/1980656",
+              "artist_names": "The Wurzels",
+              "full_title": "Don't look back in anger by The Wurzels",
+              "header_image_thumbnail_url": "https://images.genius.com/4f83a51c04c673adc6e1c4db8a040cb9.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/4f83a51c04c673adc6e1c4db8a040cb9.508x508x1.jpg",
+              "id": 1980656,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1432933288,
+              "path": "/The-wurzels-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/The-wurzels-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/4f83a51c04c673adc6e1c4db8a040cb9.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/4f83a51c04c673adc6e1c4db8a040cb9.508x508x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t look back in anger",
+              "title_with_featured": "Don't look back in anger",
+              "updated_by_human_at": 1481830874,
+              "url": "https://genius.com/The-wurzels-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/35108",
+                "header_image_url": "https://images.genius.com/8e7aa456861edfb6125fc5d27174b49b.391x391x1.jpg",
+                "id": 35108,
+                "image_url": "https://images.genius.com/8e7aa456861edfb6125fc5d27174b49b.391x391x1.jpg",
+                "index_character": "w",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "The Wurzels",
+                "slug": "The-wurzels",
+                "url": "https://genius.com/artists/The-wurzels"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/5347760",
+              "artist_names": "Tori Amos",
+              "full_title": "Don't Look Back in Anger (Live) [Manchester Apollo, 06/06/05] by Tori Amos",
+              "header_image_thumbnail_url": "https://images.genius.com/ad779129de0bcdeaaf47ff2281d52a13.300x300x1.png",
+              "header_image_url": "https://images.genius.com/ad779129de0bcdeaaf47ff2281d52a13.600x600x1.png",
+              "id": 5347760,
+              "instrumental": false,
+              "lyrics_owner_id": 1952202,
+              "lyrics_state": "incomplete",
+              "lyrics_updated_at": null,
+              "path": "/Tori-amos-dont-look-back-in-anger-live-manchester-apollo-06-06-05-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Tori-amos-dont-look-back-in-anger-live-manchester-apollo-06-06-05-sample",
+              "release_date_components": {
+                "year": 2005,
+                "month": 6,
+                "day": 6
+              },
+              "release_date_for_display": "June 6, 2005",
+              "release_date_with_abbreviated_month_for_display": "Jun. 6, 2005",
+              "song_art_image_thumbnail_url": "https://images.genius.com/ad779129de0bcdeaaf47ff2281d52a13.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/ad779129de0bcdeaaf47ff2281d52a13.600x600x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger (Live) [Manchester Apollo, 06/06/05]",
+              "title_with_featured": "Don't Look Back in Anger (Live) [Manchester Apollo, 06/06/05]",
+              "updated_by_human_at": 1677166475,
+              "url": "https://genius.com/Tori-amos-dont-look-back-in-anger-live-manchester-apollo-06-06-05-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/34286",
+                "header_image_url": "https://images.genius.com/9447e2afe19c52266918cf95322e32c9.1000x562x1.jpg",
+                "id": 34286,
+                "image_url": "https://images.genius.com/32983383f528af9160481bdfa4f9e6c8.667x667x1.png",
+                "index_character": "t",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Tori Amos",
+                "slug": "Tori-amos",
+                "url": "https://genius.com/artists/Tori-amos"
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/8543067",
+              "artist_names": "Young K",
+              "full_title": "Don't Look Back in Anger by Young K",
+              "header_image_thumbnail_url": "https://images.genius.com/8c295594ba458620e67555024c21d7da.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/8c295594ba458620e67555024c21d7da.500x500x1.jpg",
+              "id": 8543067,
+              "instrumental": false,
+              "lyrics_owner_id": 16229373,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1668102925,
+              "path": "/Young-k-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Young-k-dont-look-back-in-anger-sample",
+              "release_date_components": {
+                "year": 2022,
+                "month": 7,
+                "day": 3
+              },
+              "release_date_for_display": "July 3, 2022",
+              "release_date_with_abbreviated_month_for_display": "Jul. 3, 2022",
+              "song_art_image_thumbnail_url": "https://images.genius.com/8c295594ba458620e67555024c21d7da.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/8c295594ba458620e67555024c21d7da.500x500x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger",
+              "title_with_featured": "Don't Look Back in Anger",
+              "updated_by_human_at": 1668102996,
+              "url": "https://genius.com/Young-k-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/11864",
+                "header_image_url": "https://images.genius.com/62eb7c22aa4175f9cd3d41e6cc398c5b.1000x333x1.png",
+                "id": 11864,
+                "image_url": "https://images.genius.com/ee8af6a2e2418536bf20909307b53b5e.1000x1000x1.jpg",
+                "index_character": "y",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Young K",
+                "slug": "Young-k",
+                "url": "https://genius.com/artists/Young-k"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "remix_of",
+          "type": "remix_of",
+          "url": null,
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "remixed_by",
+          "type": "remixed_by",
+          "url": null,
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "live_version_of",
+          "type": "live_version_of",
+          "url": null,
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "performed_live_as",
+          "type": "performed_live_as",
+          "url": null,
+          "songs": [
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/7555759",
+              "artist_names": "Oasis",
+              "full_title": "Don’t Look Back In Anger (Live at Knebworth, 11 August ’96) by Oasis",
+              "header_image_thumbnail_url": "https://images.genius.com/a30491b5d3d9b6b0b9fe6a3c62dc09d0.300x300x1.png",
+              "header_image_url": "https://images.genius.com/a30491b5d3d9b6b0b9fe6a3c62dc09d0.1000x1000x1.png",
+              "id": 7555759,
+              "instrumental": false,
+              "lyrics_owner_id": 13438383,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1644122859,
+              "path": "/Oasis-dont-look-back-in-anger-live-at-knebworth-11-august-96-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Oasis-dont-look-back-in-anger-live-at-knebworth-11-august-96-sample",
+              "release_date_components": {
+                "year": 2021,
+                "month": 11,
+                "day": 19
+              },
+              "release_date_for_display": "November 19, 2021",
+              "release_date_with_abbreviated_month_for_display": "Nov. 19, 2021",
+              "song_art_image_thumbnail_url": "https://images.genius.com/a30491b5d3d9b6b0b9fe6a3c62dc09d0.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/a30491b5d3d9b6b0b9fe6a3c62dc09d0.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger (Live at Knebworth, 11 August ’96)",
+              "title_with_featured": "Don’t Look Back In Anger (Live at Knebworth, 11 August ’96)",
+              "updated_by_human_at": 1680952543,
+              "url": "https://genius.com/Oasis-dont-look-back-in-anger-live-at-knebworth-11-august-96-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/21100",
+                "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+                "id": 21100,
+                "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+                "index_character": "o",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Oasis",
+                "slug": "Oasis",
+                "url": "https://genius.com/artists/Oasis",
+                "iq": 111
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 0,
+              "api_path": "/songs/5792969",
+              "artist_names": "Oasis",
+              "full_title": "Don't Look Back in Anger [Familiar to Millions] by Oasis",
+              "header_image_thumbnail_url": "https://images.genius.com/04c089008c1ed9f36f72a208aa8746e6.300x300x1.png",
+              "header_image_url": "https://images.genius.com/04c089008c1ed9f36f72a208aa8746e6.600x600x1.png",
+              "id": 5792969,
+              "instrumental": false,
+              "lyrics_owner_id": 3807492,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1595472777,
+              "path": "/Oasis-dont-look-back-in-anger-familiar-to-millions-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Oasis-dont-look-back-in-anger-familiar-to-millions-sample",
+              "release_date_components": {
+                "year": 2000,
+                "month": 11,
+                "day": 13
+              },
+              "release_date_for_display": "November 13, 2000",
+              "release_date_with_abbreviated_month_for_display": "Nov. 13, 2000",
+              "song_art_image_thumbnail_url": "https://images.genius.com/04c089008c1ed9f36f72a208aa8746e6.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/04c089008c1ed9f36f72a208aa8746e6.600x600x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back in Anger [Familiar to Millions]",
+              "title_with_featured": "Don't Look Back in Anger [Familiar to Millions]",
+              "updated_by_human_at": 1667024497,
+              "url": "https://genius.com/Oasis-dont-look-back-in-anger-familiar-to-millions-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/21100",
+                "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+                "id": 21100,
+                "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+                "index_character": "o",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Oasis",
+                "slug": "Oasis",
+                "url": "https://genius.com/artists/Oasis",
+                "iq": 111
+              }
+            },
+            {
+              "_type": "song",
+              "annotation_count": 1,
+              "api_path": "/songs/1028679",
+              "artist_names": "Noel Gallagher",
+              "full_title": "Don't Look Back In Anger by Noel Gallagher",
+              "header_image_thumbnail_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.300x213x1.jpg",
+              "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "id": 1028679,
+              "instrumental": false,
+              "lyrics_owner_id": 1549345,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1429595542,
+              "path": "/Noel-gallagher-dont-look-back-in-anger-lyrics",
+              "pyongs_count": null,
+              "relationships_index_url": "https://genius.com/Noel-gallagher-dont-look-back-in-anger-sample",
+              "release_date_components": null,
+              "release_date_for_display": null,
+              "release_date_with_abbreviated_month_for_display": null,
+              "song_art_image_thumbnail_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.300x213x1.jpg",
+              "song_art_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false
+              },
+              "title": "Don’t Look Back In Anger",
+              "title_with_featured": "Don't Look Back In Anger",
+              "updated_by_human_at": 1435612294,
+              "url": "https://genius.com/Noel-gallagher-dont-look-back-in-anger-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/69347",
+                "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+                "id": 69347,
+                "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+                "index_character": "n",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Noel Gallagher",
+                "slug": "Noel-gallagher",
+                "url": "https://genius.com/artists/Noel-gallagher"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "translation_of",
+          "type": "translation_of",
+          "url": null,
+          "songs": []
+        },
+        {
+          "_type": "song_relationship",
+          "relationship_type": "translations",
+          "type": "translations",
+          "url": null,
+          "songs": []
+        }
+      ],
+      "tags": [
+        {
+          "_type": "tag",
+          "id": 4771,
+          "name": "In English",
+          "primary": false,
+          "url": "https://genius.com/tags/in-english"
+        },
+        {
+          "_type": "tag",
+          "id": 3936,
+          "name": "Soft Rock",
+          "primary": false,
+          "url": "https://genius.com/tags/soft-rock"
+        },
+        {
+          "_type": "tag",
+          "id": 4128,
+          "name": "Piano Rock",
+          "primary": false,
+          "url": "https://genius.com/tags/piano-rock"
+        },
+        {
+          "_type": "tag",
+          "id": 2757,
+          "name": "Alternative",
+          "primary": false,
+          "url": "https://genius.com/tags/alternative"
+        },
+        {
+          "_type": "tag",
+          "id": 1312,
+          "name": "Alternative Rock",
+          "primary": false,
+          "url": "https://genius.com/tags/alternative-rock"
+        },
+        {
+          "_type": "tag",
+          "id": 73,
+          "name": "Ballad",
+          "primary": false,
+          "url": "https://genius.com/tags/ballad"
+        },
+        {
+          "_type": "tag",
+          "id": 2860,
+          "name": "Piano",
+          "primary": false,
+          "url": "https://genius.com/tags/piano"
+        },
+        {
+          "_type": "tag",
+          "id": 1623,
+          "name": "UK",
+          "primary": false,
+          "url": "https://genius.com/tags/uk"
+        },
+        {
+          "_type": "tag",
+          "id": 2976,
+          "name": "Britpop",
+          "primary": false,
+          "url": "https://genius.com/tags/britpop"
+        },
+        {
+          "_type": "tag",
+          "id": 2033,
+          "name": "British Rock",
+          "primary": false,
+          "url": "https://genius.com/tags/british-rock"
+        },
+        {
+          "_type": "tag",
+          "id": 567,
+          "name": "Rock",
+          "primary": true,
+          "url": "https://genius.com/tags/rock"
+        }
+      ],
+      "top_scholar": {
+        "_type": "user_attribution",
+        "attribution_value": 963.2,
+        "pinned_role": null,
+        "user": {
+          "_type": "user",
+          "about_me_summary": "Danish Genius Editor previously going under the nicks “melballe,” and “Mazm.”\n\n\n\nIf I rejected or deleted your annotation/suggestion, please take the time to read this guideline. If you’re still unsure why it was rejected/deleted, hit me up and I’ll talk you through it :-)\n\n\n\nBuy CDs. Be nice to animals. Follow No Crowd.\n\nMy CD Collection.\nMy Concert Diary.\n\n\n\nAchievements:\n\n\nWinner of Scribe-A-Thon March 2015 Edition (155 songs)\n11/04 2015 – First time having a transcribed song displayed on the Genius frontpage.\n18/04 2015 – Editored, ScopeY TAUGHT ME.\n04/05 2015 – 10K IQ\n09/12 2016 – 25K IQ\n03/01 2017 – 30K IQ\n08/01 2017 – Nr. 36 Rock Top Genius Scholar – OF ALL TIME!\n05/05 2017 – 40K IQ\n09/08 2017 – 50K IQ\n04/12 2017 – 60K IQ\n23/04 2018 – 70K IQ\n27/07 2018 – 80K IQ\n02/05 2019 – 90K IQ\n\n\n\n\n\nMy Projects:\n\nWhat I’m working on\n\n\n\nI REALLY KINDA LIKE THESE artists:\n\n\nOasis\nKanyeWest\nNoelGallaghersHighFlyingBirds\nQueensoftheStoneAge\nAC/DC\nArcticMonkeys\ntheSmiths\nMorrissey\nNephew – theStrokes – theFloorIsMadeofLava – theKillers – SpleenUnited – PeterSommer – Kasabian – Audioslave – Metallica – FooFighters – theWhiteStripes – Eminem – Suspekt – Mew – theGame – BonIver – KingsOfLeon – DaftPunk – Justice – TenaciousD – PushaT – Outkast – JohnMayer – Wu-TangClan – GhostfaceKillah – Raekwon – Drake – KendrickLamar – theKillers",
+          "api_path": "/users/721779",
+          "avatar": {
+            "tiny": {
+              "url": "https://images.genius.com/avatars/tiny/fdc6ec3683eb872c7a3da920306fad23",
+              "bounding_box": {
+                "width": 16,
+                "height": 16
+              }
+            },
+            "thumb": {
+              "url": "https://images.genius.com/avatars/thumb/fdc6ec3683eb872c7a3da920306fad23",
+              "bounding_box": {
+                "width": 32,
+                "height": 32
+              }
+            },
+            "small": {
+              "url": "https://images.genius.com/avatars/small/fdc6ec3683eb872c7a3da920306fad23",
+              "bounding_box": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "medium": {
+              "url": "https://images.genius.com/avatars/medium/fdc6ec3683eb872c7a3da920306fad23",
+              "bounding_box": {
+                "width": 300,
+                "height": 400
+              }
+            }
+          },
+          "header_image_url": "https://filepicker-images.genius.com/eM4MQGEISUGa5YyqrcwW_american%20psycho%20huey%20lewis%20and%20the%20news%201.jpg",
+          "human_readable_role_for_display": "Editor",
+          "id": 721779,
+          "iq": 120164,
+          "is_meme_verified": false,
+          "is_verified": false,
+          "login": "m4ths",
+          "name": "m4ths",
+          "role_for_display": "editor",
+          "url": "https://genius.com/m4ths",
+          "current_user_metadata": {
+            "permissions": [
+              "follow"
+            ],
+            "excluded_permissions": [],
+            "interactions": {
+              "following": false
+            }
+          }
+        }
+      },
+      "translation_songs": [],
+      "verified_annotations_by": [],
+      "verified_contributors": [],
+      "verified_lyrics_by": [],
+      "writer_artists": [
+        {
+          "_type": "artist",
+          "api_path": "/artists/69347",
+          "header_image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+          "id": 69347,
+          "image_url": "https://images.genius.com/da2fa64a8de881731a1bd57406a1a85a.1000x711x1.jpg",
+          "index_character": "n",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Noel Gallagher",
+          "slug": "Noel-gallagher",
+          "url": "https://genius.com/artists/Noel-gallagher"
+        }
+      ]
+    }
+  }
+}

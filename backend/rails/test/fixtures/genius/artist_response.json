@@ -1,0 +1,1738 @@
+{
+  "meta": {
+    "status": 200
+  },
+  "response": {
+    "artist": {
+      "_type": "artist",
+      "alternate_names": [],
+      "api_path": "/artists/21100",
+      "description": {
+        "dom": {
+          "tag": "root",
+          "children": [
+            {
+              "tag": "p",
+              "children": [
+                "One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an instantly recognisable part of British culture and a key cog in the all-conquering machine that was the ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "http://en.wikipedia.org/wiki/Cool_Britannia",
+                    "rel": "noopener nofollow"
+                  },
+                  "children": [
+                    "Cool Britannia"
+                  ]
+                },
+                " movement."
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "The group rose to fame with the release of ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/definitely-maybe",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/22545"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Definitely Maybe"
+                      ]
+                    }
+                  ]
+                },
+                " in 1994, which became an instant success, debuting at number one in the UK charts. They went on to have a much-publicised rivalry with ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Blur",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/723"
+                  },
+                  "children": [
+                    "Blur"
+                  ]
+                },
+                ", and despite losing the ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/Blur-country-house-lyrics",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/songs/133483"
+                  },
+                  "children": [
+                    "biggest singles chart battle"
+                  ]
+                },
+                " in British history, they would go on to win the war, becoming global stars with ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/what-s-the-story-morning-glory",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/17740"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "(What’s the Story) Morning Glory?"
+                      ]
+                    }
+                  ]
+                },
+                ", which includes arguably their biggest hit, ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/Oasis-wonderwall-lyrics",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/songs/76654"
+                  },
+                  "children": [
+                    "“Wonderwall.”"
+                  ]
+                }
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "The band released their third album ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/be-here-now",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/22543"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Be Here Now"
+                      ]
+                    }
+                  ]
+                },
+                " in 1997, amid conflict between the Gallagher brothers. Although it went to number two in the US charts, sales were below expectations and it has since been regarded poorly. Fourth album ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/standing-on-the-shoulder-of-giants",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/89020"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Standing on the Shoulder of Giants"
+                      ]
+                    }
+                  ]
+                },
+                ", released in 2000, was also received apprehensively by critics but managed to reach number one in the UK charts. It was during its recording that two members, guitarist Paul ‘Bonehead’ Arthurs and bassist Paul ‘Guigsy’ McGuigan, quit so Colin ‘Gem’ Archer and Andy Bell were brought on to replace them, respectively. ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/heathen-chemistry",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/22542"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Heathen Chemistry"
+                      ]
+                    }
+                  ]
+                },
+                " was released in 2002 to similar success, and the band continued touring. In 2004, drummer Alan White left and Zac Starkey joined for sixth album ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/albums/oasis/don-t-believe-the-truth",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/albums/22547"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Don’t Believe the Truth"
+                      ]
+                    }
+                  ]
+                },
+                ", released in 2005, but only lasted until the next album ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/http//genius.com/albums/oasis/dig-out-your-soul",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "em",
+                      "children": [
+                        "Dig Out Your Soul"
+                      ]
+                    }
+                  ]
+                },
+                " (2008), when he was unofficially replaced by Chris Sharrock."
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "Oasis split in 2009 after Liam and Noel Gallagher’s antagonistic relationship reached breaking point. Noel went on to form ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/noel-gallagher-s-high-flying-birds",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/103633"
+                  },
+                  "children": [
+                    "Noel Gallagher’s High Flying Birds"
+                  ]
+                },
+                " and the remainder of the band continued as ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/beady-eye",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/59791"
+                  },
+                  "children": [
+                    "Beady Eye"
+                  ]
+                },
+                " until 2014, when they split. In 2017 ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Liam-gallagher",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/56368"
+                  },
+                  "children": [
+                    "Liam Gallagher"
+                  ]
+                },
+                " released his own solo record."
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attributes": {
+                        "href": "https://genius.com/Oasis-oasis-discography-annotated",
+                        "rel": "noopener"
+                      },
+                      "data": {
+                        "api_path": "/songs/1954889"
+                      },
+                      "children": [
+                        "Full Discography"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "The Gallagher brothers are notoriously surly toward their fans. “I don’t have to be nice to people because they dig my music,” Noel told Rolling Stone. “I don’t live my life to have my picture taken by fans. I’m not asking them to buy records. They buy them because they like them.”"
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                "The ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://www.youtube.com/watch?v=-VeD27szmSE",
+                    "rel": "noopener nofollow"
+                  },
+                  "children": [
+                    "band’s name"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "http://whynameitthat.blogspot.dk/2013/06/oasis.html",
+                    "rel": "noopener nofollow"
+                  },
+                  "children": [
+                    "was taken"
+                  ]
+                },
+                " from Swindon Oasis Leisure Centre in south west England, a clothes shop in the Manchester Arndale shopping center called Oasis, and a taxi rank round the corner from where they lived. Liam Gallagher told NME in 2013: “It meant that we were out there, because we were different. It was a s–t name.”"
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Members"
+                  ]
+                }
+              ]
+            },
+            "",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Liam-gallagher",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/56368"
+                  },
+                  "children": [
+                    "Liam Gallagher"
+                  ]
+                },
+                " – lead and backing vocals, tambourine (1991–2009)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Noel-gallaghers-high-flying-birds",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/103633"
+                  },
+                  "children": [
+                    "Noel Gallagher"
+                  ]
+                },
+                " – lead and rhythm guitars, backing and lead vocals, keyboards, bass, drums (1991–2009)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Gem-archer",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/411465"
+                  },
+                  "children": [
+                    "Gem Archer"
+                  ]
+                },
+                " – rhythm and lead guitars, keyboards, harmonica, backing vocals (1999–2009)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Andrew-bell",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/1009241"
+                  },
+                  "children": [
+                    "Andy Bell"
+                  ]
+                },
+                " – bass, keyboards, rhythm and lead guitars (2000–2009)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Alan-white-oasis",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/1018124"
+                  },
+                  "children": [
+                    "Alan White"
+                  ]
+                },
+                " – drums and percussion (1995–2004)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Paul-mcguigan",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/62589"
+                  },
+                  "children": [
+                    "Paul “Guigsy” McGuigan"
+                  ]
+                },
+                " – bass (1991–1999)",
+                {
+                  "tag": "br"
+                },
+                "",
+                {
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://genius.com/artists/Paul-bonehead-arthurs",
+                    "rel": "noopener"
+                  },
+                  "data": {
+                    "api_path": "/artists/651080"
+                  },
+                  "children": [
+                    "Paul “Bonehead” Arthurs"
+                  ]
+                },
+                " – rhythm and lead guitars, keyboards, bass (1991–1999)",
+                {
+                  "tag": "br"
+                },
+                "Tony McCarroll – drums and percussion (1991–1995)"
+              ]
+            }
+          ]
+        }
+      },
+      "description_preview": "One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an instantly recognisable part of British culture and a key cog in the all-conquering machine that was the Cool Britannia movement.\n\nThe group rose to fame with the release of Definitely Maybe in 1994, which became an instant success, debuting at number one in the UK charts. They went on to have a much-publicised rivalry with Blur, and despite losing the biggest singles chart battle in British history, they would go on to win the war, becoming global stars with (What’s the Story) Morning Glory?, which includes arguably their biggest hit, “Wonderwall.”\n\nThe band released their third album Be Here Now in 1997, amid conflict between the Gallagher brothers. Although it went to number two in the US charts, sales were below expectations and it has since been regarded poorly. Fourth album Standing on the Shoulder of Giants, released in 2000, was also received apprehensively by critics but managed to reach number one in the UK charts. It was during its recording that two members, guitarist Paul ‘Bonehead’ Arthurs and bassist Paul ‘Guigsy’ McGuigan, quit so Colin ‘Gem’ Archer and Andy Bell were brought on to replace them, respectively. Heathen Chemistry was released in 2002 to similar success, and the band continued touring. In 2004, drummer Alan White left and Zac Starkey joined for sixth album Don’t Believe the Truth, released in 2005, but only lasted until the next album Dig Out Your Soul (2008), when he was unofficially replaced by Chris Sharrock.\n\nOasis split in 2009 after Liam and Noel Gallagher’s antagonistic relationship reached breaking point. Noel went on to form Noel Gallagher’s High Flying Birds and the remainder of the band continued as Beady Eye until 2014, when they split. In 2017 Liam Gallagher released his own solo record.\n\nFull Discography\n\nThe Gallagher brothers are notoriously surly toward their fans. “I don’t have to be nice to people because they dig my music,” Noel told Rolling Stone. “I don’t live my life to have my picture taken by fans. I’m not asking them to buy records. They buy them because they like them.”\n\nThe band’s name was taken from Swindon Oasis Leisure Centre in south west England, a clothes shop in the Manchester Arndale shopping center called Oasis, and a taxi rank round the corner from where they lived. Liam Gallagher told NME in 2013: “It meant that we were out there, because we were different. It was a s–t name.”\n\nMembers\n\nLiam Gallagher – lead and backing vocals, tambourine (1991–2009)\nNoel Gallagher – lead and rhythm guitars, backing and lead vocals, keyboards, bass, drums (1991–2009)\nGem Archer – rhythm and lead guitars, keyboards, harmonica, backing vocals (1999–2009)\nAndy Bell – bass, keyboards, rhythm and lead guitars (2000–2009)\nAlan White – drums and percussion (1995–2004)\nPaul “Guigsy” McGuigan – bass (1991–1999)\nPaul “Bonehead” Arthurs – rhythm and lead guitars, keyboards, bass (1991–1999)\nTony McCarroll – drums and percussion (1991–1995)",
+      "facebook_name": "OasisOfficial",
+      "followers_count": 489,
+      "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+      "id": 21100,
+      "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+      "index_character": "o",
+      "instagram_name": "",
+      "is_meme_verified": false,
+      "is_verified": true,
+      "name": "Oasis",
+      "slug": "Oasis",
+      "tracking_paths": {
+        "aggregate": "/artists/Oasis",
+        "concurrent": "/artists/Oasis"
+      },
+      "translation_artist": false,
+      "twitter_name": "oasis",
+      "url": "https://genius.com/artists/Oasis",
+      "current_user_metadata": {
+        "permissions": [
+          "follow",
+          "view_activity_stream",
+          "view_contribution_opportunities",
+          "view_discography"
+        ],
+        "excluded_permissions": [
+          "edit",
+          "edit_images",
+          "edit_names",
+          "edit_anything",
+          "merge",
+          "sort_artist_songs",
+          "edit_translation_artist",
+          "see_short_id"
+        ],
+        "interactions": {
+          "following": false
+        }
+      },
+      "iq": 111,
+      "description_annotation": {
+        "_type": "referent",
+        "annotator_id": 70799,
+        "annotator_login": "ashleychittocks",
+        "api_path": "/referents/6938929",
+        "classification": "accepted",
+        "fragment": "Oasis",
+        "id": 6938929,
+        "ios_app_url": "genius://referents/6938929",
+        "is_description": true,
+        "is_image": false,
+        "path": "/6938929/Oasis/Oasis",
+        "range": {
+          "content": "Oasis"
+        },
+        "song_id": null,
+        "url": "https://genius.com/6938929/Oasis/Oasis",
+        "verified_annotator_ids": [],
+        "current_user_metadata": {
+          "permissions": [],
+          "excluded_permissions": [
+            "add_pinned_annotation_to",
+            "add_community_annotation_to"
+          ],
+          "relationships": {
+            "pinned_role": null
+          }
+        },
+        "tracking_paths": {
+          "aggregate": "/6938929/Oasis/Oasis",
+          "concurrent": "/artists/Oasis"
+        },
+        "twitter_share_message": "“One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an i…” —@Genius",
+        "annotatable": {
+          "_type": "artist",
+          "api_path": "/artists/21100",
+          "context": null,
+          "id": 21100,
+          "image_url": "https://images.genius.com/3b639522f0c829a581595f0ab6f1f3a7.1000x1000x1.jpg",
+          "link_title": "Oasis",
+          "title": "Oasis",
+          "type": "Artist",
+          "url": "https://genius.com/artists/Oasis"
+        },
+        "annotations": [
+          {
+            "_type": "annotation",
+            "api_path": "/annotations/6938929",
+            "being_created": false,
+            "body": {
+              "dom": {
+                "tag": "root",
+                "children": [
+                  {
+                    "tag": "p",
+                    "children": [
+                      "One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an instantly recognisable part of British culture and a key cog in the all-conquering machine that was the ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "http://en.wikipedia.org/wiki/Cool_Britannia",
+                          "rel": "noopener nofollow"
+                        },
+                        "children": [
+                          "Cool Britannia"
+                        ]
+                      },
+                      " movement."
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "The group rose to fame with the release of ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/definitely-maybe",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/22545"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Definitely Maybe"
+                            ]
+                          }
+                        ]
+                      },
+                      " in 1994, which became an instant success, debuting at number one in the UK charts. They went on to have a much-publicised rivalry with ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Blur",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/723"
+                        },
+                        "children": [
+                          "Blur"
+                        ]
+                      },
+                      ", and despite losing the ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/Blur-country-house-lyrics",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/songs/133483"
+                        },
+                        "children": [
+                          "biggest singles chart battle"
+                        ]
+                      },
+                      " in British history, they would go on to win the war, becoming global stars with ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/what-s-the-story-morning-glory",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/17740"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "(What’s the Story) Morning Glory?"
+                            ]
+                          }
+                        ]
+                      },
+                      ", which includes arguably their biggest hit, ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/Oasis-wonderwall-lyrics",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/songs/76654"
+                        },
+                        "children": [
+                          "“Wonderwall.”"
+                        ]
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "The band released their third album ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/be-here-now",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/22543"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Be Here Now"
+                            ]
+                          }
+                        ]
+                      },
+                      " in 1997, amid conflict between the Gallagher brothers. Although it went to number two in the US charts, sales were below expectations and it has since been regarded poorly. Fourth album ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/standing-on-the-shoulder-of-giants",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/89020"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Standing on the Shoulder of Giants"
+                            ]
+                          }
+                        ]
+                      },
+                      ", released in 2000, was also received apprehensively by critics but managed to reach number one in the UK charts. It was during its recording that two members, guitarist Paul ‘Bonehead’ Arthurs and bassist Paul ‘Guigsy’ McGuigan, quit so Colin ‘Gem’ Archer and Andy Bell were brought on to replace them, respectively. ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/heathen-chemistry",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/22542"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Heathen Chemistry"
+                            ]
+                          }
+                        ]
+                      },
+                      " was released in 2002 to similar success, and the band continued touring. In 2004, drummer Alan White left and Zac Starkey joined for sixth album ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/albums/oasis/don-t-believe-the-truth",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/albums/22547"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Don’t Believe the Truth"
+                            ]
+                          }
+                        ]
+                      },
+                      ", released in 2005, but only lasted until the next album ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/http//genius.com/albums/oasis/dig-out-your-soul",
+                          "rel": "noopener"
+                        },
+                        "children": [
+                          {
+                            "tag": "em",
+                            "children": [
+                              "Dig Out Your Soul"
+                            ]
+                          }
+                        ]
+                      },
+                      " (2008), when he was unofficially replaced by Chris Sharrock."
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "Oasis split in 2009 after Liam and Noel Gallagher’s antagonistic relationship reached breaking point. Noel went on to form ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/noel-gallagher-s-high-flying-birds",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/103633"
+                        },
+                        "children": [
+                          "Noel Gallagher’s High Flying Birds"
+                        ]
+                      },
+                      " and the remainder of the band continued as ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/beady-eye",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/59791"
+                        },
+                        "children": [
+                          "Beady Eye"
+                        ]
+                      },
+                      " until 2014, when they split. In 2017 ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Liam-gallagher",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/56368"
+                        },
+                        "children": [
+                          "Liam Gallagher"
+                        ]
+                      },
+                      " released his own solo record."
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      {
+                        "tag": "strong",
+                        "children": [
+                          {
+                            "tag": "a",
+                            "attributes": {
+                              "href": "https://genius.com/Oasis-oasis-discography-annotated",
+                              "rel": "noopener"
+                            },
+                            "data": {
+                              "api_path": "/songs/1954889"
+                            },
+                            "children": [
+                              "Full Discography"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "The Gallagher brothers are notoriously surly toward their fans. “I don’t have to be nice to people because they dig my music,” Noel told Rolling Stone. “I don’t live my life to have my picture taken by fans. I’m not asking them to buy records. They buy them because they like them.”"
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      "The ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://www.youtube.com/watch?v=-VeD27szmSE",
+                          "rel": "noopener nofollow"
+                        },
+                        "children": [
+                          "band’s name"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "http://whynameitthat.blogspot.dk/2013/06/oasis.html",
+                          "rel": "noopener nofollow"
+                        },
+                        "children": [
+                          "was taken"
+                        ]
+                      },
+                      " from Swindon Oasis Leisure Centre in south west England, a clothes shop in the Manchester Arndale shopping center called Oasis, and a taxi rank round the corner from where they lived. Liam Gallagher told NME in 2013: “It meant that we were out there, because we were different. It was a s–t name.”"
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      {
+                        "tag": "strong",
+                        "children": [
+                          "Members"
+                        ]
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "tag": "p",
+                    "children": [
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Liam-gallagher",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/56368"
+                        },
+                        "children": [
+                          "Liam Gallagher"
+                        ]
+                      },
+                      " – lead and backing vocals, tambourine (1991–2009)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Noel-gallaghers-high-flying-birds",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/103633"
+                        },
+                        "children": [
+                          "Noel Gallagher"
+                        ]
+                      },
+                      " – lead and rhythm guitars, backing and lead vocals, keyboards, bass, drums (1991–2009)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Gem-archer",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/411465"
+                        },
+                        "children": [
+                          "Gem Archer"
+                        ]
+                      },
+                      " – rhythm and lead guitars, keyboards, harmonica, backing vocals (1999–2009)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Andrew-bell",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/1009241"
+                        },
+                        "children": [
+                          "Andy Bell"
+                        ]
+                      },
+                      " – bass, keyboards, rhythm and lead guitars (2000–2009)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Alan-white-oasis",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/1018124"
+                        },
+                        "children": [
+                          "Alan White"
+                        ]
+                      },
+                      " – drums and percussion (1995–2004)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Paul-mcguigan",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/62589"
+                        },
+                        "children": [
+                          "Paul “Guigsy” McGuigan"
+                        ]
+                      },
+                      " – bass (1991–1999)",
+                      {
+                        "tag": "br"
+                      },
+                      "",
+                      {
+                        "tag": "a",
+                        "attributes": {
+                          "href": "https://genius.com/artists/Paul-bonehead-arthurs",
+                          "rel": "noopener"
+                        },
+                        "data": {
+                          "api_path": "/artists/651080"
+                        },
+                        "children": [
+                          "Paul “Bonehead” Arthurs"
+                        ]
+                      },
+                      " – rhythm and lead guitars, keyboards, bass (1991–1999)",
+                      {
+                        "tag": "br"
+                      },
+                      "Tony McCarroll – drums and percussion (1991–1995)"
+                    ]
+                  }
+                ]
+              }
+            },
+            "comment_count": 0,
+            "community": true,
+            "created_at": 1366625326,
+            "custom_preview": null,
+            "deleted": false,
+            "embed_content": "\u003Cblockquote class='rg_standalone_container' data-src='//genius.com/annotations/6938929/standalone_embed'\u003E\u003Ca href='https://genius.com/6938929/Oasis/Oasis'\u003EOasis\u003C/a\u003E\u003Cbr\u003E\u003Ca href='https://genius.com/artists/Oasis'\u003E&#8213; Oasis\u003C/a\u003E\u003C/blockquote\u003E\u003Cscript async crossorigin src='//genius.com/annotations/load_standalone_embeds.js'\u003E\u003C/script\u003E",
+            "has_voters": true,
+            "id": 6938929,
+            "needs_exegesis": false,
+            "pinned": false,
+            "proposed_edit_count": 1,
+            "pyongs_count": null,
+            "referent_id": 6938929,
+            "share_url": "https://genius.com/6938929",
+            "source": null,
+            "state": "accepted",
+            "twitter_share_message": "“One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an instantly…” —@Genius",
+            "url": "https://genius.com/6938929/Oasis/Oasis",
+            "verified": false,
+            "votes_total": 57,
+            "current_user_metadata": {
+              "permissions": [
+                "vote",
+                "propose_edit_to",
+                "create_comment"
+              ],
+              "excluded_permissions": [
+                "edit",
+                "cosign",
+                "uncosign",
+                "destroy",
+                "accept",
+                "reject",
+                "see_unreviewed",
+                "clear_votes",
+                "pin_to_profile",
+                "unpin_from_profile",
+                "update_source",
+                "edit_custom_preview"
+              ],
+              "interactions": {
+                "cosign": false,
+                "pyong": false,
+                "vote": null
+              },
+              "iq_by_action": {
+                "accept": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 10,
+                    "applicable": true
+                  }
+                },
+                "reject": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 2,
+                    "applicable": true
+                  }
+                },
+                "delete": {
+                  "primary": {
+                    "multiplier": 1,
+                    "base": 5,
+                    "applicable": true
+                  }
+                }
+              }
+            },
+            "accepted_by": {
+              "_type": "user",
+              "about_me_summary": "Retired Co-founder of Rock Genius.",
+              "api_path": "/users/1850",
+              "avatar": {
+                "tiny": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 16,
+                    "height": 16
+                  }
+                },
+                "thumb": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 32,
+                    "height": 32
+                  }
+                },
+                "small": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/small/1358288164_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "medium": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+                  "bounding_box": {
+                    "width": 300,
+                    "height": 400
+                  }
+                }
+              },
+              "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/1358288163_1850_coolmtv.jpg",
+              "human_readable_role_for_display": "Contributor",
+              "id": 1850,
+              "iq": 196794,
+              "is_meme_verified": false,
+              "is_verified": false,
+              "login": "Alex_Koenig",
+              "name": "Alex Koenig",
+              "role_for_display": "contributor",
+              "url": "https://genius.com/Alex_Koenig",
+              "current_user_metadata": {
+                "permissions": [
+                  "follow"
+                ],
+                "excluded_permissions": [],
+                "interactions": {
+                  "following": false
+                }
+              }
+            },
+            "authors": [
+              {
+                "_type": "user_attribution",
+                "attribution": 0.42,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Just a girl who happens to be bored more often than not, and likes to listen to music a lot.\n\nHello (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧\n\nlast.fm",
+                  "api_path": "/users/2553734",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.rapgenius.com/avatars/tiny/f4b2ea72be349b66f268138be3a04f3a",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.rapgenius.com/avatars/thumb/f4b2ea72be349b66f268138be3a04f3a",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.rapgenius.com/avatars/small/f4b2ea72be349b66f268138be3a04f3a",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.rapgenius.com/avatars/medium/f4b2ea72be349b66f268138be3a04f3a",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://images.rapgenius.com/avatars/medium/f4b2ea72be349b66f268138be3a04f3a",
+                  "human_readable_role_for_display": "Editor",
+                  "id": 2553734,
+                  "iq": 132890,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "lemoncave",
+                  "name": "lemoncave",
+                  "role_for_display": "editor",
+                  "url": "https://genius.com/lemoncave",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.224,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "",
+                  "api_path": "/users/4082303",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/4c073c79243531eb761e00b6ed263334",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/4c073c79243531eb761e00b6ed263334",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/4c073c79243531eb761e00b6ed263334",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/4c073c79243531eb761e00b6ed263334",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/iscDx7TSPmmhrk0YBkGN_Royal-Enfield-The-Himalayan-motorcycle-testing-videos-5.jpg",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 4082303,
+                  "iq": 1405,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "mulaymandar",
+                  "name": "mulaymandar",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/mulaymandar",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.172,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Acoustic singer-songwriter from Essex, UK. Writer and Rap Genius upper echelon impresario.\n\n“A talented songwriter with an excellent voice… On the Blunt – Dylan spectrum, he’s",
+                  "api_path": "/users/70799",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/RZcgEFJRrCL5O9T6xi4w.jpg",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/RZcgEFJRrCL5O9T6xi4w.jpg",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/small/RZcgEFJRrCL5O9T6xi4w.jpg",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/RZcgEFJRrCL5O9T6xi4w.jpg",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/RZcgEFJRrCL5O9T6xi4w.jpg",
+                  "human_readable_role_for_display": "Verified Artist",
+                  "id": 70799,
+                  "iq": 101127,
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "login": "ashleychittocks",
+                  "name": "Ashley Chittock",
+                  "role_for_display": "verified_artist",
+                  "url": "https://genius.com/ashleychittocks",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.148,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Rap & UK rock\n\nKendrick, Drake, J Cole, Brockhampton\n\nOasis, The Stone Roses, Courteeners, Arctic Monkeys, The Smiths",
+                  "api_path": "/users/6255332",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://filepicker-images.genius.com/7slt7fb9z4c",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://filepicker-images.genius.com/7slt7fb9z4c",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://filepicker-images.genius.com/7slt7fb9z4c",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://filepicker-images.genius.com/7slt7fb9z4c",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/m82z3rnb71",
+                  "human_readable_role_for_display": null,
+                  "id": 6255332,
+                  "iq": 138,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "don9914",
+                  "name": "don9914",
+                  "role_for_display": null,
+                  "url": "https://genius.com/don9914",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.026,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Danish Genius Editor previously going under the nicks “melballe,” and “Mazm.”\n\n\n\nIf I rejected or deleted your annotation/suggestion, please take the time to read this guideline. If you’re still unsure why it was rejected/deleted, hit me up and I’ll talk you through it :-)\n\n\n\nBuy CDs. Be nice to animals. Follow No Crowd.\n\nMy CD Collection.\nMy Concert Diary.\n\n\n\nAchievements:\n\n\nWinner of Scribe-A-Thon March 2015 Edition (155 songs)\n11/04 2015 – First time having a transcribed song displayed on the Genius frontpage.\n18/04 2015 – Editored, ScopeY TAUGHT ME.\n04/05 2015 – 10K IQ\n09/12 2016 – 25K IQ\n03/01 2017 – 30K IQ\n08/01 2017 – Nr. 36 Rock Top Genius Scholar – OF ALL TIME!\n05/05 2017 – 40K IQ\n09/08 2017 – 50K IQ\n04/12 2017 – 60K IQ\n23/04 2018 – 70K IQ\n27/07 2018 – 80K IQ\n02/05 2019 – 90K IQ\n\n\n\n\n\nMy Projects:\n\nWhat I’m working on\n\n\n\nI REALLY KINDA LIKE THESE artists:\n\n\nOasis\nKanyeWest\nNoelGallaghersHighFlyingBirds\nQueensoftheStoneAge\nAC/DC\nArcticMonkeys\ntheSmiths\nMorrissey\nNephew – theStrokes – theFloorIsMadeofLava – theKillers – SpleenUnited – PeterSommer – Kasabian – Audioslave – Metallica – FooFighters – theWhiteStripes – Eminem – Suspekt – Mew – theGame – BonIver – KingsOfLeon – DaftPunk – Justice – TenaciousD – PushaT – Outkast – JohnMayer – Wu-TangClan – GhostfaceKillah – Raekwon – Drake – KendrickLamar – theKillers",
+                  "api_path": "/users/721779",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/fdc6ec3683eb872c7a3da920306fad23",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/eM4MQGEISUGa5YyqrcwW_american%20psycho%20huey%20lewis%20and%20the%20news%201.jpg",
+                  "human_readable_role_for_display": "Editor",
+                  "id": 721779,
+                  "iq": 120164,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "m4ths",
+                  "name": "m4ths",
+                  "role_for_display": "editor",
+                  "url": "https://genius.com/m4ths",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.004,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "Half afraid, half amazed, all insane.",
+                  "api_path": "/users/269182",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/5f579d275735b22510e0bc9a06171bde",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/3GmrMEUaTVW5V3WEham0_Foto0079.jpg",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 269182,
+                  "iq": 432096,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "igordebraga",
+                  "name": "​igordebraga",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/igordebraga",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.004,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "",
+                  "api_path": "/users/1857665",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://filepicker-images.genius.com/iptc956v28o",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://filepicker-images.genius.com/iptc956v28o",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://filepicker-images.genius.com/iptc956v28o",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://filepicker-images.genius.com/iptc956v28o",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://filepicker-images.genius.com/w16mfkjg9h",
+                  "human_readable_role_for_display": "Contributor",
+                  "id": 1857665,
+                  "iq": 28529,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "GroovyChick-",
+                  "name": "GroovyChick-",
+                  "role_for_display": "contributor",
+                  "url": "https://genius.com/GroovyChick-",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              },
+              {
+                "_type": "user_attribution",
+                "attribution": 0.002,
+                "pinned_role": null,
+                "user": {
+                  "_type": "user",
+                  "about_me_summary": "UK-based moderator • he/him\n\n\n\n\n\n\nI manage the Genius Coaching Corner, a thread series that highlights new members of the editorial team and the mentors who got them there.\n\nIf you’re a Contributor looking to become an Editor, Mediator or Transcriber, shoot me a message and I’ll try and get you in contact with a mentor. If you’re a Transcriber or Editor+ and you’d like to host a Coaching Corner, please also get in touch!\n\n\n\nEditored by EwokABdevito on 28 August, 2018\nModded thanks to MERLYN on 31 August, 2021\n\nMentees:\nnoxxi (Editor)\n7 December, 2019\nvintagewashingmachine (Editor)\n4 April, 2021\nhigherfasterlouder (Transcriber)\n6 February, 2022\nzero (Transcriber, co-mentored with Coolrrrray)\n6 March, 2022\ndwolf359 (Transcriber)\n27 February, 2023\nTheYoshiPhase (Mediator)\n20 February, 2024\n\nI also helped thousandeyes become a moderator\n29 September, 2023\n\n\n\nThree-time Weekly Annotation Competition winner:\n\n\n\n3 March, 2021 | this bio\n\n\n\n9 October, 2021 | this bio\n\n\n\n19 April, 2023 | this annotation\n\nOverall WAC average: 4.82/5\n\nHit 11,111 IQ on 11/11, 2018",
+                  "api_path": "/users/6727604",
+                  "avatar": {
+                    "tiny": {
+                      "url": "https://images.genius.com/avatars/tiny/7bc524b4ddc6bbfbd01fd53772389bbd",
+                      "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    "thumb": {
+                      "url": "https://images.genius.com/avatars/thumb/7bc524b4ddc6bbfbd01fd53772389bbd",
+                      "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                      }
+                    },
+                    "small": {
+                      "url": "https://images.genius.com/avatars/small/7bc524b4ddc6bbfbd01fd53772389bbd",
+                      "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                      }
+                    },
+                    "medium": {
+                      "url": "https://images.genius.com/avatars/medium/7bc524b4ddc6bbfbd01fd53772389bbd",
+                      "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                      }
+                    }
+                  },
+                  "header_image_url": "https://images.genius.com/bfdedbc193981f646d961401467a2446.1000x1000x1.jpg",
+                  "human_readable_role_for_display": "Moderator",
+                  "id": 6727604,
+                  "iq": 168905,
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "login": "Irrelevant_Cabbage",
+                  "name": "Irrelevant Cabbage",
+                  "role_for_display": "moderator",
+                  "url": "https://genius.com/Irrelevant_Cabbage",
+                  "current_user_metadata": {
+                    "permissions": [
+                      "follow"
+                    ],
+                    "excluded_permissions": [],
+                    "interactions": {
+                      "following": false
+                    }
+                  }
+                }
+              }
+            ],
+            "cosigned_by": [],
+            "created_by": {
+              "_type": "user",
+              "about_me_summary": "Acoustic singer-songwriter from Essex, UK. Writer and Rap Genius upper echelon impresario.\n\n“A talented songwriter with an excellent voice… On the Blunt – Dylan spectrum, he’s",
+              "api_path": "/users/70799",
+              "avatar": {
+                "tiny": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/RZcgEFJRrCL5O9T6xi4w.jpg",
+                  "bounding_box": {
+                    "width": 16,
+                    "height": 16
+                  }
+                },
+                "thumb": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/RZcgEFJRrCL5O9T6xi4w.jpg",
+                  "bounding_box": {
+                    "width": 32,
+                    "height": 32
+                  }
+                },
+                "small": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/small/RZcgEFJRrCL5O9T6xi4w.jpg",
+                  "bounding_box": {
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "medium": {
+                  "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/RZcgEFJRrCL5O9T6xi4w.jpg",
+                  "bounding_box": {
+                    "width": 300,
+                    "height": 400
+                  }
+                }
+              },
+              "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/RZcgEFJRrCL5O9T6xi4w.jpg",
+              "human_readable_role_for_display": "Verified Artist",
+              "id": 70799,
+              "iq": 101127,
+              "is_meme_verified": false,
+              "is_verified": true,
+              "login": "ashleychittocks",
+              "name": "Ashley Chittock",
+              "role_for_display": "verified_artist",
+              "url": "https://genius.com/ashleychittocks",
+              "current_user_metadata": {
+                "permissions": [
+                  "follow"
+                ],
+                "excluded_permissions": [],
+                "interactions": {
+                  "following": false
+                }
+              }
+            },
+            "rejection_comment": null,
+            "top_comment": null,
+            "verified_by": null
+          }
+        ]
+      },
+      "user": {
+        "_type": "user",
+        "about_me_summary": "One of the most decorated artists of the 1990s, for the best part of two decades Oasis were an instantly recognisable part of British culture and a key cog in the all-conquering",
+        "api_path": "/users/9029255",
+        "avatar": {
+          "tiny": {
+            "url": "https://images.genius.com/avatars/tiny/10fe8017923460f828c625dae705ec03",
+            "bounding_box": {
+              "width": 16,
+              "height": 16
+            }
+          },
+          "thumb": {
+            "url": "https://images.genius.com/avatars/thumb/10fe8017923460f828c625dae705ec03",
+            "bounding_box": {
+              "width": 32,
+              "height": 32
+            }
+          },
+          "small": {
+            "url": "https://images.genius.com/avatars/small/10fe8017923460f828c625dae705ec03",
+            "bounding_box": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          "medium": {
+            "url": "https://images.genius.com/avatars/medium/10fe8017923460f828c625dae705ec03",
+            "bounding_box": {
+              "width": 300,
+              "height": 400
+            }
+          }
+        },
+        "header_image_url": "https://images.genius.com/03628574fa075d2be67ace5f5a7b80f6.300x139x1.png",
+        "human_readable_role_for_display": "Verified Artist",
+        "id": 9029255,
+        "iq": 111,
+        "is_meme_verified": false,
+        "is_verified": true,
+        "login": "OasisOfficial",
+        "name": "Oasis",
+        "role_for_display": "verified_artist",
+        "url": "https://genius.com/OasisOfficial",
+        "current_user_metadata": {
+          "permissions": [
+            "follow"
+          ],
+          "excluded_permissions": [],
+          "interactions": {
+            "following": false
+          }
+        }
+      }
+    }
+  }
+}

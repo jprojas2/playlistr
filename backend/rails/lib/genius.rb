@@ -26,19 +26,32 @@ class Genius
   def initialize
     @auth_email = Rails.application.credentials.dig(:genius_api, :user)
     @auth_password = Rails.application.credentials.dig(:genius_api, :password)
-    #raise CredentialsMissingError if (@auth_email.blank? || @auth_password.blank?)
-    #login
+
+    @songs = {}
   end
 
   def search query
-    res = request(
+    request(
       http_method: :get,
       endpoint: "search",
       params: {
         q: query
       }
-    )
-    res&.dig("response", "hits")&.map { |hit| hit["result"] } || []
+    )&.dig("response", "hits")&.map { |hit| hit["result"] } || []
+  end
+
+  def song id
+    @songs[id] ||= request(
+      http_method: :get,
+      endpoint: "songs/#{id}"
+    )&.dig("response", "song")
+  end
+
+  def artist id
+    request(
+      http_method: :get,
+      endpoint: "artists/#{id}"
+    )&.dig("response", "artist")
   end
 
   private
