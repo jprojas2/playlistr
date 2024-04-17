@@ -1,6 +1,6 @@
-class AuthenticationController < ApplicationController
+class Api::AuthenticationController < ApplicationController
 
-  # POST /auth/login
+  # POST /api/login
   def login
     @user = User.find_by_email(params[:email])
     if @user&.authenticate(params[:password])
