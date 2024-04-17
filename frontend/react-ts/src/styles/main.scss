@@ -54,6 +54,39 @@ code {
     }
 }
 
+.btn-1 {
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-2 {
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    @include box-3d-decoration(0.1rem, 0.5rem, white);
+}
+
+.btn-sm {
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.btn-3d {
+    @include box-3d-decoration(5px, 13px, white);
+}
+
+.btn-sm-3d {
+    @include box-3d-decoration(1px, 0.5rem, white);
+}
+
 .btn-black {
     background-color: $black;
     color: $white;
@@ -83,4 +116,10 @@ code {
 
 input::placeholder {
     font-family: 'Inter', sans-serif;
+}
+
+@include breakpoint('>desktop-xl') {
+    html {
+        font-size: 20px;
+    }
 }

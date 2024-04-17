@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
+import MainLayout from './layouts/MainLayout'
 import NotFoundPage from './pages/NotFoundPage'
 import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
@@ -22,7 +23,9 @@ const RootComponent: React.FC = () => {
                     <Route path="*" element={<NotFoundPage />} />
                     <Route path={ROUTES.LOGIN_ROUTE} element={<LoginPage />} />
                     <Route element={<AuthComponent />}>
-                        <Route path={ROUTES.HOMEPAGE_ROUTE} element={<HomePage />} />
+                        <Route element={<MainLayout />}>
+                            <Route path={ROUTES.HOMEPAGE_ROUTE} element={<HomePage />} />
+                        </Route>
                     </Route>
                 </Routes>
             </Router>

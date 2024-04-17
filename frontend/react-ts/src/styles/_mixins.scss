@@ -74,3 +74,18 @@
         z-index: -1;
     }
 }
+
+@mixin striped-background {
+    text-shadow:
+        -3px -3px 0 #fff,
+        0 -3px 0 #fff,
+        3px -3px 0 #fff,
+        3px 0 0 #fff,
+        3px 3px 0 #fff,
+        0 3px 0 #fff,
+        -3px 3px 0 #fff,
+        -3px 0 0 #fff;
+    background-color: #e5e5f7;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #bebebe 0, #bebebe 1px, #ffffff 0, #ffffff 50%);
+}

@@ -1,0 +1,60 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.main-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .main {
+        position: relative;
+        aspect-ratio: 16/9;
+        height: 65%;
+        border: 1px solid #000;
+        border-radius: 1rem;
+        margin-top: 4rem;
+        display: flex;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: 0.8rem 0.8rem 0 $black;
+        .content {
+            width: calc(100% - 11rem);
+        }
+    }
+}
+
+@include breakpoint('<phone') {
+    .main-wrapper {
+        .main {
+            @include rectangle(100%, calc(100% - 100px));
+            margin-top: 0;
+            border: unset;
+            border-radius: unset;
+            .content {
+                width: 100%;
+            }
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+@include breakpoint('>phone') {
+    .main-wrapper {
+        .main {
+            max-width: calc(100% - 10rem);
+        }
+    }
+}
+
+@include breakpoint('<phone') {
+    .main-wrapper {
+        .main {
+            .content {
+                height: 100%;
+            }
+            max-width: 100%;
+            height: calc(100% - $player-height-phone);
+        }
+    }
+}

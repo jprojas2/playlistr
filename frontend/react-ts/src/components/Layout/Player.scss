@@ -1,0 +1,97 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.main-player {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    height: $player-height;
+    border-top: 1px solid black;
+    z-index: 10;
+    .progress-bar {
+        height: $player-progress-bar-height;
+        .progress {
+            height: 100%;
+            background-color: $black;
+        }
+    }
+    .player-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        height: calc(#{$player-height} - #{$player-progress-bar-height});
+        .player-body-left {
+            display: flex;
+            height: 100%;
+            gap: 1.5rem;
+            align-items: center;
+            .song-art {
+                height: $player-song-art-size;
+                aspect-ratio: 1;
+                border: 1px solid black;
+                img {
+                    @include square(100%);
+                }
+            }
+            .song-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.15rem;
+                .song-title {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+                .song-artist {
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                }
+                .song-album {
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        .player-body-center {
+            display: none;
+        }
+    }
+}
+
+@include breakpoint('<phone') {
+    .main-player {
+        height: $player-height-phone;
+        .progress-bar {
+            height: $player-progress-bar-height-phone;
+        }
+        .player-body {
+            padding: 1rem 1rem;
+            height: calc(#{$player-height-phone} - #{$player-progress-bar-height-phone});
+            .player-body-left {
+                gap: 1rem;
+                .song-art {
+                    height: 4rem;
+                }
+                .song-info {
+                    .song-title {
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+                    .song-artist {
+                        font-size: 1rem;
+                    }
+                    .song-album {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .player-body-right {
+                display: none;
+            }
+        }
+    }
+}
