@@ -95,7 +95,7 @@ class Genius
           "\n"
         end
       end.compact.join
-    end.compact.join.gsub(/\[.*\]\n/, "")
+    end.compact.join.gsub(/\[.*\]\n/, "").strip
   rescue => e
     Rails.logger.error e.message
     nil
