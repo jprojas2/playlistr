@@ -54,6 +54,16 @@ class Genius
     )&.dig("response", "artist")
   end
 
+  def artist_songs artist_id, order: nil
+    artist_params = {}
+    artist_params[:sort] = order if order.present?
+    request(
+      http_method: :get,
+      endpoint: "artists/#{artist_id}/songs",
+      params: artist_params
+    )&.dig("response", "songs")
+  end
+
   def lyrics song_id
     song = song(song_id)
     return nil if song.nil?
@@ -125,6 +135,7 @@ class Genius
   end
 
   def request(http_method:, endpoint:, params: {}, retries: 2)
+    endpoint += "?#{params.to_query}" if http_method == :get and params.present?
     @response = client.public_send(http_method, endpoint, params)
     if response_successful?
       case @response.headers["content-type"]

@@ -12,7 +12,6 @@ class Api::V1::ArtistsController < Api::V1::ApiController
 
   # GET /artists/1
   def show
-    render json: @artist
   end
 
   # POST /artists
