@@ -23,7 +23,8 @@ Rails.application.routes.draw do
       get '/search', to: 'search#index'
     end
   end
-
+  
+  options '*path', to: 'application#cors_preflight_check'
 
   get '/*a', to: 'application#not_found'
 end
