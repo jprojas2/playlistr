@@ -4,6 +4,7 @@ import SearchInput from '../components/SearchInput'
 import MicIcon from '../components/Icons/MicIcon'
 import NoSoundIcon from '../components/Icons/NoSoundIcon'
 import axios from 'axios'
+import SongPage from './SongPage'
 
 const BrowsePage: React.FC = () => {
     const [search, setSearch] = React.useState<string>('')
@@ -108,6 +109,9 @@ const BrowsePage: React.FC = () => {
 
     return (
         <>
+            {selectedItem && selectedItem._type == 'song' && (
+                <SongPage songData={selectedItem} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Search' }} />
+            )}
             {!selectedItem && (
                 <div className="browse-page-content">
                     <SearchInput
