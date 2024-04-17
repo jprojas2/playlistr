@@ -1,0 +1,54 @@
+@import '../styles/mixins.scss';
+@import '../styles/animations.scss';
+
+.search-input {
+    width: 100%;
+    padding: 0.2rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+    display: flex;
+    align-items: center;
+    .search-icon {
+        margin-right: 10px;
+        margin-top: 3px;
+        svg {
+            @include square(1.8rem);
+        }
+    }
+    .clear-icon {
+        margin-left: auto;
+        margin-top: 3px;
+        transition: transform 0.3s;
+        @include square(1rem);
+        opacity: 0;
+        &.show {
+            animation: popAndRotateIn 0.3s ease-in-out;
+            opacity: 1;
+        }
+        &.hide {
+            animation: popAndRotateOut 0.3s ease-in-out;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        svg {
+            @include square(0.75rem);
+        }
+    }
+    input {
+        width: 100%;
+        border: none;
+        font-size: 1.2rem;
+        outline: none;
+        &::placeholder {
+            color: #000;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+}

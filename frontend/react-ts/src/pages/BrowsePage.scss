@@ -1,0 +1,143 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+@import '../styles/animations.scss';
+
+.browse-page-content {
+    @include square(100%);
+    @include flexbox(start, start, column, nowrap);
+    padding: 1rem 2rem;
+    .no-input,
+    .no-results {
+        @include square(100%);
+        @include flexbox(center, center, column, nowrap);
+        gap: 2rem;
+        span {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-align: center;
+        }
+
+        svg {
+            @include square(5rem);
+        }
+    }
+    .loading-results {
+        @include square(100%);
+        @include flexbox(center, center, row, nowrap);
+        gap: 2rem;
+        animation: popAndRotateIn 0.1s ease-in-out;
+        & > span {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-align: center;
+            display: flex;
+            & > span {
+                animation: bounce 1s infinite;
+            }
+            @for $i from 1 through 15 {
+                & > span:nth-child(#{$i}) {
+                    animation-delay: calc(#{$i}s / 20);
+                }
+            }
+        }
+    }
+
+    .search-results {
+        @include flexbox(start, start, column, nowrap);
+        width: calc(100% + 1rem);
+        padding-right: 1rem;
+        gap: 0.75rem;
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+        margin-left: -1rem;
+        padding-left: 1rem;
+        margin-top: -1rem;
+        padding-top: 1rem;
+        .browse-item-result {
+            border: 1px solid black;
+            border-radius: 0.6rem;
+            padding: 0.7rem 1.3rem 0.7rem 0.85rem;
+            width: 100%;
+            animation: fadeIn 0.1s ease-in-out;
+            background-color: white;
+            @include flexbox(space-between, center, row, nowrap);
+            transition:
+                transform,
+                box-shadow 0.1s ease-in-out;
+            &:hover {
+                @include striped-background;
+                box-shadow: 0.2rem 0.2rem 0 $black;
+                transform: translate(-2px, -2px);
+                cursor: pointer;
+            }
+            .browse-item-left {
+                gap: 1rem;
+                @include flexbox(start, center, row, nowrap);
+                .browse-item-img {
+                    @include square(3rem);
+                    border: 1px solid black;
+                    outline: 3px solid white;
+                    img {
+                        @include square(100%);
+                        object-fit: cover;
+                    }
+                }
+                .browse-item-info {
+                    @include flexbox(start, start, column, nowrap);
+                    gap: 0.3rem;
+                    .browse-item-title {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                    .browse-item-artist {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                    .browse-item-album {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .browse-item-type {
+                font-size: 0.8rem;
+                font-weight: 300;
+                text-transform: capitalize;
+                color: gray;
+            }
+        }
+    }
+}
+
+@include breakpoint('<phone') {
+    .browse-page-content {
+        padding: 1rem 1.5rem;
+        .search-results {
+            .browse-item-result {
+                padding: 0.5rem 0.7rem 0.5rem 0.6rem;
+                .browse-item-left {
+                    .browse-item-img {
+                        @include square(2rem);
+                    }
+                    .browse-item-info {
+                        .browse-item-title {
+                            font-size: 1rem;
+                        }
+                        .browse-item-artist {
+                            font-size: 0.8rem;
+                        }
+                        .browse-item-album {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .browse-item-type {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
