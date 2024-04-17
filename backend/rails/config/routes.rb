@@ -11,13 +11,13 @@ Rails.application.routes.draw do
     post '/login', to: 'authentication#login'
     namespace :v1 do
       resource :player
-      resources :songs, param: :eid do
+      resources :songs, param: :eid, only: %i[ index show ] do
         member do
           get :lyrics
         end
       end
-      resources :artists, param: :eid
-      resources :albums, param: :eid
+      resources :artists, param: :eid, only: %i[ index show ]
+      resources :albums, param: :eid, only: %i[ index show ]
       resources :playlists
       resources :users, param: :_username, except: %[i new]
       get '/search', to: 'search#index'

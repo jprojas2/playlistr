@@ -1,7 +1,7 @@
 class Api::V1::SongsController < Api::V1::ApiController
   before_action :authorize_request
   before_action :set_song, only: %i[ show lyrics ]
-  before_action :set_persisted_song, only: %i[ update destroy ]
+
 
   # GET /songs
   def index
@@ -13,31 +13,6 @@ class Api::V1::SongsController < Api::V1::ApiController
   # GET /songs/1
   def show
     render json: @song
-  end
-
-  # POST /songs
-  def create
-    @song = Song.new(song_params)
-
-    if @song.save
-      render json: @song, status: :created, location: [:api, :v1, @song]
-    else
-      render json: @song.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /songs/1
-  def update
-    if @song.update(song_params.except(:eid))
-      render json: @song
-    else
-      render json: @song.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /songs/1
-  def destroy
-    @song.destroy!
   end
 
   def lyrics
