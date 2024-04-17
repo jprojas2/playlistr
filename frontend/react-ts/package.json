@@ -24,7 +24,7 @@
     },
     "scripts": {
         "start": "vite --port 3000 --open",
-        "dev": "vite --port 3000 --open",
+        "dev": "vite --port 3000 --open --host",
         "build": "vite build",
         "serve": "vite preview --open",
         "test": "jest",
