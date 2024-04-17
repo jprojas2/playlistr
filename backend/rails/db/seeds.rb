@@ -22,10 +22,13 @@ if Rails.env.development?
   song_with_no_artist_or_album = Song.create!(eid: '3', name: 'Test Song 3', favorite: 'false', lyrics: 'Test Lyrics 3', duration: '3:00', image_url: 'https://via.placeholder.com/150')  
 
   playlist = Playlist.create!(name: 'Test Playlist', user_id: user.id)
-  playlist.songs << song
-  playlist.songs << song2
+  playlist.playlist_songs.create(song_id: song.id, song_index: 0)
+  playlist.playlist_songs.create(song_id: song2.id, song_index: 1)
   playlist2 = Playlist.create!(name: 'Test Playlist 2', user_id: user2.id)
-  playlist2.songs << song
-  playlist2.songs << song
-  playlist2.songs << song2
+  playlist2.playlist_songs.create(song_id: song2.id, song_index: 0)
+  playlist2.playlist_songs.create(song_id: song.id, song_index: 1)
+
+  player = Player.create!(user_id: user.id, playing_index: 0)
+  player_item = PlayerItem.create!(player_id: player.id, song_id: song.id, song_index: 1)
+  player_item = PlayerItem.create!(player_id: player.id, song_id: song2.id, song_index: 0)
 end
