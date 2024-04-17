@@ -1,0 +1,36 @@
+@import '../styles/mixins.scss';
+
+.login-page {
+    @include flexbox(center, center, column, nowrap);
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.login-page-content {
+    width: 20rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid $black;
+    text-align: center;
+    @include box-3d-decoration(5px, 5px, black);
+    input[type='email'],
+    input[type='password'] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 1rem;
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+}
+
+.login-fields {
+    @include flexbox(center, center, column, nowrap);
+    position: relative;
+    z-index: 0;
+}

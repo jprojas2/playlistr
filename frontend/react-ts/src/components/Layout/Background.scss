@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+
+.pattern-background {
+    opacity: 0.15;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    .pattern-row {
+        display: flex;
+        overflow: hidden;
+        animation: move 10s linear infinite;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translate(240px, 240px);
+    }
+}
+
+@include breakpoint('<phone') {
+    .pattern-background {
+        display: none;
+    }
+}

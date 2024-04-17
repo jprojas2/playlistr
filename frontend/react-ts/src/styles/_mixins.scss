@@ -57,3 +57,20 @@
         }
     }
 }
+
+@mixin box-3d-decoration($offset, $border-radius, $background-color: #000) {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $background-color;
+        border-radius: $border-radius;
+        border: 1px solid black;
+        top: $offset;
+        left: $offset;
+        z-index: -1;
+    }
+}

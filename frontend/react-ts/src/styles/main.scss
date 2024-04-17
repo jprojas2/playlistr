@@ -30,3 +30,57 @@ code {
 #root {
     height: 100%;
 }
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid $black;
+    text-decoration: none;
+    border-radius: $main-border-radius;
+    color: $black;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: white;
+    &:hover {
+        background-color: $black;
+        color: $white;
+        // transform: translate(0, -2px);
+        svg {
+            fill: $white;
+        }
+    }
+    svg {
+        fill: $black;
+    }
+}
+
+.btn-black {
+    background-color: $black;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $black;
+        svg {
+            fill: $black;
+        }
+    }
+    svg {
+        fill: $white;
+    }
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: $primary-color-text;
+    &:hover {
+        background-color: $white;
+        color: $primary-color-text-highlight;
+        svg {
+            fill: $primary-color-text-highlight;
+        }
+    }
+}
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+}
