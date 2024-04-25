@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :songs, param: :eid, only: %i[ index show ] do
         member do
           get :lyrics
+          post :play
         end
       end
       resources :artists, param: :eid, only: %i[ index show ]

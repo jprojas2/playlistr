@@ -6,6 +6,7 @@ import axios from 'axios'
 import HeartIcon from '../components/Icons/HeartIcon'
 import EllipsisIcon from '../components/Icons/EllipsisIcon'
 import AnimatedLoading from '../components/AnimatedLoading'
+import { usePlayer } from '../layouts/MainLayout'
 
 interface SongPageProps {
     songId?: string | null
@@ -20,6 +21,7 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     const [loading, setLoading] = React.useState(false)
     const [loadingLyrics, setLoadingLyrics] = React.useState(false)
     const [songData, setSongData] = React.useState(props.songData)
+    const { setPlayerData } = usePlayer()
 
     React.useEffect(() => {
         if (songData) {
@@ -63,6 +65,16 @@ const SongPage: React.FC<SongPageProps> = (props) => {
         }
     }, [])
 
+    function playSong(event: React.MouseEvent<HTMLAnchorElement>) {
+        event.preventDefault()
+        event.stopPropagation()
+        let playUrl = event.currentTarget.getAttribute('href')
+        if (playUrl)
+            axios.post(playUrl).then((res) => {
+                setPlayerData(res.data)
+            })
+    }
+
     return (
         <>
             {loading && <div role="alert">Loading...</div>}
@@ -94,27 +106,27 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                             </div>
                             <div className="song-actions">
                                 <div className="song-actions-row">
-                                    <a className="btn btn-2 btn-black play-button" href={`/api/songs/${songData.eid}/play`} target="_blank">
+                                    <a className="btn btn-2 btn-black play-button" href={`/api/v1/songs/${songData.eid}/play`} onClick={playSong}>
                                         <span className="icon">
                                             <PlayIcon />
                                         </span>
                                         <span>Play</span>
                                     </a>
-                                    <a className="btn btn-2 btn-primary more-button" href={`/api/songs/${songData.eid}/play`} target="_blank">
+                                    <a className="btn btn-2 btn-primary more-button" href="#" target="_blank">
                                         <span className="icon">
                                             <EllipsisIcon />
                                         </span>
                                         <span></span>
                                     </a>
                                 </div>
-                                <a className="btn btn-2 btn-primary favorite-button" href={`/api/songs/${songData.eid}/play`} target="_blank">
+                                <a className="btn btn-2 btn-primary favorite-button" href={`/api/v1/songs/${songData.eid}/favorite`} target="_blank">
                                     <span className="icon">
                                         <HeartIcon />
                                         <HeartIcon />
                                     </span>
                                     <span>Favorite</span>
                                 </a>
-                                <a className="btn btn-2 btn-primary playlist-button" href={`/api/songs/${songData.eid}/download`} download>
+                                <a className="btn btn-2 btn-primary playlist-button" href="#" download>
                                     <span className="icon">
                                         <PlaylistPlusIcon />
                                     </span>
