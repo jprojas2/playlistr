@@ -20,7 +20,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
 
   test "should not create player if one exists" do
     assert_no_difference("Player.count") do
-      post api_v1_player_url, params: { player: { paused_at: @player.paused_at, song_id: @player.song_id, started_at: @player.started_at } }, as: :json, headers: @headers
+      post api_v1_player_url, params: { player: { paused_at: @player.paused_at, started_at: @player.started_at } }, as: :json, headers: @headers
     end
 
     assert_response :created
@@ -34,7 +34,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update user's player" do
-    patch api_v1_player_url, params: { player: { paused_at: @player.paused_at, song_id: @player.song_id, started_at: @player.started_at } }, as: :json, headers: @headers
+    patch api_v1_player_url, params: { player: { paused_at: @player.paused_at, started_at: @player.started_at } }, as: :json, headers: @headers
     assert_response :success
     assert_equal @user.id, response.parsed_body["user_id"]
   end

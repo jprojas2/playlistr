@@ -26,10 +26,6 @@ class Api::V1::SongsController < Api::V1::ApiController
       @song = Song.find_or_initialize_by_eid(params[:eid])
     end
 
-    def set_persisted_song
-      @song = Song.find_by!(eid: params[:eid])
-    end
-
     # Only allow a list of trusted parameters through.
     def song_params
       params.require(:song).permit(:eid, :name, :artist_id, :album_id, :favorite, :lyrics, :duration, :image_url)

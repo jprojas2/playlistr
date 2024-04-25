@@ -4,7 +4,6 @@ class Api::V1::PlayersController < Api::V1::ApiController
 
   # GET /player
   def show
-    render json: @player
   end
 
   # POST /player
@@ -40,6 +39,6 @@ class Api::V1::PlayersController < Api::V1::ApiController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:song_id, :playing, :started_at, :paused_at)
+      params.require(:player).permit(:playing, :started_at, :paused_at)
     end
 end

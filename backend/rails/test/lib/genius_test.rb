@@ -33,4 +33,11 @@ class GeniusTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test "artist_songs should return an array of songs" do
+    genius_client = Genius.new
+    genius_client.stub :request, JSON.parse(File.read("test/fixtures/genius/artist_songs_response.json")) do
+      assert_instance_of Array, genius_client.artist_songs("123")
+    end
+  end
 end

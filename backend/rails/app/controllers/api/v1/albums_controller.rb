@@ -1,6 +1,6 @@
 class Api::V1::AlbumsController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_album, only: %i[ show update destroy ]
+  before_action :set_album, only: %i[ show ]
 
   # GET /albums
   def index
