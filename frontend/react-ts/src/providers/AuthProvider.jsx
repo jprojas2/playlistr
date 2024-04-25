@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
             axios.interceptors.response.use(
                 (response) => response,
                 (error) => {
-                    if (error.response.status === 401) {
+                    if (error.response?.status === 401) {
                         setToken(null)
                     }
                     return Promise.reject(error)
@@ -36,8 +36,6 @@ export const AuthProvider = ({ children }) => {
     return <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>
 }
 
-export const useAuth = () => {
-    return useContext(AuthContext)
-}
+export const useAuth = () => useContext(AuthContext)
 
 export default AuthProvider
