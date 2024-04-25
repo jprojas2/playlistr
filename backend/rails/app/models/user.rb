@@ -9,4 +9,8 @@ class User < ApplicationRecord
   has_many :playlists, dependent: :destroy
   has_many :songs, through: :playlists
   has_one :player, dependent: :destroy
+
+  def to_param
+    username
+  end
 end
