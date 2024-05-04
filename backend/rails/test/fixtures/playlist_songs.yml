@@ -1,0 +1,19 @@
+one:
+  song: one
+  playlist: one
+  song_index: 0
+
+two:
+  song: two
+  playlist: one
+  song_index: 1
+
+three:
+  song: two
+  playlist: two
+  song_index: 0
+
+four:
+  song: one
+  playlist: two
+  song_index: 1

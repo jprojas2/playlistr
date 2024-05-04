@@ -57,9 +57,9 @@ class Player < ApplicationRecord
 
     conflicting_song = player_items.find_by(song_index: to_index)
     with_keeping_current_song do
-      moved_song = player_items.find_by(song_index: to_index)
-      song.update(song_index: to_index) if moved_song
-      conflicting_song.update(song_index: from_index) if pair_song
+      conflicting_song.update!(song_index: player_items.size) if conflicting_song
+      moved_song.update!(song_index: to_index) if moved_song
+      conflicting_song.update!(song_index: from_index) if conflicting_song
     end
   end
 
@@ -73,7 +73,7 @@ class Player < ApplicationRecord
   def with_keeping_current_song
     playing_song = player_items.find_by(song_index: playing_index)
     yield
-    update(playing_index: playing_song.reload.song_index)
+    update(playing_index: playing_song ? playing_song.reload.song_index : player_items.size)
   end
   
   def refresh_indexes

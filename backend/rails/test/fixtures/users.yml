@@ -11,3 +11,9 @@ two:
   username: MyString2
   email: MyString
   password_digest: MyString
+
+three:
+  name: MyString
+  username: MyString3
+  email: MyString
+  password_digest: MyString

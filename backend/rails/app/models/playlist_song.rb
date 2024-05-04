@@ -4,6 +4,10 @@ class PlaylistSong < ApplicationRecord
 
   after_destroy :reorder_songs
 
+  def to_param
+    song_index.to_s
+  end
+
   private
 
   def reorder_songs

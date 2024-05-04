@@ -31,7 +31,7 @@ Rails.application.routes.draw do
           post :play
           post :reorder
         end
-        resources :playlist_songs, param: :song_index, only: %i[ index create destroy] do
+        resources :playlist_songs, param: :song_index, only: %i[ index create destroy ] do
           member do
             post :play
           end
