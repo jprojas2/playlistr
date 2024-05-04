@@ -1,7 +1,7 @@
 class Api::V1::PlaylistsController < Api::V1::ApiController
   before_action :authorize_request
   before_action :set_playlist_collection
-  before_action :set_playlist, only: %i[ show update destroy ]
+  before_action :set_playlist, only: %i[ show update destroy play reorder ]
   
   # GET /playlists
   def index
@@ -10,7 +10,6 @@ class Api::V1::PlaylistsController < Api::V1::ApiController
 
   # GET /playlists/1
   def show
-    render json: @playlist
   end
 
   # POST /playlists
@@ -36,6 +35,19 @@ class Api::V1::PlaylistsController < Api::V1::ApiController
   # DELETE /playlists/1
   def destroy
     @playlist.destroy!
+  end
+
+  def play
+    player = @current_user.player.play_playlist(@playlist)
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Could not play playlist' }, status: :unprocessable_entity
+  end
+
+  def reorder
+    @playlist.playlist_songs.each do |playlist_song|
+      playlist_song.update!(song_index: params[:song_indexes].index(playlist_song.song_index))
+    end
+    head :no_content
   end
 
   private

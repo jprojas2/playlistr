@@ -3,7 +3,12 @@ class Api::V1::SearchController < Api::V1::ApiController
 
   # GET /search
   def index
-    render json: process_search(Genius.new.search(params[:q]))
+    case params[:type]
+    when "song"
+      render json: Genius.new.search(params[:q])
+    else
+      render json: process_search(Genius.new.search(params[:q]))
+    end
   end
 
   def process_search search_results

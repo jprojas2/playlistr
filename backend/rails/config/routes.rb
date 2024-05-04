@@ -10,7 +10,14 @@ Rails.application.routes.draw do
   namespace :api do
     post '/login', to: 'authentication#login'
     namespace :v1 do
-      resource :player
+      resource :player do
+        member do
+          post :play
+          post :pause
+          post :next
+          post :previous
+        end
+      end
       resources :songs, param: :eid, only: %i[ index show ] do
         member do
           get :lyrics
@@ -19,7 +26,17 @@ Rails.application.routes.draw do
       end
       resources :artists, param: :eid, only: %i[ index show ]
       resources :albums, param: :eid, only: %i[ index show ]
-      resources :playlists
+      resources :playlists do
+        member do
+          post :play
+          post :reorder
+        end
+        resources :playlist_songs, param: :song_index, only: %i[ index create destroy] do
+          member do
+            post :play
+          end
+        end
+      end
       resources :users, param: :_username, except: %[i new]
       get '/search', to: 'search#index'
     end

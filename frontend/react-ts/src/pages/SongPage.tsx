@@ -7,6 +7,7 @@ import HeartIcon from '../components/Icons/HeartIcon'
 import EllipsisIcon from '../components/Icons/EllipsisIcon'
 import AnimatedLoading from '../components/AnimatedLoading'
 import { usePlayer } from '../layouts/MainLayout'
+import PauseIcon from '../components/Icons/PauseIcon'
 
 interface SongPageProps {
     songId?: string | null
@@ -21,13 +22,13 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     const [loading, setLoading] = React.useState(false)
     const [loadingLyrics, setLoadingLyrics] = React.useState(false)
     const [songData, setSongData] = React.useState(props.songData)
-    const { setPlayerData } = usePlayer()
+    const { playerData, setPlayerData } = usePlayer()
 
     React.useEffect(() => {
         if (songData) {
             setSongData(() => {
                 return {
-                    eid: songData.id,
+                    eid: songData.id?.toString(),
                     name: songData.title,
                     artist_id: songData.primary_artist?.id,
                     album_id: songData.album?.id,
@@ -68,11 +69,22 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     function playSong(event: React.MouseEvent<HTMLAnchorElement>) {
         event.preventDefault()
         event.stopPropagation()
-        let playUrl = event.currentTarget.getAttribute('href')
-        if (playUrl)
-            axios.post(playUrl).then((res) => {
-                setPlayerData(res.data)
-            })
+        axios.post(`/api/v1/songs/${songData.eid}/play`).then((res) => {
+            setPlayerData(res.data)
+        })
+    }
+
+    function pauseSong(event: React.MouseEvent<HTMLAnchorElement>) {
+        event.preventDefault()
+        event.stopPropagation()
+        axios.post(`/api/v1/player/pause`).then((res) => {
+            setPlayerData(res.data)
+        })
+    }
+
+    function isSongPlaying() {
+        console.log(songData, playerData.current_song)
+        return songData && songData.eid === playerData.current_song?.eid && playerData.playing
     }
 
     return (
@@ -106,11 +118,16 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                             </div>
                             <div className="song-actions">
                                 <div className="song-actions-row">
-                                    <a className="btn btn-2 btn-black play-button" href={`/api/v1/songs/${songData.eid}/play`} onClick={playSong}>
+                                    <a
+                                        className={'btn btn-2 btn-black play-button ' + (isSongPlaying() && 'playing')}
+                                        href="#"
+                                        onClick={isSongPlaying() ? pauseSong : playSong}
+                                    >
                                         <span className="icon">
                                             <PlayIcon />
+                                            <PauseIcon />
                                         </span>
-                                        <span>Play</span>
+                                        <span>{isSongPlaying() ? 'Pause' : 'Play'}</span>
                                     </a>
                                     <a className="btn btn-2 btn-primary more-button" href="#" target="_blank">
                                         <span className="icon">

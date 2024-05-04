@@ -31,6 +31,22 @@ class Api::V1::PlayersController < Api::V1::ApiController
     @player.destroy!
   end
 
+  def play
+    @player.play
+
+    render :show
+  rescue
+    render json: { error: 'Player not found' }, status: :not_found
+  end
+
+  def pause
+    @player.pause
+
+    render :show
+  rescue
+    render json: { error: 'Player not found' }, status: :not_found
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_player

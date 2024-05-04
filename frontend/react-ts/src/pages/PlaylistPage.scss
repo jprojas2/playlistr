@@ -1,0 +1,214 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.playlist-page {
+    @include square(100%);
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+
+    > .back-button {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .search-input {
+        margin-bottom: 1.5rem;
+    }
+
+    .playlist-title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        font-style: italic;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .playlist-page-content {
+        @include flexbox(start, start, column, nowrap);
+        @include square(100%);
+        padding-top: 2rem;
+    }
+
+    .no-songs {
+        @include flexbox(center, center, column, nowrap);
+        gap: 2rem;
+        width: 100%;
+        flex: 1;
+        span {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-align: center;
+        }
+
+        svg {
+            @include square(7rem);
+        }
+    }
+
+    .playlist-songs {
+        @include flexbox(start, start, column, nowrap);
+        gap: 1rem;
+        width: calc(100% + 1rem);
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        margin-left: -1rem;
+        padding-top: 1rem;
+        margin-top: -1rem;
+        position: relative;
+        z-index: 1;
+        .playlist-song {
+            border: 1px solid black;
+            border-radius: 0.6rem;
+            padding: 0.6rem 0.9rem 0.6rem 0.7rem;
+            width: 100%;
+            background-color: white;
+            transition:
+                transform,
+                box-shadow 0.1s ease-in-out;
+            @include flexbox(space-between, center, row, nowrap);
+            &:hover {
+                @include striped-background;
+                box-shadow: 0.2rem 0.2rem 0 $black;
+                transform: translate(-2px, -2px);
+                cursor: pointer;
+            }
+            .handle {
+                svg {
+                    fill: black;
+                }
+                display: flex;
+                align-items: center;
+            }
+            .playlist-song-left {
+                gap: 1rem;
+                @include flexbox(start, center, row, nowrap);
+                .song-img {
+                    @include square(2.5rem);
+                    border: 1px solid black;
+                    outline: 3px solid white;
+                    img {
+                        @include square(100%);
+                        object-fit: cover;
+                    }
+                }
+                .song-info {
+                    @include flexbox(start, start, column, nowrap);
+                    gap: 0.3rem;
+                    .song-title {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                    .song-album {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .song-actions {
+                @include flexbox(center, center, row, nowrap);
+                gap: 0.5rem;
+                position: relative;
+                z-index: 0;
+                .btn {
+                    @include square(2.3rem);
+                    svg {
+                        position: absolute;
+                    }
+                }
+                .play-song {
+                    svg {
+                        left: 13px;
+                        width: 0.65rem;
+                    }
+                }
+                .delete-song {
+                    svg {
+                        left: 5px;
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .search-music-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .search-results {
+        position: absolute;
+        width: 100%;
+        max-height: 18rem;
+        border: 1px solid black;
+        border-top: 1px solid transparent;
+        border-radius: 0 0 0.6rem 0.6rem;
+        bottom: calc(1.5rem + 1px);
+        transform: translateY(100%);
+        overflow: auto;
+        z-index: 2;
+        .search-result {
+            &:after {
+                content: '';
+                display: block;
+                width: 80%;
+                height: 1px;
+                border-bottom: 1px solid black;
+                bottom: 0;
+                position: absolute;
+            }
+            @include flexbox(start, start, row, nowrap);
+            gap: 1rem;
+            padding: 2rem 2rem;
+            background-color: white;
+            transition: background-color 0.1s ease-in-out;
+            position: relative;
+            &:hover {
+                @include striped-background;
+                cursor: pointer;
+            }
+            .search-result-left {
+                @include flexbox(start, center, row, nowrap);
+                gap: 1rem;
+                .search-result-img {
+                    @include square(4rem);
+                    border: 1px solid black;
+                    img {
+                        @include square(100%);
+                        object-fit: cover;
+                    }
+                }
+                .search-result-info {
+                    gap: 0.5rem;
+                    @include flexbox(start, start, column, nowrap);
+                    .search-result-title {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                    .search-result-album {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .loading-results {
+            padding: 3rem;
+            background-color: white;
+        }
+        .no-results {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-align: center;
+            padding: 3rem;
+            background-color: white;
+        }
+    }
+}

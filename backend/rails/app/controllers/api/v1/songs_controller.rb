@@ -30,7 +30,7 @@ class Api::V1::SongsController < Api::V1::ApiController
     puts e.message
     render json: { error: 'Player not found' }, status: :not_found
   end
-
+  
   private
     def set_song
       @song = Song.find_or_initialize_by_eid(params[:eid])

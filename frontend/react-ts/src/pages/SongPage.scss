@@ -103,9 +103,36 @@
                     .play-button {
                         svg {
                             width: 0.75rem;
+                            transition: transform 0.3s;
+                            position: absolute;
+                            left: 2px;
                         }
                         span:last-child {
                             padding-left: 3.5rem;
+                        }
+
+                        svg:first-child {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                        svg:last-child {
+                            transform: scale(0);
+                            top: 4px;
+                            left: 1px;
+                            height: 14px;
+                        }
+
+                        &.playing {
+                            span:last-child {
+                                padding-left: 3.25rem;
+                            }
+                            svg:first-child {
+                                transform: scale(0);
+                                opacity: 0;
+                            }
+                            svg:last-child {
+                                transform: scale(1);
+                            }
                         }
                         width: calc(100% - 3rem - 0.8rem);
                     }

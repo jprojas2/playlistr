@@ -6,7 +6,7 @@ class Player < ApplicationRecord
   validates :user_id, uniqueness: true
 
   def current_song
-    songs.where('player_items.song_index = ?', playing_index).first
+    @current_song ||= songs.where('player_items.song_index = ?', playing_index).first
   end
 
   def play
