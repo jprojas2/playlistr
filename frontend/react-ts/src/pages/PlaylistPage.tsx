@@ -73,9 +73,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
 
     const addSong = (songId: number) => {
         axios.post(`/api/v1/playlists/${playlistData.id}/playlist_songs`, { song_id: songId }).then((response) => {
-            getPlaylistData(() => {
-                setSearch('')
-            })
+            getPlaylistData()
         })
     }
 
@@ -85,6 +83,18 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                 closeModal()
             })
         })
+    }
+
+    const addSongItem = (songData: any) => {
+        const song = {
+            eid: songData.id,
+            name: songData.title,
+            image_url: songData.song_art_image_thumbnail_url,
+            song_index: playlistData.songs.length
+        }
+        setPlaylistData({ ...playlistData, songs: [...playlistData.songs, song] })
+        setSearch('')
+        addSong(songData.id)
     }
 
     const getSearchResults = () => {
@@ -243,7 +253,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                         key={index}
                         className="search-result"
                         onClick={() => {
-                            addSong(result.id)
+                            addSongItem(result)
                         }}
                     >
                         <div className="search-result-left">
