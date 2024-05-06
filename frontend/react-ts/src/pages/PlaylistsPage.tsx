@@ -70,13 +70,15 @@ const PlaylistsPage: React.FC = () => {
         )
     }
 
-    const DeletePlaylistModal: React.FC<{ id: number }> = ({ id }) => {
+    const DeletePlaylistModal: React.FC<{ playlist: any }> = ({ playlist }) => {
         return (
             <div className="modal new-playlist-modal">
                 <div className="modal-header">
-                    <h2 className="modal-title">ARE YOU SURE?</h2>
+                    <h2 className="modal-title">DELETE PLAYLIST</h2>
                 </div>
-                <div className="modal-body"></div>
+                <div className="modal-body">
+                    <p>Are you sure you want to delete the playlist "{playlist.name}"?</p>
+                </div>
                 <div className="modal-footer">
                     <div className="actions">
                         <button onClick={() => closeModal()} className="btn btn-3 cancel">
@@ -85,7 +87,7 @@ const PlaylistsPage: React.FC = () => {
                             </div>
                             Cancel
                         </button>
-                        <button className="btn btn-3 btn-primary commit" onClick={() => deletePlaylist(id)}>
+                        <button className="btn btn-3 btn-primary commit" onClick={() => deletePlaylist(playlist.id)}>
                             <div className="icon">
                                 <CheckIcon />
                             </div>
@@ -99,7 +101,7 @@ const PlaylistsPage: React.FC = () => {
 
     const NoPlaylists: React.FC = () => {
         return (
-            <div className="no-results">
+            <div className="no-playlists">
                 <NoSoundIcon />
                 <span>No playlists have been created</span>
                 <a
@@ -167,7 +169,7 @@ const PlaylistsPage: React.FC = () => {
                                 className="btn btn-4 btn-danger delete-playlist"
                                 onClick={(e) => {
                                     e.stopPropagation()
-                                    openModal(<DeletePlaylistModal id={playlist.id} />)
+                                    openModal(<DeletePlaylistModal playlist={playlist} />)
                                 }}
                             >
                                 <TrashIcon />
@@ -200,7 +202,7 @@ const PlaylistsPage: React.FC = () => {
         <>
             {selectedItem && <PlaylistPage playlistId={selectedItem.id} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Playlists' }} />}
             {!selectedItem && (
-                <div className="playlists-page-content">
+                <div className="playlists-page">
                     <SearchInput
                         placeholder="Search playlists..."
                         value={search}

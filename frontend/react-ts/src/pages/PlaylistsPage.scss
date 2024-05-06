@@ -2,13 +2,14 @@
 @import '../styles/mixins.scss';
 @import '../styles/animations.scss';
 
-.playlists-page-content {
+.playlists-page {
     @include square(100%);
     @include flexbox(start, start, column, nowrap);
     padding: 1rem 2rem;
 }
 
-.no-results {
+.no-results,
+.no-playlists {
     @include square(100%);
     @include flexbox(center, center, column, nowrap);
     gap: 2rem;
@@ -38,7 +39,7 @@
 }
 
 .modal.new-playlist-modal {
-    max-width: 400px;
+    max-width: 500px;
     input {
         border: none;
         border-bottom: 1px solid black;
