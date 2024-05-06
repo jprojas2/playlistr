@@ -14,7 +14,7 @@
     }
 
     .search-input {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .playlist-title {
@@ -22,7 +22,7 @@
         font-weight: 300;
         font-style: italic;
         margin: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .playlist-page-content {
@@ -149,7 +149,7 @@
         border: 1px solid black;
         border-top: 1px solid transparent;
         border-radius: 0 0 0.6rem 0.6rem;
-        bottom: calc(1.5rem + 1px);
+        bottom: calc(1rem + 1px);
         transform: translateY(100%);
         overflow: auto;
         z-index: 2;

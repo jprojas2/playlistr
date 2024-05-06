@@ -13,7 +13,7 @@ import PauseIcon from '../components/Icons/PauseIcon'
 import AnimatedLoading from '~/components/AnimatedLoading'
 import DragIcon from '~/components/Icons/DragIcon'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
-import { get } from 'http'
+import SongPage from './SongPage'
 
 interface PlaylistPageProps {
     playlistId?: string | null
@@ -37,6 +37,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     const [search, setSearch] = React.useState<string>('')
     const [loadingResults, setLoadingResults] = React.useState<boolean>(false)
     const [results, setResults] = React.useState<any[]>([])
+    const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { openModal, closeModal } = useModal()
     const { pause, isPlaying, playPlaylistSong } = usePlayer()
     const currentFetchSignal = React.useRef<AbortController | null>(null)
@@ -202,7 +203,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                 key={index}
                 className="playlist-song"
                 onClick={() => {
-                    //setSelectedItem(playlist)
+                    setSelectedItem(song)
                 }}
             >
                 <div className="playlist-song-left">
@@ -272,26 +273,31 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     )
 
     return (
-        <div className="playlist-page">
-            {props.backButton && (
-                <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
-                    <span>&lt;&nbsp;&nbsp;</span>
-                    {props.backButton?.text || 'Back'}
-                </button>
-            )}
-            {loading && <div className="">loading</div>}
-            {!loading && (
-                <div className="playlist-page-content">
-                    <h1 className="playlist-title">{playlistData?.name}</h1>
-                    <div className="search-music-container">
-                        <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
-                        {search.length > 0 && searchResults}
-                    </div>
-                    {playlistData?.songs.length > 0 && playlistSongs}
-                    {playlistData?.songs.length === 0 && <NoSongs />}
+        <>
+            {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
+            {!selectedItem && (
+                <div className="playlist-page">
+                    {props.backButton && (
+                        <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
+                            <span>&lt;&nbsp;&nbsp;</span>
+                            {props.backButton?.text || 'Back'}
+                        </button>
+                    )}
+                    {loading && <div className="">loading</div>}
+                    {!loading && (
+                        <div className="playlist-page-content">
+                            <div className="search-music-container">
+                                <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
+                                {search.length > 0 && searchResults}
+                            </div>
+                            <h1 className="playlist-title">{playlistData?.name}</h1>
+                            {playlistData?.songs.length > 0 && playlistSongs}
+                            {playlistData?.songs.length === 0 && <NoSongs />}
+                        </div>
+                    )}
                 </div>
             )}
-        </div>
+        </>
     )
 }
 
