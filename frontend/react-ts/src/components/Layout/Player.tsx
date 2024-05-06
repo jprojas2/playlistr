@@ -1,7 +1,7 @@
 import React from 'react'
 import './Player.scss'
 import axios from 'axios'
-import { useAuth } from '../../providers/AuthProvider'
+import { useAuth } from '../../contexts/AuthContext'
 import { usePlayer } from '../../layouts/MainLayout'
 
 const Player: React.FC = () => {
