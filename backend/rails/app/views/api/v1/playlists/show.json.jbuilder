@@ -9,9 +9,9 @@ json.songs @playlist.playlist_songs do |ps|
   json.artist do
     json.eid ps.song.artist.eid
     json.name ps.song.artist.name
-  end
+  end if ps.song.artist
   json.album do
     json.eid ps.song.album.eid
     json.name ps.song.album.name
-  end
+  end if ps.song.album
 end

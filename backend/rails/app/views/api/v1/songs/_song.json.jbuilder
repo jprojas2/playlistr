@@ -3,8 +3,8 @@ json.favorited song.favorited(@current_user)
 json.artist do
   json.eid song.artist.eid
   json.name song.artist.name
-end
+end if song.artist
 json.album do
   json.eid song.album.eid
   json.name song.album.name
-end
+end if song.album
