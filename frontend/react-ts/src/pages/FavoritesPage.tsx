@@ -44,9 +44,11 @@ const FavoritesPage = () => {
         return (
             <div className="modal new-playlist-modal">
                 <div className="modal-header">
-                    <h2 className="modal-title">ARE YOU SURE?</h2>
+                    <h2 className="modal-title">REMOVE FAVORITE</h2>
                 </div>
-                <div className="modal-body"></div>
+                <div className="modal-body">
+                    <p>Remove this song from your favorites?</p>
+                </div>
                 <div className="modal-footer">
                     <div className="actions">
                         <button onClick={() => closeModal()} className="btn btn-3 cancel">
