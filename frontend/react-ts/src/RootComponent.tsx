@@ -8,8 +8,8 @@ import PlaylistsPage from './pages/PlaylistsPage'
 import FavoritesPage from './pages/FavoritesPage'
 import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
-import AuthProvider, { useAuth } from './providers/AuthProvider'
-import { ModalProvider } from './contexts/ModalContext'
+import AuthProvider, { useAuth } from './contexts/AuthContext'
+import ModalProvider from './contexts/ModalContext'
 
 const AuthComponent: React.FC = () => {
     const { token } = useAuth()

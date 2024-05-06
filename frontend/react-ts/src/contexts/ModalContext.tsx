@@ -43,3 +43,5 @@ export const useModal = () => {
     }
     return context
 }
+
+export default ModalProvider

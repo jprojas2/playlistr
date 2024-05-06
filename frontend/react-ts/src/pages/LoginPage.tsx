@@ -1,8 +1,8 @@
 import React from 'react'
 import './LoginPage.scss'
-import { useAuth } from '../providers/AuthProvider'
+import { useAuth } from '../contexts/AuthContext'
 import axios from 'axios'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Background from '~/components/Layout/Background'
 
 const LoginPage: React.FC = () => {
