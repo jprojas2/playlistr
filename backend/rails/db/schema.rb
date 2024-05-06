@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_16_145955) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_06_040838) do
   create_table "albums", force: :cascade do |t|
     t.string "eid"
     t.integer "artist_id"
@@ -28,6 +28,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_145955) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "song_id", null: false
+    t.integer "favorite_index"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["song_id"], name: "index_favorites_on_song_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "player_items", force: :cascade do |t|
@@ -72,7 +82,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_145955) do
     t.string "name"
     t.integer "artist_id"
     t.integer "album_id"
-    t.boolean "favorite"
     t.text "lyrics"
     t.integer "duration"
     t.string "image_url"
@@ -92,6 +101,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_145955) do
   end
 
   add_foreign_key "albums", "artists"
+  add_foreign_key "favorites", "songs"
+  add_foreign_key "favorites", "users"
   add_foreign_key "player_items", "players"
   add_foreign_key "player_items", "songs"
   add_foreign_key "players", "users"

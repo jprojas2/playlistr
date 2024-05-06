@@ -5,6 +5,7 @@ class Song < ApplicationRecord
   has_many :player_items, dependent: :destroy
   has_many :playlist_songs, dependent: :destroy
   has_many :playlists, through: :playlist_songs
+  has_many :favorites, dependent: :destroy
 
   def self.initialize_by_eid eid
     song_data = Genius.new.song(eid)
@@ -32,6 +33,10 @@ class Song < ApplicationRecord
     end
     
     song
+  end
+
+  def favorited user
+    user.favorites.exists?(song_id: id)
   end
 
   def get_lyrics

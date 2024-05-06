@@ -9,6 +9,8 @@ class User < ApplicationRecord
   has_many :playlists, dependent: :destroy
   has_many :songs, through: :playlists
   has_one :player, dependent: :destroy
+  has_many :favorites, -> { order(:favorite_index) }, dependent: :destroy
+  has_many :favorite_songs, through: :favorites, source: :song
 
   def to_param
     username

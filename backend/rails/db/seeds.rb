@@ -14,12 +14,12 @@ if Rails.env.development?
 
   artist = Artist.create!(eid: '1', name: 'Test Artist', image_url: 'https://via.placeholder.com/150')
   album = Album.create!(eid: '1', name: 'Test Album', year: '2021', image_url: 'https://via.placeholder.com/150')
-  song = Song.create!(eid: '1', name: 'Test Song', artist_id: artist.id, album_id: album.id, favorite: 'false', lyrics: 'Test Lyrics', duration: '3:00', image_url: 'https://via.placeholder.com/150')
+  song = Song.create!(eid: '1', name: 'Test Song', artist_id: artist.id, album_id: album.id, lyrics: 'Test Lyrics', duration: '3:00', image_url: 'https://via.placeholder.com/150')
   artist2 = Artist.create!(eid: '2', name: 'Test Artist 2', image_url: 'https://via.placeholder.com/150')
   album2 = Album.create!(eid: '2', name: 'Test Album 2', year: '2021', image_url: 'https://via.placeholder.com/150')
-  song2 = Song.create!(eid: '2', name: 'Test Song 2', artist_id: artist2.id, album_id: album2.id, favorite: 'false', lyrics: 'Test Lyrics 2', duration: '3:00', image_url: 'https://via.placeholder.com/150')
+  song2 = Song.create!(eid: '2', name: 'Test Song 2', artist_id: artist2.id, album_id: album2.id, lyrics: 'Test Lyrics 2', duration: '3:00', image_url: 'https://via.placeholder.com/150')
 
-  song_with_no_artist_or_album = Song.create!(eid: '3', name: 'Test Song 3', favorite: 'false', lyrics: 'Test Lyrics 3', duration: '3:00', image_url: 'https://via.placeholder.com/150')  
+  song_with_no_artist_or_album = Song.create!(eid: '3', name: 'Test Song 3', lyrics: 'Test Lyrics 3', duration: '3:00', image_url: 'https://via.placeholder.com/150')  
 
   playlist = Playlist.create!(name: 'Test Playlist', user_id: user.id)
   playlist.playlist_songs.create(song_id: song.id, song_index: 0)

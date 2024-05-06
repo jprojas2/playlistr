@@ -5,7 +5,6 @@ class CreateSongs < ActiveRecord::Migration[7.1]
       t.string :name
       t.references :artist, foreign_key: true
       t.references :album, foreign_key: true
-      t.boolean :favorite
       t.text :lyrics
       t.integer :duration
       t.string :image_url

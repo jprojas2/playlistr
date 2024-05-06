@@ -5,7 +5,6 @@ one:
   name: MyString
   artist: one
   album: one
-  favorite: false
   lyrics: MyText
   duration: 1
   image_url: MyString
@@ -15,7 +14,15 @@ two:
   name: MyString
   artist: two
   album: two
-  favorite: false
+  lyrics: MyText
+  duration: 1
+  image_url: MyString
+
+three:
+  eid: MyString3
+  name: MyString
+  artist: two
+  album: two
   lyrics: MyText
   duration: 1
   image_url: MyString

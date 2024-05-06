@@ -22,6 +22,8 @@ Rails.application.routes.draw do
         member do
           get :lyrics
           post :play
+          post :favorite
+          post :unfavorite
         end
       end
       resources :artists, param: :eid, only: %i[ index show ]
@@ -38,6 +40,12 @@ Rails.application.routes.draw do
         end
       end
       resources :users, param: :_username, except: %[i new]
+      resources :favorites, only: %i[ index destroy ] do
+        collection do
+          post :reorder
+        end
+      end
+
       get '/search', to: 'search#index'
     end
   end

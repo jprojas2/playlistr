@@ -3,7 +3,7 @@ class ApplicationController < ActionController::API
   before_action :set_default_response_format
 
   def not_found
-    render json: { error: 'not_found' }
+    render json: { error: 'not_found' }, status: :not_found
   end
 
   def react

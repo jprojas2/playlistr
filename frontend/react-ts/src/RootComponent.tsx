@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout'
 import NotFoundPage from './pages/NotFoundPage'
 import BrowsePage from './pages/BrowsePage'
 import PlaylistsPage from './pages/PlaylistsPage'
+import FavoritesPage from './pages/FavoritesPage'
 import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
 import AuthProvider, { useAuth } from './providers/AuthProvider'
@@ -30,6 +31,7 @@ const RootComponent: React.FC = () => {
                                 <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
                                 <Route path={ROUTES.BROWSE_ROUTE} element={<BrowsePage />} />
                                 <Route path={ROUTES.PLAYLISTS_ROUTE} element={<PlaylistsPage />} />
+                                <Route path={ROUTES.FAVORITES_ROUTE} element={<FavoritesPage />} />
                             </Route>
                         </Route>
                     </Routes>

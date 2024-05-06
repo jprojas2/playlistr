@@ -1,18 +1,24 @@
 class Api::V1::SongsController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_song, only: %i[ show lyrics play]
+  before_action :set_song, only: %i[ show lyrics play favorite unfavorite]
   before_action :persist_song, only: %i[ play]
 
-  # GET /songs
   def index
     @songs = Song.all
-
-    render json: @songs
   end
 
-  # GET /songs/1
-  def show
-    render json: @song
+  def favorite
+    if @song.save
+      @favorite = @current_user.favorites.new
+      @favorite.favorite_index = @current_user.favorites.count
+      @favorite.song = @song
+      @favorite.save
+    end
+  end
+
+  def unfavorite
+    @favorite = @current_user.favorites.find_by(song_id: @song.id)
+    @favorite.destroy
   end
 
   def lyrics
