@@ -88,7 +88,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
 
     const addSongItem = (songData: any) => {
         const song = {
-            eid: songData.id,
+            eid: songData.id.toString(),
             name: songData.title,
             image_url: songData.song_art_image_thumbnail_url,
             song_index: playlistData.songs.length
@@ -222,6 +222,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                         href="#"
                         className="btn btn-4 btn-danger delete-song"
                         onClick={(e) => {
+                            e.stopPropagation()
                             openModal(<DeleteSongModal id={song.song_index} />)
                         }}
                     >
@@ -231,6 +232,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                         href="#"
                         className="btn btn-4 btn-black play-song"
                         onClick={(e) => {
+                            e.stopPropagation()
                             isPlaying(song.eid) ? pause() : playPlaylistSong(playlistData.id, song.song_index)
                         }}
                     >
