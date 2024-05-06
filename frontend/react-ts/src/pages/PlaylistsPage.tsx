@@ -201,6 +201,7 @@ const PlaylistsPage: React.FC = () => {
                         </span>
                     </div>
                 ))}
+                {filteredPlaylists().length === 0 && <NoResults />}
             </div>
         </>
     )
@@ -217,9 +218,8 @@ const PlaylistsPage: React.FC = () => {
                             setSearch(e.target.value)
                         }}
                     />
-                    {!loading && filteredPlaylists().length > 0 && results}
+                    {!loading && playlists.length > 0 && results}
                     {!loading && playlists.length === 0 && <NoPlaylists />}
-                    {!loading && playlists.length > 0 && filteredPlaylists().length === 0 && <NoResults />}
                 </div>
             )}
         </>
