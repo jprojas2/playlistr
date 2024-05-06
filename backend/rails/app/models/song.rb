@@ -14,7 +14,8 @@ class Song < ApplicationRecord
     song = new(
       eid: eid,
       name: song_data["title"],
-      image_url: song_data['song_art_image_url']
+      image_url: song_data['song_art_image_url'],
+      thumbnail_url: song_data['song_art_image_thumbnail_url']
     )
 
     if song_data.dig("primary_artist", "id")

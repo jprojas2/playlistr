@@ -116,13 +116,54 @@
             @include flexbox(start, center, row, nowrap);
             .playlist-img {
                 @include square(2.5rem);
+                display: flex;
+                overflow: hidden;
+                position: relative;
                 border: 1px solid black;
                 outline: 3px solid white;
+                @include striped-background;
+                background-size: 5px 5px;
                 img {
                     @include square(100%);
                     object-fit: cover;
                 }
             }
+
+            .playlist-img:has(:nth-child(2)) {
+                img {
+                    @include square(100%);
+                }
+                img:nth-child(2) {
+                    margin-left: -1.25rem;
+                }
+            }
+            .playlist-img:has(:nth-child(3)) {
+                img:nth-child(2) {
+                    @include square(50%);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                img:nth-child(3) {
+                    @include square(50%);
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .playlist-img:has(:nth-child(4)) {
+                flex-wrap: wrap;
+                img {
+                    @include square(50%);
+                }
+                img:nth-child(2),
+                img:nth-child(3),
+                img:nth-child(4) {
+                    position: relative;
+                    margin-left: 0;
+                }
+            }
+
             .playlist-info {
                 @include flexbox(start, start, column, nowrap);
                 gap: 0.3rem;

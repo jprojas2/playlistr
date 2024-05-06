@@ -21,11 +21,15 @@ const PlaylistsPage: React.FC = () => {
     const { playPlaylist } = usePlayer()
 
     React.useEffect(() => {
+        getPlaylists(() => setLoading(false))
+    }, [])
+
+    const getPlaylists = (callback?: Function) => {
         axios.get('http://localhost:3001/api/v1/playlists').then((response) => {
             setPlaylists(response.data)
-            setLoading(false)
+            if (callback) callback()
         })
-    }, [])
+    }
 
     const filteredPlaylists = (): any[] => {
         return playlists.filter((playlist): boolean => {
@@ -33,10 +37,20 @@ const PlaylistsPage: React.FC = () => {
         })
     }
 
-    const deletePlaylist = (id: number) => {
-        axios.delete(`http://localhost:3001/api/v1/playlists/${id}`).then((response) => {
-            setPlaylists(playlists.filter((playlist) => playlist.id !== id))
+    const createPlaylist = (name: string) => {
+        setPlaylists([...playlists, { name, image_urls: [] }])
+
+        axios.post('http://localhost:3001/api/v1/playlists', { playlist: { name } }).then((response) => {
             closeModal()
+            getPlaylists()
+        })
+    }
+
+    const deletePlaylist = (id: number) => {
+        setPlaylists(playlists.filter((playlist) => playlist.id !== id))
+        axios.delete(`http://localhost:3001/api/v1/playlists/${id}`).then((response) => {
+            closeModal()
+            getPlaylists()
         })
     }
 
@@ -157,7 +171,7 @@ const PlaylistsPage: React.FC = () => {
                     >
                         <div className="playlist-item-left">
                             <div className="playlist-img">
-                                <img src={playlist.image_url} alt={playlist.name} />
+                                {playlist.image_urls.length > 0 && playlist.image_urls.map((image_url: string) => <img src={image_url} alt={playlist.name} />)}
                             </div>
                             <div className="playlist-info">
                                 <span className="playlist-title">{playlist.name}</span>
@@ -190,13 +204,6 @@ const PlaylistsPage: React.FC = () => {
             </div>
         </>
     )
-
-    const createPlaylist = (name: string) => {
-        axios.post('http://localhost:3001/api/v1/playlists', { playlist: { name } }).then((response) => {
-            setPlaylists([...playlists, response.data])
-            closeModal()
-        })
-    }
 
     return (
         <>
