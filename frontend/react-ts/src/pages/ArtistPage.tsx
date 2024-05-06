@@ -1,8 +1,8 @@
 import React from 'react'
 import './ArtistPage.scss'
 import axios from 'axios'
-import AnimatedLoading from '../components/AnimatedLoading'
 import SongPage from './SongPage'
+import AnimatedLoading from '../components/AnimatedLoading'
 
 interface ArtistPageProps {
     artistId?: string | null

@@ -1,12 +1,12 @@
 import React from 'react'
 import './SongPage.scss'
+import axios from 'axios'
+import { usePlayer } from '../contexts/PlayerContext'
+import AnimatedLoading from '../components/AnimatedLoading'
 import PlayIcon from '../components/Icons/PlayIcon'
 import PlaylistPlusIcon from '../components/Icons/PlaylistPlusIcon'
-import axios from 'axios'
 import HeartIcon from '../components/Icons/HeartIcon'
 import EllipsisIcon from '../components/Icons/EllipsisIcon'
-import AnimatedLoading from '../components/AnimatedLoading'
-import { usePlayer } from '../layouts/MainLayout'
 import PauseIcon from '../components/Icons/PauseIcon'
 
 interface SongPageProps {
@@ -80,9 +80,7 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     }
 
     const unfavorite = () => {
-        axios.post(`/api/v1/songs/${songData.eid}/unfavorite`).then((res) => {
-            console.log(res.data)
-        })
+        axios.post(`/api/v1/songs/${songData.eid}/unfavorite`)
         setSongData((prev: any) => {
             return {
                 ...prev,

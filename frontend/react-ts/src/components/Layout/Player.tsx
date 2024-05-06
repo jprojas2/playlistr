@@ -2,7 +2,7 @@ import React from 'react'
 import './Player.scss'
 import axios from 'axios'
 import { useAuth } from '../../contexts/AuthContext'
-import { usePlayer } from '../../layouts/MainLayout'
+import { usePlayer } from '../../contexts/PlayerContext'
 
 const Player: React.FC = () => {
     const { playerData, setPlayerData } = usePlayer()

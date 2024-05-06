@@ -10,6 +10,7 @@ import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
 import AuthProvider, { useAuth } from './contexts/AuthContext'
 import ModalProvider from './contexts/ModalContext'
+import PlayerProvider from './contexts/PlayerContext'
 
 const AuthComponent: React.FC = () => {
     const { token } = useAuth()
@@ -22,20 +23,22 @@ const RootComponent: React.FC = () => {
     return (
         <AuthProvider>
             <ModalProvider>
-                <Router>
-                    <Routes>
-                        <Route path="*" element={<NotFoundPage />} />
-                        <Route path={ROUTES.LOGIN_ROUTE} element={<LoginPage />} />
-                        <Route element={<AuthComponent />}>
-                            <Route element={<MainLayout />}>
-                                <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
-                                <Route path={ROUTES.BROWSE_ROUTE} element={<BrowsePage />} />
-                                <Route path={ROUTES.PLAYLISTS_ROUTE} element={<PlaylistsPage />} />
-                                <Route path={ROUTES.FAVORITES_ROUTE} element={<FavoritesPage />} />
+                <PlayerProvider>
+                    <Router>
+                        <Routes>
+                            <Route path="*" element={<NotFoundPage />} />
+                            <Route path={ROUTES.LOGIN_ROUTE} element={<LoginPage />} />
+                            <Route element={<AuthComponent />}>
+                                <Route element={<MainLayout />}>
+                                    <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
+                                    <Route path={ROUTES.BROWSE_ROUTE} element={<BrowsePage />} />
+                                    <Route path={ROUTES.PLAYLISTS_ROUTE} element={<PlaylistsPage />} />
+                                    <Route path={ROUTES.FAVORITES_ROUTE} element={<FavoritesPage />} />
+                                </Route>
                             </Route>
-                        </Route>
-                    </Routes>
-                </Router>
+                        </Routes>
+                    </Router>
+                </PlayerProvider>
             </ModalProvider>
         </AuthProvider>
     )

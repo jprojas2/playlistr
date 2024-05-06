@@ -1,9 +1,9 @@
-import React, { createContext, useContext, useMemo } from 'react'
+import React, { useContext, useMemo } from 'react'
 import axios from 'axios'
 
-export const AuthContext = createContext()
+export const AuthContext = React.createContext<any>(null)
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [token, setToken] = React.useState(localStorage.getItem('token'))
 
     React.useEffect(() => {

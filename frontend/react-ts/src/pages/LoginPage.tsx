@@ -1,7 +1,7 @@
 import React from 'react'
 import './LoginPage.scss'
-import { useAuth } from '../contexts/AuthContext'
 import axios from 'axios'
+import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
 import Background from '~/components/Layout/Background'
 

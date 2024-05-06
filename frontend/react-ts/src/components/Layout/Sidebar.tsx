@@ -1,11 +1,12 @@
 import React from 'react'
 import './Sidebar.scss'
-import { NavLink, NavLinkProps } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { ROUTES } from '../../resources/routes-constants'
 
 const sidebarLinks = [
-    { linkText: 'Browse', pathname: 'browse' },
-    { linkText: 'Playlists', pathname: 'playlists' },
-    { linkText: 'Favorites', pathname: 'favorites' }
+    { linkText: 'Browse', pathname: ROUTES.BROWSE_ROUTE },
+    { linkText: 'Playlists', pathname: ROUTES.PLAYLISTS_ROUTE },
+    { linkText: 'Favorites', pathname: ROUTES.FAVORITES_ROUTE }
 ]
 
 const Sidebar: React.FC = () => {

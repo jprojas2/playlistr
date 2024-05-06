@@ -9,26 +9,6 @@ const ICON_SECONDARY_COLOR = 'red'
 const BG_ANGLE = -14
 
 const Background: React.FC = () => {
-    const [position, setPosition] = React.useState({ x: 0, y: 0 })
-
-    React.useEffect(() => {
-        return
-        const interval = setInterval(() => {
-            setPosition((prev) => {
-                if (prev.x >= 246) {
-                    return {
-                        x: 0,
-                        y: 0
-                    }
-                }
-                return {
-                    x: prev.x + 0.1,
-                    y: prev.y + 0.1
-                }
-            })
-        }, 10)
-    }, [])
-
     const patternHeight = window.innerHeight * 2
     const patternWidth = window.innerWidth * 2
     const bgArea = patternHeight * patternWidth
@@ -57,8 +37,6 @@ const Background: React.FC = () => {
         <div
             className="pattern-background"
             style={{
-                top: position.y,
-                left: position.x,
                 transform: `rotate(${BG_ANGLE}deg) translate(-25%, -50%)`,
                 transformOrigin: 'center center',
                 height: patternHeight,

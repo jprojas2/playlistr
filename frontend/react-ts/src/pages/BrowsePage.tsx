@@ -1,11 +1,11 @@
 import React from 'react'
 import './BrowsePage.scss'
-import SearchInput from '../components/SearchInput'
-import MicIcon from '../components/Icons/MicIcon'
-import NoSoundIcon from '../components/Icons/NoSoundIcon'
 import axios from 'axios'
 import SongPage from './SongPage'
 import ArtistPage from './ArtistPage'
+import SearchInput from '../components/SearchInput'
+import MicIcon from '../components/Icons/MicIcon'
+import NoSoundIcon from '../components/Icons/NoSoundIcon'
 
 const BrowsePage: React.FC = () => {
     const [search, setSearch] = React.useState<string>('')

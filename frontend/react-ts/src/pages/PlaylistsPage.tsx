@@ -2,15 +2,15 @@ import React, { PropsWithChildren } from 'react'
 import './PlaylistsPage.scss'
 import axios from 'axios'
 import { useModal } from '../contexts/ModalContext'
+import { usePlayer } from '../contexts/PlayerContext'
 import SearchInput from '../components/SearchInput'
+import PlaylistPage from './PlaylistPage'
 import NoSoundIcon from '../components/Icons/NoSoundIcon'
 import PlaylistPlusIcon from '../components/Icons/PlaylistPlusIcon'
 import CloseIcon from '../components/Icons/CloseIcon'
 import CheckIcon from '../components/Icons/CheckIcon'
 import TrashIcon from '../components/Icons/TrashIcon'
 import PlayIcon from '../components/Icons/PlayIcon'
-import PlaylistPage from './PlaylistPage'
-import { usePlayer } from '~/layouts/MainLayout'
 
 const PlaylistsPage: React.FC = () => {
     const [loading, setLoading] = React.useState<boolean>(true)
@@ -171,7 +171,8 @@ const PlaylistsPage: React.FC = () => {
                     >
                         <div className="playlist-item-left">
                             <div className="playlist-img">
-                                {playlist.image_urls.length > 0 && playlist.image_urls.map((image_url: string) => <img src={image_url} alt={playlist.name} />)}
+                                {playlist.image_urls.length > 0 &&
+                                    playlist.image_urls.map((image_url: string, index: number) => <img key={index} src={image_url} alt={playlist.name} />)}
                             </div>
                             <div className="playlist-info">
                                 <span className="playlist-title">{playlist.name}</span>
