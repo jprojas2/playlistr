@@ -7,11 +7,10 @@ import SongPage from './SongPage'
 import SearchInput from '../components/SearchInput'
 import TrashIcon from '../components/Icons/TrashIcon'
 import PlayIcon from '../components/Icons/PlayIcon'
-import PauseIcon from '~/components/Icons/PauseIcon'
-import CloseIcon from '~/components/Icons/CloseIcon'
-import CheckIcon from '~/components/Icons/CheckIcon'
-import BrokenHeartIcon from '~/components/Icons/BrokenHeartIcon'
-import { get } from 'http'
+import PauseIcon from '../components/Icons/PauseIcon'
+import CloseIcon from '../components/Icons/CloseIcon'
+import CheckIcon from '../components/Icons/CheckIcon'
+import BrokenHeartIcon from '../components/Icons/BrokenHeartIcon'
 
 const FavoritesPage = () => {
     const [loading, setLoading] = React.useState<boolean>(true)
@@ -73,14 +72,19 @@ const FavoritesPage = () => {
             </div>
         )
     }
-    const NoFavorites: React.FC = () => {
-        return (
-            <div className="no-favorites">
-                <BrokenHeartIcon />
-                <span>No favorites have been saved yet</span>
-            </div>
-        )
-    }
+    const NoFavorites = (
+        <div className="no-favorites">
+            <BrokenHeartIcon />
+            <span>No favorites have been saved yet</span>
+        </div>
+    )
+
+    const NoResults = (
+        <div className="no-results">
+            <BrokenHeartIcon />
+            <span>No favorites found</span>
+        </div>
+    )
 
     const results = (
         <div className="favorites">
@@ -122,13 +126,6 @@ const FavoritesPage = () => {
         </div>
     )
 
-    const NoResults = () => (
-        <div className="no-results">
-            <h2>No results found</h2>
-            <p>Try searching for something else</p>
-        </div>
-    )
-
     return (
         <>
             {selectedItem && (
@@ -152,8 +149,8 @@ const FavoritesPage = () => {
                         }}
                     />
                     {!loading && filteredFavorites().length > 0 && results}
-                    {!loading && favorites.length === 0 && <NoFavorites />}
-                    {!loading && favorites.length > 0 && filteredFavorites().length === 0 && <NoResults />}
+                    {!loading && favorites.length === 0 && NoFavorites}
+                    {!loading && favorites.length > 0 && filteredFavorites().length === 0 && NoResults}
                 </div>
             )}
         </>
