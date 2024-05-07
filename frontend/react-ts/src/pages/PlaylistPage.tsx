@@ -283,7 +283,6 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                             <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
                             {search.length > 0 && searchResults}
                         </div>
-                        {loading && <AnimatedLoading />}
                         {!loading && (
                             <>
                                 <h1 className="playlist-title">{playlistData?.name}</h1>
