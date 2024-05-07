@@ -3,21 +3,19 @@ import './SongPage.scss'
 import axios from 'axios'
 import { usePlayer } from '../contexts/PlayerContext'
 import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
 import AnimatedLoading from '../components/AnimatedLoading'
 import PlayIcon from '../components/Icons/PlayIcon'
 import PlaylistPlusIcon from '../components/Icons/PlaylistPlusIcon'
 import HeartIcon from '../components/Icons/HeartIcon'
 import EllipsisIcon from '../components/Icons/EllipsisIcon'
 import PauseIcon from '../components/Icons/PauseIcon'
+import useResourceInContext from '../hooks/resourceInContext'
+import BackButton, { backButtonProps } from '../components/BackButton'
 
-interface SongPageProps {
+type SongPageProps = {
     songId?: string | null
     songData?: any
-    backButton?: {
-        onClose: () => void
-        text: string
-    } | null
+    backButton?: backButtonProps | null
 }
 
 const SongPage: React.FC<SongPageProps> = (props) => {
@@ -26,7 +24,7 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     const [songData, setSongData] = React.useState<any>(props.songData || null)
     const { playSong, isPlaying, pause } = usePlayer()
     const { id } = useParams()
-    const Navigate = useNavigate()
+    const { resourceInContext, setSelectedItem } = useResourceInContext(songData?.name)
 
     React.useEffect(() => {
         const songId = props.songData?.eid || props.songId || id
@@ -74,21 +72,11 @@ const SongPage: React.FC<SongPageProps> = (props) => {
         })
     }
 
-    const defaultBackButton = {
-        onClose: () => Navigate('../'),
-        text: 'Back to Search'
-    }
-
-    const backButton = props.backButton || defaultBackButton
+    if (resourceInContext) return resourceInContext
 
     return (
-        <div className="song-details">
-            {
-                <button className="btn btn-sm btn-sm-3d btn-black back-button" onClick={backButton.onClose}>
-                    <span>&lt;&nbsp;&nbsp;</span>
-                    {backButton?.text || 'Back'}
-                </button>
-            }
+        <div className="song-page">
+            <BackButton text={props.backButton?.text || 'Back to Browse'} onClick={props.backButton?.onClick} color="black" />
             {loading && <AnimatedLoading />}
             {!loading && !songData && <div role="alert">No song displayed.</div>}
             {!loading && songData && (
@@ -96,8 +84,16 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                     <div className="song-left">
                         <div className="song-info">
                             <div className="song-title">{songData.name}</div>
-                            <div className="song-artist">{songData.artist?.name}</div>
-                            <div className="song-album">{songData.album?.name}</div>
+                            {songData?.artist && (
+                                <a href="#" className="song-artist" onClick={() => setSelectedItem({ ...songData.artist, _type: 'artist' })}>
+                                    {songData.artist?.name}
+                                </a>
+                            )}
+                            {songData?.album && (
+                                <a href="#" className="song-album" onClick={() => setSelectedItem({ ...songData.album, _type: 'album' })}>
+                                    {songData.album?.name}
+                                </a>
+                            )}
                         </div>
                         <div className="lyrics-container">
                             {loadingLyrics && <AnimatedLoading />}

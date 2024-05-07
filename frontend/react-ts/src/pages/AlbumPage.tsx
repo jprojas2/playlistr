@@ -1,47 +1,44 @@
 import React from 'react'
 import './AlbumPage.scss'
-import SongPage from './SongPage'
 import AnimatedLoading from '~/components/AnimatedLoading'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import useResourceInContext from '../hooks/resourceInContext'
+import BackButton, { backButtonProps } from '../components/BackButton'
 
-interface AlbumPageProps {
+type AlbumPageProps = {
     albumId?: string | null
-    backButton?: {
-        onClose: () => void
-        text: string
-    } | null
+    albumData?: any
+    backButton?: backButtonProps
 }
 
 const AlbumPage: React.FC<AlbumPageProps> = (props) => {
     const [loading, setLoading] = React.useState<boolean>(false)
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
-    const [albumData, setAlbumData] = React.useState<any>(null)
-    const [selectedItem, setSelectedItem] = React.useState<any>(null)
+    const [albumData, setAlbumData] = React.useState<any>(props.albumData || null)
     const { id } = useParams()
+    const { resourceInContext, setSelectedItem } = useResourceInContext(albumData?.name)
 
     React.useEffect(() => {
-        const albumId = props.albumId || id
+        const albumId = props.albumData?.eid || props.albumId || id
+        if (window.location.href.includes('/browse')) window.history.pushState({}, '', `/browse/albums/${albumId}`)
+        if (albumData) setLoadingExtraData(true)
+        else setLoading(true)
         setLoading(true)
         axios.get(`/api/v1/albums/${albumId}`).then((res) => {
             setAlbumData(res.data)
             setLoading(false)
         })
     }, [])
+
+    if (resourceInContext) return resourceInContext
+
     return (
         <div className="album-page">
-            {selectedItem && selectedItem._type === 'song' && (
-                <SongPage songId={selectedItem.id} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${albumData.name}` }} />
-            )}
-            {!selectedItem && props.backButton && (
-                <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
-                    <span>&lt;&nbsp;&nbsp;</span>
-                    {props.backButton?.text || 'Back'}
-                </button>
-            )}
-            {!selectedItem && loading && <AnimatedLoading />}
-            {!selectedItem && !loading && !albumData && <div className="album-page">Album not found</div>}
-            {!selectedItem && !loading && albumData && (
+            <BackButton text={props.backButton?.text || 'Back to Browse'} onClick={props.backButton?.onClick} />
+            {loading && <AnimatedLoading />}
+            {!loading && !albumData && <div className="album-page">Album not found</div>}
+            {!loading && albumData && (
                 <>
                     <div
                         className="album-page-header"

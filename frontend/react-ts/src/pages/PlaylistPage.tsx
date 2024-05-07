@@ -271,7 +271,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
 
     return (
         <>
-            {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
+            {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClick: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
             {!selectedItem && (
                 <div className="playlist-page">
                     <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={() => Navigate('../')}>

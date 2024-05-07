@@ -1,31 +1,27 @@
 import React from 'react'
 import './ArtistPage.scss'
 import axios from 'axios'
-import SongPage from './SongPage'
 import AnimatedLoading from '../components/AnimatedLoading'
 import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import useResourceInContext from '../hooks/resourceInContext'
+import BackButton, { backButtonProps } from '~/components/BackButton'
 
-interface ArtistPageProps {
+type ArtistPageProps = {
     artistId?: string | null
     artistData?: any
-    backButton?: {
-        onClose: () => void
-        text: string
-    } | null
+    backButton?: backButtonProps | null
 }
 
 const ArtistPage: React.FC<ArtistPageProps> = (props) => {
     const [loading, setLoading] = React.useState<boolean>(false)
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
     const [artistData, setArtistData] = React.useState<any>(props.artistData || null)
-    const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { id } = useParams()
-    const Navigate = useNavigate()
+    const { resourceInContext, setSelectedItem } = useResourceInContext(artistData?.name)
 
     React.useEffect(() => {
         const artistId = props.artistData?.eid || props.artistId || id
-        window.history.pushState({}, '', `/browse/artists/${artistId}`)
+        if (window.location.href.includes('/browse')) window.history.pushState({}, '', `/browse/artists/${artistId}`)
         if (artistData) setLoadingExtraData(true)
         else setLoading(true)
         axios.get(`/api/v1/artists/${artistId}`).then((res) => {
@@ -35,38 +31,14 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
         })
     }, [])
 
-    const defaultBackButton = {
-        onClose: () => {
-            Navigate('../')
-        },
-        text: 'Back to Browse'
-    }
-
-    const backButton = props.backButton || defaultBackButton
+    if (resourceInContext) return resourceInContext
 
     return (
         <div className="artist-page">
-            {selectedItem && selectedItem._type === 'song' && (
-                <SongPage
-                    songId={selectedItem.eid}
-                    backButton={{
-                        onClose: () => {
-                            setSelectedItem(null)
-                            window.history.pushState({}, '', `/browse/artists/${artistData.eid}`)
-                        },
-                        text: `Back to ${artistData.name}`
-                    }}
-                />
-            )}
-            {!selectedItem && (
-                <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={backButton.onClose}>
-                    <span>&lt;&nbsp;&nbsp;</span>
-                    {backButton?.text || 'Back'}
-                </button>
-            )}
-            {!selectedItem && loading && <AnimatedLoading />}
-            {!selectedItem && !loading && !artistData && <div className="artist-page">Artist not found</div>}
-            {!selectedItem && !loading && artistData && (
+            {<BackButton text={props.backButton?.text || 'Back to Browse'} onClick={props.backButton?.onClick} />}
+            {loading && <AnimatedLoading />}
+            {!loading && !artistData && <div className="artist-page">Artist not found</div>}
+            {!loading && artistData && (
                 <>
                     <div
                         className="artist-page-header"

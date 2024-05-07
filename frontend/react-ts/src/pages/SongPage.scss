@@ -1,6 +1,6 @@
 @import '~/styles/mixins.scss';
 @import '~/styles/animations.scss';
-.song-details {
+.song-page {
     @include rectangle(100%, 100%);
     padding: 2rem;
     position: relative;
@@ -19,12 +19,24 @@
         font-size: 1.3rem;
         font-style: italic;
         font-weight: 300;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        color: black;
+        display: block;
     }
     .song-album {
         font-size: 1.1rem;
         font-style: italic;
         font-weight: 300;
         margin-bottom: 2rem;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        color: black;
+        display: block;
     }
     .song-container {
         animation: fadeIn 0.5s;
@@ -214,10 +226,10 @@
 }
 
 @include breakpoint('<phone') {
-    .song-details {
+    .song-page {
         padding: 1rem 1.5rem;
     }
-    .song-details .song-container {
+    .song-page .song-container {
         flex-direction: column;
         gap: 1rem;
         .song-left {
