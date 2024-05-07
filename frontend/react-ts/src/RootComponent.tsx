@@ -6,6 +6,9 @@ import NotFoundPage from './pages/NotFoundPage'
 import BrowsePage from './pages/BrowsePage'
 import PlaylistsPage from './pages/PlaylistsPage'
 import FavoritesPage from './pages/FavoritesPage'
+import SongPage from './pages/SongPage'
+import ArtistPage from './pages/ArtistPage'
+import PlaylistPage from './pages/PlaylistPage'
 import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
 import AuthProvider, { useAuth } from './contexts/AuthContext'
@@ -31,8 +34,15 @@ const RootComponent: React.FC = () => {
                             <Route element={<AuthComponent />}>
                                 <Route element={<MainLayout />}>
                                     <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
-                                    <Route path={ROUTES.BROWSE_ROUTE} element={<BrowsePage />} />
-                                    <Route path={ROUTES.PLAYLISTS_ROUTE} element={<PlaylistsPage />} />
+                                    <Route path={ROUTES.BROWSE_ROUTE}>
+                                        <Route path="songs/:id" element={<SongPage />} />
+                                        <Route path="artists/:id" element={<ArtistPage />} />
+                                        <Route path="" element={<BrowsePage />} />
+                                    </Route>
+                                    <Route path={ROUTES.PLAYLISTS_ROUTE}>
+                                        <Route path=":id" element={<PlaylistPage />} />
+                                        <Route path="" element={<PlaylistsPage />} />
+                                    </Route>
                                     <Route path={ROUTES.FAVORITES_ROUTE} element={<FavoritesPage />} />
                                 </Route>
                             </Route>

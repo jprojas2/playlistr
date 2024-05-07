@@ -3,6 +3,7 @@ import './PlaylistPage.scss'
 import axios from 'axios'
 import { useModal } from '../contexts/ModalContext'
 import { usePlayer } from '../contexts/PlayerContext'
+import { useNavigate, useParams } from 'react-router-dom'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import AnimatedLoading from '~/components/AnimatedLoading'
 import SongPage from './SongPage'
@@ -13,7 +14,7 @@ import PlayIcon from '../components/Icons/PlayIcon'
 import CheckIcon from '../components/Icons/CheckIcon'
 import CloseIcon from '../components/Icons/CloseIcon'
 import PauseIcon from '../components/Icons/PauseIcon'
-import DragIcon from '~/components/Icons/DragIcon'
+import DragIcon from '../components/Icons/DragIcon'
 
 interface PlaylistPageProps {
     playlistId?: string | null
@@ -40,9 +41,12 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { openModal, closeModal } = useModal()
     const { pause, isPlaying, playPlaylistSong } = usePlayer()
-    const currentFetchSignal = React.useRef<AbortController | null>(null)
+    const { id } = useParams()
+    const Navigate = useNavigate()
 
     React.useEffect(() => {
+        const playlistId = props.playlistId || id
+        window.history.pushState({}, '', `/playlists/${playlistId}`)
         if (playlistData) {
             setLoading(false)
         } else {
@@ -51,16 +55,30 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                 setLoading(false)
             })
         }
-    }, [playlistData])
+    }, [])
 
     React.useEffect(() => {
+        const controller = new AbortController()
         if (search.length > 0) {
-            getSearchResults()
+            setLoadingResults(true)
+            axios
+                .get(`/api/v1/search?q=${search}&type=song`, { signal: controller.signal })
+                .then((response) => {
+                    setResults(response.data)
+                    setLoadingResults(false)
+                })
+                .catch((e) => {
+                    if (e.name != 'CanceledError') {
+                        throw e
+                    }
+                })
         }
+        return () => controller.abort()
     }, [search])
 
     const getPlaylistData = (callback?: Function) => {
-        axios.get(`/api/v1/playlists/${props.playlistId}`).then((response) => {
+        const playlistId = props.playlistId || id
+        axios.get(`/api/v1/playlists/${playlistId}`).then((response) => {
             setPlaylistData(response.data)
             if (callback) callback()
         })
@@ -87,33 +105,10 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     }
 
     const addSongItem = (songData: any) => {
-        const song = {
-            eid: songData.id.toString(),
-            name: songData.title,
-            image_url: songData.song_art_image_thumbnail_url,
-            song_index: playlistData.songs.length
-        }
-        setPlaylistData({ ...playlistData, songs: [...playlistData.songs, song] })
+        console.log(songData)
+        setPlaylistData({ ...playlistData, songs: [...playlistData.songs, songData] })
         setSearch('')
-        addSong(songData.id)
-    }
-
-    const getSearchResults = () => {
-        if (currentFetchSignal.current !== null && !currentFetchSignal.current.signal.aborted) currentFetchSignal.current.abort()
-        const controller = new AbortController()
-        currentFetchSignal.current = controller
-        setLoadingResults(true)
-        axios
-            .get(`/api/v1/search?q=${search}&type=song`, { signal: controller.signal })
-            .then((response) => {
-                setResults(response.data)
-                setLoadingResults(false)
-            })
-            .catch((e) => {
-                if (e.name != 'CanceledError') {
-                    throw e
-                }
-            })
+        addSong(songData.eid)
     }
 
     const onDragEnd = (result: any) => {
@@ -211,7 +206,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                         <DragIcon />
                     </div>
                     <div className="song-img">
-                        <img src={song.image_url} alt={song.name} />
+                        <img src={song.thumbnail_url} alt={song.name} />
                     </div>
                     <div className="song-info">
                         <span className="song-title">{song.name}</span>
@@ -261,11 +256,11 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                     >
                         <div className="search-result-left">
                             <div className="search-result-img">
-                                <img src={result.song_art_image_thumbnail_url} alt={result.title} />
+                                <img src={result.thumbnail_url} alt={result.title} />
                             </div>
                             <div className="search-result-info">
-                                <span className="search-result-title">{result.title}</span>
-                                <span className="search-result-album">{result.primary_artist?.name}</span>
+                                <span className="search-result-title">{result.name}</span>
+                                <span className="search-result-album">{result.artist?.name}</span>
                             </div>
                         </div>
                     </div>
@@ -279,13 +274,11 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
             {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
             {!selectedItem && (
                 <div className="playlist-page">
-                    {props.backButton && (
-                        <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
-                            <span>&lt;&nbsp;&nbsp;</span>
-                            {props.backButton?.text || 'Back'}
-                        </button>
-                    )}
-                    {loading && <div className="">loading</div>}
+                    <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={() => Navigate('/playlists')}>
+                        <span>&lt;&nbsp;&nbsp;</span>
+                        Back to Playlists
+                    </button>
+                    {loading && <AnimatedLoading />}
                     {!loading && (
                         <div className="playlist-page-content">
                             <div className="search-music-container">

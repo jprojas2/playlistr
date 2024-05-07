@@ -11,6 +11,7 @@ import PauseIcon from '~/components/Icons/PauseIcon'
 import CloseIcon from '~/components/Icons/CloseIcon'
 import CheckIcon from '~/components/Icons/CheckIcon'
 import BrokenHeartIcon from '~/components/Icons/BrokenHeartIcon'
+import { get } from 'http'
 
 const FavoritesPage = () => {
     const [loading, setLoading] = React.useState<boolean>(true)
@@ -21,11 +22,15 @@ const FavoritesPage = () => {
     const { playSong, isPlaying, pause } = usePlayer()
 
     React.useEffect(() => {
+        getFavorites(() => setLoading(false))
+    }, [])
+
+    const getFavorites = (callback: () => void) => {
         axios.get('http://localhost:3001/api/v1/favorites').then((response) => {
             setFavorites(response.data)
-            setLoading(false)
+            callback()
         })
-    }, [])
+    }
 
     const filteredFavorites = (): any[] => {
         return favorites.filter((favorite): boolean => {
@@ -126,7 +131,17 @@ const FavoritesPage = () => {
 
     return (
         <>
-            {selectedItem && <SongPage songId={selectedItem.song.eid} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Favorites' }} />}
+            {selectedItem && (
+                <SongPage
+                    songId={selectedItem.song.eid}
+                    backButton={{
+                        onClose: () => {
+                            getFavorites(() => setSelectedItem(null))
+                        },
+                        text: 'Back to Favorites'
+                    }}
+                />
+            )}
             {!selectedItem && (
                 <div className="favorites-page">
                     <SearchInput

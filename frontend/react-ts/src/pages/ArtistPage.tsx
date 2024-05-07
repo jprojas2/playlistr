@@ -3,6 +3,7 @@ import './ArtistPage.scss'
 import axios from 'axios'
 import SongPage from './SongPage'
 import AnimatedLoading from '../components/AnimatedLoading'
+import { useParams } from 'react-router-dom'
 
 interface ArtistPageProps {
     artistId?: string | null
@@ -14,58 +15,35 @@ interface ArtistPageProps {
 }
 
 const ArtistPage: React.FC<ArtistPageProps> = (props) => {
-    const [loading, setLoading] = React.useState(false)
-    const [loadingExtraData, setLoadingExtraData] = React.useState(false)
-    const [artistData, setArtistData] = React.useState(props.artistData)
+    const [loading, setLoading] = React.useState<boolean>(false)
+    const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
+    const [artistData, setArtistData] = React.useState<any>(null)
     const [selectedItem, setSelectedItem] = React.useState<any>(null)
+    const { id } = useParams()
 
     React.useEffect(() => {
-        if (artistData) {
-            console.log('artistData', artistData)
-            setArtistData(() => {
-                return {
-                    eid: artistData.id,
-                    name: artistData.name,
-                    image_url: artistData.image_url,
-                    albums: (artistData.albums || []).map((album: any) => {
-                        return {
-                            title: album.title,
-                            year: album.year,
-                            image_url: album.song_art_image_url,
-                            image_thumbnail_url: album.song_art_image_thumbnail_url
-                        }
-                    }),
-                    top_songs: (artistData.songs || []).map((song: any) => {
-                        return {
-                            title: song.title,
-                            song_art_image_url: song.song_art_image_url,
-                            song_art_image_thumbnail_url: song.song_art_image_thumbnail_url,
-                            primary_artist: {
-                                name: song.primary_artist.name
-                            }
-                        }
-                    })
-                }
-            })
-            if ((artistData.albums || []).length === 0 || (artistData.songs.length || []) === 0) {
-                setLoadingExtraData(true)
-                axios.get(`/api/v1/artists/${artistData.eid || artistData.id}`).then((res) => {
-                    setArtistData(res.data)
-                    setLoadingExtraData(false)
-                })
-            }
-        } else if (!artistData && props.artistId) {
-            setLoading(true)
-            axios.get(`/api/v1/artists/${props.artistId}`).then((res) => {
-                setArtistData(res.data)
-                setLoading(false)
-            })
-        }
+        const artistId = props.artistData?.id || props.artistId || id
+        window.history.pushState({}, '', `/browse/artists/${artistId}`)
+
+        setLoading(true)
+        axios.get(`/api/v1/artists/${artistId}`).then((res) => {
+            setArtistData(res.data)
+            setLoading(false)
+        })
     }, [])
     return (
         <div className="artist-page">
             {selectedItem && selectedItem._type === 'song' && (
-                <SongPage songData={selectedItem} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${artistData.name}` }} />
+                <SongPage
+                    songId={selectedItem.eid}
+                    backButton={{
+                        onClose: () => {
+                            setSelectedItem(null)
+                            window.history.pushState({}, '', `/browse/artists/${artistData.eid}`)
+                        },
+                        text: `Back to ${artistData.name}`
+                    }}
+                />
             )}
             {!selectedItem && props.backButton && (
                 <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
@@ -95,15 +73,15 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
                                             key={index}
                                             className="artist-song"
                                             onClick={() => {
-                                                setSelectedItem(song)
+                                                setSelectedItem({ ...song, _type: 'song' })
                                             }}
                                         >
                                             <div className="artist-song-left">
                                                 <div className="artist-song-img">
-                                                    <img src={song.song_art_image_thumbnail_url} alt={song.title} />
+                                                    <img src={song.thumbnail_url} alt={song.name} />
                                                 </div>
                                                 <div className="artist-song-info">
-                                                    <span className="artist-song-title">{song.title}</span>
+                                                    <span className="artist-song-title">{song.name}</span>
                                                 </div>
                                             </div>
                                         </div>

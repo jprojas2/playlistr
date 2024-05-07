@@ -12,16 +12,14 @@ class GeniusTest < ActiveSupport::TestCase
   test "song should return a song item" do
     genius_client = Genius.new
     genius_client.stub :request, JSON.parse(File.read("test/fixtures/genius/song_response.json")) do
-      assert_includes genius_client.song("123").keys, "_type"
-      assert_equal genius_client.song("123")["_type"], "song"
+      assert_instance_of Song, genius_client.song("123")
     end
   end
 
   test "artist should return a artist item" do
     genius_client = Genius.new
     genius_client.stub :request, JSON.parse(File.read("test/fixtures/genius/artist_response.json")) do
-      assert_includes genius_client.artist("123").keys, "_type"
-      assert_equal genius_client.artist("123")["_type"], "artist"
+      assert_instance_of Artist, genius_client.artist("123")
     end
   end
 

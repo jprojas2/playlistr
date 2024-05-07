@@ -3,8 +3,8 @@ import './PlaylistsPage.scss'
 import axios from 'axios'
 import { useModal } from '../contexts/ModalContext'
 import { usePlayer } from '../contexts/PlayerContext'
+import { useNavigate } from 'react-router-dom'
 import SearchInput from '../components/SearchInput'
-import PlaylistPage from './PlaylistPage'
 import NoSoundIcon from '../components/Icons/NoSoundIcon'
 import PlaylistPlusIcon from '../components/Icons/PlaylistPlusIcon'
 import CloseIcon from '../components/Icons/CloseIcon'
@@ -16,9 +16,9 @@ const PlaylistsPage: React.FC = () => {
     const [loading, setLoading] = React.useState<boolean>(true)
     const [search, setSearch] = React.useState<string>('')
     const [playlists, setPlaylists] = React.useState<any[]>([])
-    const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { openModal, closeModal } = useModal()
     const { playPlaylist } = usePlayer()
+    const Navigate = useNavigate()
 
     React.useEffect(() => {
         getPlaylists(() => setLoading(false))
@@ -166,7 +166,7 @@ const PlaylistsPage: React.FC = () => {
                         key={index}
                         className="playlist-item"
                         onClick={() => {
-                            setSelectedItem(playlist)
+                            Navigate(`/playlists/${playlist.id}`)
                         }}
                     >
                         <div className="playlist-item-left">
@@ -209,8 +209,7 @@ const PlaylistsPage: React.FC = () => {
 
     return (
         <>
-            {selectedItem && <PlaylistPage playlistId={selectedItem.id} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Playlists' }} />}
-            {!selectedItem && (
+            {
                 <div className="playlists-page">
                     <SearchInput
                         placeholder="Search playlists..."
@@ -222,7 +221,7 @@ const PlaylistsPage: React.FC = () => {
                     {!loading && playlists.length > 0 && results}
                     {!loading && playlists.length === 0 && <NoPlaylists />}
                 </div>
-            )}
+            }
         </>
     )
 }

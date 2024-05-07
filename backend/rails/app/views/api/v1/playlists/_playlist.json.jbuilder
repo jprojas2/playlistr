@@ -6,6 +6,7 @@ json.songs playlist.playlist_songs do |ps|
   json.eid ps.song.eid
   json.name ps.song.name
   json.image_url ps.song.image_url
+  json.thumbnail_url ps.song.thumbnail_url
   json.artist do
     json.eid ps.song.artist.eid
     json.name ps.song.artist.name

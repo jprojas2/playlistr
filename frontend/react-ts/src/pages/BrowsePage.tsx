@@ -12,14 +12,11 @@ const BrowsePage: React.FC = () => {
     const [results, setResults] = React.useState<any[]>([])
     const [loading, setLoading] = React.useState<boolean>(false)
     const [selectedItem, setSelectedItem] = React.useState<any>(null)
-    const currentFetchSignal = React.useRef<AbortController | null>(null)
 
     React.useEffect(() => {
-        if (currentFetchSignal.current !== null && !currentFetchSignal.current.signal.aborted) currentFetchSignal.current.abort()
+        const controller = new AbortController()
         if (search.length > 0) {
             setLoading(true)
-            const controller = new AbortController()
-            currentFetchSignal.current = controller
             axios
                 .get('/api/v1/search?q=' + search, { signal: controller.signal })
                 .then((res) => {
@@ -32,6 +29,7 @@ const BrowsePage: React.FC = () => {
                     }
                 })
         }
+        return () => controller.abort()
     }, [search])
 
     React.useEffect(() => {}, [selectedItem])
@@ -67,25 +65,25 @@ const BrowsePage: React.FC = () => {
                     >
                         <div className="browse-item-left">
                             <div className="browse-item-img">
-                                {result._type === 'song' && <img src={result.song_art_image_thumbnail_url} alt={result.title} />}
+                                {result._type === 'song' && <img src={result.thumbnail_url} alt={result.title} />}
                                 {result._type === 'artist' && <img src={result.image_url} alt={result.title} />}
-                                {result._type === 'album' && <img src={result.song_art_image_thumbnail_url} alt={result.title} />}
+                                {result._type === 'album' && <img src={result.image_url} alt={result.title} />}
                             </div>
                             <div className="browse-item-info" data-type={result._type}>
                                 {result._type === 'song' && (
                                     <>
                                         {' '}
-                                        <span className="browse-item-title">{result.title}</span>
-                                        <span className="browse-item-artist">{result.primary_artist.name}</span>
-                                        <span className="browse-item-album"></span>
+                                        <span className="browse-item-title">{result.name}</span>
+                                        <span className="browse-item-artist">{result.artist?.name}</span>
+                                        <span className="browse-item-album">{result.album?.name}</span>
                                     </>
                                 )}
                                 {result._type === 'artist' && <span className="browse-item-title">{result.name}</span>}
                                 {result._type === 'album' && (
                                     <>
                                         {' '}
-                                        <span className="browse-item-album">{result.title}</span>
-                                        <span className="browse-item-artist">{result.primary_artist.name}</span>
+                                        <span className="browse-item-album">{result.name}</span>
+                                        <span className="browse-item-artist">{result.artist?.name}</span>
                                         <span className="browse-item-year">{result.year}</span>
                                     </>
                                 )}
@@ -108,13 +106,24 @@ const BrowsePage: React.FC = () => {
         </div>
     )
 
+    const onBackButtonPress = () => {
+        setSelectedItem(null)
+        window.history.pushState(null, '', '/browse')
+    }
+
     return (
         <>
             {selectedItem && selectedItem._type == 'song' && (
-                <SongPage songData={selectedItem} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Search' }} />
+                <SongPage
+                    songId={selectedItem.eid}
+                    backButton={{
+                        onClose: onBackButtonPress,
+                        text: 'Back to Search'
+                    }}
+                />
             )}
             {selectedItem && selectedItem._type == 'artist' && (
-                <ArtistPage artistData={selectedItem} backButton={{ onClose: () => setSelectedItem(null), text: 'Back to Search' }} />
+                <ArtistPage artistId={selectedItem.eid} backButton={{ onClose: onBackButtonPress, text: 'Back to Search' }} />
             )}
             {!selectedItem && (
                 <div className="browse-page-content">

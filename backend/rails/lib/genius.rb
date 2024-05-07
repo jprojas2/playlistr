@@ -37,21 +37,22 @@ class Genius
       params: {
         q: query
       }
-    )&.dig("response", "hits")&.map { |hit| hit["result"] } || []
+    )&.dig("response", "hits")&.map { |hit| hit["result"] 
+    }&.map { |song_data| to_song(song_data) } || []
   end
 
   def song id
     @songs[id] ||= request(
       http_method: :get,
       endpoint: "songs/#{id}"
-    )&.dig("response", "song")
+    )&.dig("response", "song").then{ |song_data| to_song(song_data)}
   end
 
   def artist id
     request(
       http_method: :get,
       endpoint: "artists/#{id}"
-    )&.dig("response", "artist")
+    )&.dig("response", "artist").then{ |artist_data| to_artist(artist_data)}
   end
 
   def artist_songs artist_id, order: nil
@@ -61,14 +62,14 @@ class Genius
       http_method: :get,
       endpoint: "artists/#{artist_id}/songs",
       params: artist_params
-    )&.dig("response", "songs")
+    )&.dig("response", "songs")&.map { |song_data| to_song(song_data) } || []
   end
 
   def lyrics song_id
     song = song(song_id)
     return nil if song.nil?
 
-    lyrics_url = song&.dig("path")
+    lyrics_url = song.path
     html = Net::HTTP.get(URI("https://genius.com#{lyrics_url}"))
     doc = Nokogiri::HTML(html)
     doc.css("[data-lyrics-container='true']").map do |lc|
@@ -186,6 +187,43 @@ class Genius
 
   def api_requests_quota_reached?
     @response.body.match?(API_REQUSTS_QUOTA_REACHED_MESSAGE)
+  end
+
+  def to_song song_data
+    return if song_data.nil?
+
+    song = Song.new(
+      eid: song_data["id"],
+      name: song_data["title"],
+      image_url: song_data['song_art_image_url'],
+      thumbnail_url: song_data['song_art_image_thumbnail_url'],
+      pageviews: song_data.dig("stats", "pageviews"),
+      path: song_data["path"]
+    )
+    song.artist = to_artist(song_data["primary_artist"]) if song_data.dig("primary_artist", "id")
+    song.album = to_album(song_data["album"]) if song_data.dig("album", "id")
+    song
+  end
+
+  def to_artist artist_data
+    return if artist_data.nil?
+
+    artist = Artist.new(
+      eid: artist_data["id"],
+      name: artist_data["name"],
+      image_url: artist_data["image_url"]
+    )
+  end
+
+  def to_album album_data
+    return if album_data.nil?
+
+    album = Album.new(
+      eid: album_data["id"],
+      name: album_data["name"],
+      image_url: album_data["cover_art_url"],
+      year: album_data["release_date_for_display"]
+    )
   end
 
 end

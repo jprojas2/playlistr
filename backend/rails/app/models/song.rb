@@ -7,32 +7,13 @@ class Song < ApplicationRecord
   has_many :playlists, through: :playlist_songs
   has_many :favorites, dependent: :destroy
 
+  attr_accessor :pageviews
+  attr_accessor :path
+
   def self.initialize_by_eid eid
-    song_data = Genius.new.song(eid)
-    return if song_data.nil?
-
-    song = new(
-      eid: eid,
-      name: song_data["title"],
-      image_url: song_data['song_art_image_url'],
-      thumbnail_url: song_data['song_art_image_thumbnail_url']
-    )
-
-    if song_data.dig("primary_artist", "id")
-      artist = Artist.find_or_initialize_by_eid(song_data["primary_artist"]["id"])
-      song.artist = artist
-    end
-
-    if song_data.dig("album", "id")
-      album = Album.find_or_initialize_by_eid(song_data["album"]["id"])
-      album.assign_attributes(
-        name: song_data["album"]["name"],
-        image_url: song_data["album"]["cover_art_url"],
-        year: song_data["album"]["release_date_for_display"]
-      )
-      song.album = album
-    end
-    
+    song = Genius.new.song(eid)
+    song.artist = Artist.find_or_initialize_by_eid(song.artist.eid) if song.artist
+    song.album = Album.find_or_initialize_by_eid(song.album.eid) if song.album
     song
   end
 

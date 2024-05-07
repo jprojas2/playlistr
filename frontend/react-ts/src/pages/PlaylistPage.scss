@@ -154,7 +154,7 @@
         overflow: auto;
         z-index: 2;
         .search-result {
-            &:after {
+            &:not(:last-child):after {
                 content: '';
                 display: block;
                 width: 80%;
