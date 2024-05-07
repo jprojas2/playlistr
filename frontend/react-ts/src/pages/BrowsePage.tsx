@@ -6,6 +6,7 @@ import ArtistPage from './ArtistPage'
 import SearchInput from '../components/SearchInput'
 import MicIcon from '../components/Icons/MicIcon'
 import NoSoundIcon from '../components/Icons/NoSoundIcon'
+import AnimatedLoading from '~/components/AnimatedLoading'
 
 const BrowsePage: React.FC = () => {
     const [search, setSearch] = React.useState<string>('')
@@ -96,16 +97,6 @@ const BrowsePage: React.FC = () => {
         )
     }
 
-    const LoadingResults = (
-        <div className="loading-results">
-            <span>
-                {'Searching...'.split('').map((char, index) => (
-                    <span key={index}>{char}</span>
-                ))}
-            </span>
-        </div>
-    )
-
     const onBackButtonPress = () => {
         setSelectedItem(null)
         window.history.pushState(null, '', '/browse')
@@ -115,7 +106,7 @@ const BrowsePage: React.FC = () => {
         <>
             {selectedItem && selectedItem._type == 'song' && (
                 <SongPage
-                    songId={selectedItem.eid}
+                    songData={{ ...selectedItem }}
                     backButton={{
                         onClose: onBackButtonPress,
                         text: 'Back to Search'
@@ -123,7 +114,7 @@ const BrowsePage: React.FC = () => {
                 />
             )}
             {selectedItem && selectedItem._type == 'artist' && (
-                <ArtistPage artistId={selectedItem.eid} backButton={{ onClose: onBackButtonPress, text: 'Back to Search' }} />
+                <ArtistPage artistData={{ ...selectedItem }} backButton={{ onClose: onBackButtonPress, text: 'Back to Search' }} />
             )}
             {!selectedItem && (
                 <div className="browse-page-content">
@@ -135,7 +126,11 @@ const BrowsePage: React.FC = () => {
                         }}
                     />
                     {search.length === 0 && <NoInput />}
-                    {search.length > 0 && loading && LoadingResults}
+                    {search.length > 0 && loading && (
+                        <div className="loading-results">
+                            <AnimatedLoading text="Searching..." />
+                        </div>
+                    )}
                     {!loading && search.length > 0 && results.length > 0 && <Results />}
                     {!loading && search.length > 0 && results.length === 0 && <NoResults />}
                 </div>

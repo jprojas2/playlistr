@@ -3,6 +3,7 @@ import './SongPage.scss'
 import axios from 'axios'
 import { usePlayer } from '../contexts/PlayerContext'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import AnimatedLoading from '../components/AnimatedLoading'
 import PlayIcon from '../components/Icons/PlayIcon'
 import PlaylistPlusIcon from '../components/Icons/PlaylistPlusIcon'
@@ -12,6 +13,7 @@ import PauseIcon from '../components/Icons/PauseIcon'
 
 interface SongPageProps {
     songId?: string | null
+    songData?: any
     backButton?: {
         onClose: () => void
         text: string
@@ -21,14 +23,16 @@ interface SongPageProps {
 const SongPage: React.FC<SongPageProps> = (props) => {
     const [loading, setLoading] = React.useState<boolean>(false)
     const [loadingLyrics, setLoadingLyrics] = React.useState<boolean>(false)
-    const [songData, setSongData] = React.useState<any>(null)
+    const [songData, setSongData] = React.useState<any>(props.songData || null)
     const { playSong, isPlaying, pause } = usePlayer()
     const { id } = useParams()
+    const Navigate = useNavigate()
 
     React.useEffect(() => {
-        const songId = props.songId || id
+        const songId = props.songData?.eid || props.songId || id
+        console.log('songId', songId)
         if (window.location.pathname.includes('browse')) window.history.pushState({}, '', `/browse/songs/${songId}`)
-        setLoading(true)
+        if (!songData) setLoading(true)
         axios.get(`/api/v1/songs/${songId}`).then((res) => {
             setSongData(res.data)
             setLoading(false)
@@ -36,7 +40,7 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     }, [])
 
     React.useEffect(() => {
-        if (songData && songData.eid && !songData.lyrics) {
+        if (songData?.eid && !songData.lyrics) {
             setLoadingLyrics(true)
             axios.get(`/api/v1/songs/${songData.eid}/lyrics`).then((res) => {
                 setSongData((prev: any) => {
@@ -70,14 +74,21 @@ const SongPage: React.FC<SongPageProps> = (props) => {
         })
     }
 
+    const defaultBackButton = {
+        onClose: () => Navigate('../'),
+        text: 'Back to Search'
+    }
+
+    const backButton = props.backButton || defaultBackButton
+
     return (
         <div className="song-details">
-            {props.backButton && (
-                <button className="btn btn-sm btn-sm-3d btn-black back-button" onClick={props.backButton.onClose}>
+            {
+                <button className="btn btn-sm btn-sm-3d btn-black back-button" onClick={backButton.onClose}>
                     <span>&lt;&nbsp;&nbsp;</span>
-                    {props.backButton?.text || 'Back'}
+                    {backButton?.text || 'Back'}
                 </button>
-            )}
+            }
             {loading && <AnimatedLoading />}
             {!loading && !songData && <div role="alert">No song displayed.</div>}
             {!loading && songData && (
@@ -103,7 +114,10 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                                 <a
                                     className={'btn btn-2 btn-black play-button ' + (isPlaying(songData.eid) && 'playing')}
                                     href="#"
-                                    onClick={() => (isPlaying(songData.eid) ? pause() : playSong(songData.eid))}
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        isPlaying(songData.eid) ? pause() : playSong(songData.eid)
+                                    }}
                                 >
                                     <span className="icon">
                                         <PlayIcon />
@@ -119,7 +133,14 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                                 </a>
                             </div>
                             {songData.favorited && (
-                                <a className="btn btn-2 btn-primary unfavorite-button" href="#" onClick={unfavorite}>
+                                <a
+                                    className="btn btn-2 btn-primary unfavorite-button"
+                                    href="#"
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        unfavorite()
+                                    }}
+                                >
                                     <span className="icon">
                                         <HeartIcon />
                                         <HeartIcon />
@@ -128,7 +149,14 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                                 </a>
                             )}
                             {!songData.favorited && (
-                                <a className="btn btn-2 btn-primary favorite-button" href="#" onClick={favorite}>
+                                <a
+                                    className="btn btn-2 btn-primary favorite-button"
+                                    href="#"
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        favorite()
+                                    }}
+                                >
                                     <span className="icon">
                                         <HeartIcon />
                                         <HeartIcon />

@@ -274,22 +274,24 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
             {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClose: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
             {!selectedItem && (
                 <div className="playlist-page">
-                    <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={() => Navigate('/playlists')}>
+                    <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={() => Navigate('../')}>
                         <span>&lt;&nbsp;&nbsp;</span>
                         Back to Playlists
                     </button>
-                    {loading && <AnimatedLoading />}
-                    {!loading && (
-                        <div className="playlist-page-content">
-                            <div className="search-music-container">
-                                <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
-                                {search.length > 0 && searchResults}
-                            </div>
-                            <h1 className="playlist-title">{playlistData?.name}</h1>
-                            {playlistData?.songs.length > 0 && playlistSongs}
-                            {playlistData?.songs.length === 0 && <NoSongs />}
+                    <div className="playlist-page-content">
+                        <div className="search-music-container">
+                            <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
+                            {search.length > 0 && searchResults}
                         </div>
-                    )}
+                        {loading && <AnimatedLoading />}
+                        {!loading && (
+                            <>
+                                <h1 className="playlist-title">{playlistData?.name}</h1>
+                                {playlistData?.songs.length > 0 && playlistSongs}
+                                {playlistData?.songs.length === 0 && <NoSongs />}
+                            </>
+                        )}
+                    </div>
                 </div>
             )}
         </>

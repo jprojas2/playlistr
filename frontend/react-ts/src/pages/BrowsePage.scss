@@ -25,23 +25,6 @@
     .loading-results {
         @include square(100%);
         @include flexbox(center, center, row, nowrap);
-        gap: 2rem;
-        animation: popAndRotateIn 0.1s ease-in-out;
-        & > span {
-            font-style: italic;
-            font-size: 1.2rem;
-            font-weight: 200;
-            text-align: center;
-            display: flex;
-            & > span {
-                animation: bounce 1s infinite;
-            }
-            @for $i from 1 through 15 {
-                & > span:nth-child(#{$i}) {
-                    animation-delay: calc(#{$i}s / 20);
-                }
-            }
-        }
     }
 
     .search-results {

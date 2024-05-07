@@ -4,6 +4,7 @@ import axios from 'axios'
 import SongPage from './SongPage'
 import AnimatedLoading from '../components/AnimatedLoading'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 interface ArtistPageProps {
     artistId?: string | null
@@ -17,20 +18,32 @@ interface ArtistPageProps {
 const ArtistPage: React.FC<ArtistPageProps> = (props) => {
     const [loading, setLoading] = React.useState<boolean>(false)
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
-    const [artistData, setArtistData] = React.useState<any>(null)
+    const [artistData, setArtistData] = React.useState<any>(props.artistData || null)
     const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { id } = useParams()
+    const Navigate = useNavigate()
 
     React.useEffect(() => {
-        const artistId = props.artistData?.id || props.artistId || id
+        const artistId = props.artistData?.eid || props.artistId || id
         window.history.pushState({}, '', `/browse/artists/${artistId}`)
-
-        setLoading(true)
+        if (artistData) setLoadingExtraData(true)
+        else setLoading(true)
         axios.get(`/api/v1/artists/${artistId}`).then((res) => {
             setArtistData(res.data)
             setLoading(false)
+            setLoadingExtraData(false)
         })
     }, [])
+
+    const defaultBackButton = {
+        onClose: () => {
+            Navigate('../')
+        },
+        text: 'Back to Browse'
+    }
+
+    const backButton = props.backButton || defaultBackButton
+
     return (
         <div className="artist-page">
             {selectedItem && selectedItem._type === 'song' && (
@@ -45,10 +58,10 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
                     }}
                 />
             )}
-            {!selectedItem && props.backButton && (
-                <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={props.backButton.onClose}>
+            {!selectedItem && (
+                <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={backButton.onClose}>
                     <span>&lt;&nbsp;&nbsp;</span>
-                    {props.backButton?.text || 'Back'}
+                    {backButton?.text || 'Back'}
                 </button>
             )}
             {!selectedItem && loading && <AnimatedLoading />}
