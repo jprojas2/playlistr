@@ -42,7 +42,6 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     const { openModal, closeModal } = useModal()
     const { pause, isPlaying, playPlaylistSong } = usePlayer()
     const { id } = useParams()
-    const Navigate = useNavigate()
 
     const getPlaylistData = (): Promise<void> => {
         return new Promise((resolve, reject) => {
