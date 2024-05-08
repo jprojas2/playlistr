@@ -13,7 +13,6 @@ class Song < ApplicationRecord
   def self.initialize_by_eid eid
     song = Genius.new.song(eid)
     song.artist = Artist.find_or_initialize_by_eid(song.artist.eid) if song.artist
-    song.album = Album.find_or_initialize_by_eid(song.album.eid) if song.album
     song
   end
 

@@ -97,6 +97,31 @@
                     }
                 }
             }
+            .song-actions {
+                @include flexbox(center, center, row, nowrap);
+                gap: 0.5rem;
+                position: relative;
+                z-index: 0;
+                .btn {
+                    @include square(2.3rem);
+                    svg {
+                        position: absolute;
+                    }
+                    cursor: pointer;
+                }
+                .play-song {
+                    svg {
+                        left: 13px;
+                        width: 0.65rem;
+                    }
+                }
+                .delete-song {
+                    svg {
+                        left: 5px;
+                        width: 1.5rem;
+                    }
+                }
+            }
             .browse-item-type {
                 font-size: 0.8rem;
                 font-weight: 300;

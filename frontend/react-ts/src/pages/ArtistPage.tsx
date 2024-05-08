@@ -1,10 +1,13 @@
 import React from 'react'
 import './ArtistPage.scss'
 import axios from 'axios'
-import AnimatedLoading from '../components/AnimatedLoading'
 import { useParams } from 'react-router-dom'
+import { usePlayer } from '../contexts/PlayerContext'
 import useResourceInContext from '../hooks/resourceInContext'
-import BackButton, { backButtonProps } from '~/components/BackButton'
+import AnimatedLoading from '../components/AnimatedLoading'
+import BackButton, { backButtonProps } from '../components/BackButton'
+import PauseIcon from '../components/Icons/PauseIcon'
+import PlayIcon from '../components/Icons/PlayIcon'
 
 type ArtistPageProps = {
     artistId?: string | null
@@ -17,6 +20,7 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
     const [artistData, setArtistData] = React.useState<any>(props.artistData || null)
     const { id } = useParams()
+    const { isPlaying, playSong, pause } = usePlayer()
     const { resourceInContext, setSelectedItem } = useResourceInContext(artistData?.name)
 
     React.useEffect(() => {
@@ -69,6 +73,17 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
                                                     <span className="artist-song-title">{song.name}</span>
                                                 </div>
                                             </div>
+                                            <span className="song-actions">
+                                                <a
+                                                    className="btn btn-4 btn-black play-song"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation()
+                                                        isPlaying(song.eid) ? pause() : playSong(song.eid)
+                                                    }}
+                                                >
+                                                    {isPlaying(song.eid) ? <PauseIcon /> : <PlayIcon />}
+                                                </a>
+                                            </span>
                                         </div>
                                     ))}
                                 </div>

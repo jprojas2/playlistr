@@ -9,6 +9,7 @@ import FavoritesPage from './pages/FavoritesPage'
 import SongPage from './pages/SongPage'
 import ArtistPage from './pages/ArtistPage'
 import PlaylistPage from './pages/PlaylistPage'
+import AlbumPage from './pages/AlbumPage'
 import { ROUTES } from './resources/routes-constants'
 import './styles/main.scss'
 import AuthProvider, { useAuth } from './contexts/AuthContext'
@@ -35,8 +36,9 @@ const RootComponent: React.FC = () => {
                                 <Route element={<MainLayout />}>
                                     <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
                                     <Route path={ROUTES.BROWSE_ROUTE}>
-                                        <Route path="songs/:id" element={<SongPage />} />
-                                        <Route path="artists/:id" element={<ArtistPage />} />
+                                        <Route path={`${ROUTES.BROWSE_SUBROUTES.SONGS_ROUTE}/:id`} element={<SongPage />} />
+                                        <Route path={`${ROUTES.BROWSE_SUBROUTES.ARTISTS_ROUTE}/:id`} element={<ArtistPage />} />
+                                        <Route path={`${ROUTES.BROWSE_SUBROUTES.ALBUMS_ROUTE}/:id`} element={<AlbumPage />} />
                                         <Route path="" element={<BrowsePage />} />
                                     </Route>
                                     <Route path={ROUTES.PLAYLISTS_ROUTE}>

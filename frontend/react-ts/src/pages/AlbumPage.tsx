@@ -1,10 +1,13 @@
 import React from 'react'
 import './AlbumPage.scss'
-import AnimatedLoading from '~/components/AnimatedLoading'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { usePlayer } from '../contexts/PlayerContext'
 import useResourceInContext from '../hooks/resourceInContext'
 import BackButton, { backButtonProps } from '../components/BackButton'
+import AnimatedLoading from '~/components/AnimatedLoading'
+import PauseIcon from '../components/Icons/PauseIcon'
+import PlayIcon from '../components/Icons/PlayIcon'
 
 type AlbumPageProps = {
     albumId?: string | null
@@ -17,6 +20,7 @@ const AlbumPage: React.FC<AlbumPageProps> = (props) => {
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
     const [albumData, setAlbumData] = React.useState<any>(props.albumData || null)
     const { id } = useParams()
+    const { isPlaying, playSong, pause, playlistData } = usePlayer()
     const { resourceInContext, setSelectedItem } = useResourceInContext(albumData?.name)
 
     React.useEffect(() => {
@@ -28,6 +32,7 @@ const AlbumPage: React.FC<AlbumPageProps> = (props) => {
         axios.get(`/api/v1/albums/${albumId}`).then((res) => {
             setAlbumData(res.data)
             setLoading(false)
+            setLoadingExtraData(false)
         })
     }, [])
 
@@ -50,47 +55,39 @@ const AlbumPage: React.FC<AlbumPageProps> = (props) => {
                         {loadingExtraData && <AnimatedLoading />}
                         {!loadingExtraData && (
                             <>
-                                <p>Top Songs</p>
-                                <div className="album-top-songs">
-                                    {(!albumData.top_songs || albumData.top_songs.length === 0) && <div>No songs found</div>}
-                                    {albumData.top_songs?.map((song: any, index: number) => (
+                                <div className="album-songs-title">Songs</div>
+                                <div className="album-songs">
+                                    {albumData.songs?.map((song: any, index: number) => (
                                         <div
                                             key={index}
                                             className="album-song"
                                             onClick={() => {
-                                                setSelectedItem(song)
+                                                setSelectedItem({ ...song, _type: 'song' })
                                             }}
                                         >
                                             <div className="album-song-left">
                                                 <div className="album-song-img">
-                                                    <img src={song.song_art_image_thumbnail_url} alt={song.title} />
+                                                    <img src={song.thumbnail_url} alt={song.name} />
                                                 </div>
                                                 <div className="album-song-info">
-                                                    <span className="album-song-title">{song.title}</span>
+                                                    <span className="album-song-title">{song.name}</span>
                                                 </div>
                                             </div>
+                                            <span className="song-actions">
+                                                <a
+                                                    className="btn btn-4 btn-black play-song"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation()
+                                                        isPlaying(song.eid) ? pause() : playSong(song.eid)
+                                                    }}
+                                                >
+                                                    {isPlaying(song.eid) ? <PauseIcon /> : <PlayIcon />}
+                                                </a>
+                                            </span>
                                         </div>
                                     ))}
+                                    {(!albumData.songs || albumData.songs.length === 0) && <div>No songs found</div>}
                                 </div>
-                                {albumData.albums && albumData.albums.length > 0 && (
-                                    <>
-                                        <p>Albums</p>
-                                        <div className="album-albums">
-                                            {(!albumData.albums || albumData.albums.length === 0) && <div>No albums found</div>}
-                                            {albumData.albums?.map((album: any, index: number) => (
-                                                <div key={index} className="album-album">
-                                                    <div className="album-album-img">
-                                                        <img src={album.song_art_image_thumbnail_url} alt={album.title} />
-                                                    </div>
-                                                    <div className="album-album-info">
-                                                        <span className="album-album-title">{album.title}</span>
-                                                        <span className="album-album-year">{album.year}</span>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </>
-                                )}
                             </>
                         )}
                     </div>
