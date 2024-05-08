@@ -4,9 +4,10 @@ import axios from 'axios'
 import { useModal } from '../contexts/ModalContext'
 import { usePlayer } from '../contexts/PlayerContext'
 import { useNavigate, useParams } from 'react-router-dom'
+import useResourceInContext from '~/hooks/resourceInContext'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
-import AnimatedLoading from '~/components/AnimatedLoading'
-import SongPage from './SongPage'
+import AnimatedLoading from '../components/AnimatedLoading'
+import BackButton from '../components/BackButton'
 import SearchInput from '../components/SearchInput'
 import NoSoundIcon from '../components/Icons/NoSoundIcon'
 import TrashIcon from '../components/Icons/TrashIcon'
@@ -38,11 +39,25 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
     const [search, setSearch] = React.useState<string>('')
     const [loadingResults, setLoadingResults] = React.useState<boolean>(false)
     const [results, setResults] = React.useState<any[]>([])
-    const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { openModal, closeModal } = useModal()
     const { pause, isPlaying, playPlaylistSong } = usePlayer()
     const { id } = useParams()
     const Navigate = useNavigate()
+
+    const getPlaylistData = (): Promise<void> => {
+        return new Promise((resolve, reject) => {
+            const playlistId = props.playlistId || id
+            axios
+                .get(`/api/v1/playlists/${playlistId}`)
+                .then((response) => {
+                    setPlaylistData(response.data)
+                    resolve()
+                })
+                .catch(reject)
+        })
+    }
+
+    const { resourceInContext, setSelectedItem } = useResourceInContext(playlistData?.name, getPlaylistData)
 
     React.useEffect(() => {
         const playlistId = props.playlistId || id
@@ -51,7 +66,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
             setLoading(false)
         } else {
             setLoading(true)
-            getPlaylistData(() => {
+            getPlaylistData().then(() => {
                 setLoading(false)
             })
         }
@@ -76,14 +91,6 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
         return () => controller.abort()
     }, [search])
 
-    const getPlaylistData = (callback?: Function) => {
-        const playlistId = props.playlistId || id
-        axios.get(`/api/v1/playlists/${playlistId}`).then((response) => {
-            setPlaylistData(response.data)
-            if (callback) callback()
-        })
-    }
-
     const reorderPlaylist = (songIndexes: number[]) => {
         axios.post(`/api/v1/playlists/${playlistData.id}/reorder`, { song_indexes: songIndexes }).then((response) => {
             getPlaylistData()
@@ -98,7 +105,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
 
     const deleteSong = (id: number) => {
         axios.delete(`/api/v1/playlists/${playlistData.id}/playlist_songs/${id}`).then((response) => {
-            getPlaylistData(() => {
+            getPlaylistData().then(() => {
                 closeModal()
             })
         })
@@ -198,7 +205,7 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                 key={index}
                 className="playlist-song"
                 onClick={() => {
-                    setSelectedItem(song)
+                    setSelectedItem({ ...song, _type: 'song' })
                 }}
             >
                 <div className="playlist-song-left">
@@ -269,30 +276,26 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
         </div>
     )
 
+    if (resourceInContext) return resourceInContext
+
     return (
         <>
-            {selectedItem && <SongPage songId={selectedItem.eid} backButton={{ onClick: () => setSelectedItem(null), text: `Back to ${playlistData.name}` }} />}
-            {!selectedItem && (
-                <div className="playlist-page">
-                    <button className="btn btn-sm btn-sm-3d btn-primary back-button" onClick={() => Navigate('../')}>
-                        <span>&lt;&nbsp;&nbsp;</span>
-                        Back to Playlists
-                    </button>
-                    <div className="playlist-page-content">
-                        <div className="search-music-container">
-                            <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
-                            {search.length > 0 && searchResults}
-                        </div>
-                        {!loading && (
-                            <>
-                                <h1 className="playlist-title">{playlistData?.name}</h1>
-                                {playlistData?.songs.length > 0 && playlistSongs}
-                                {playlistData?.songs.length === 0 && <NoSongs />}
-                            </>
-                        )}
+            <div className="playlist-page">
+                <BackButton text="Back to Playlists" />
+                <div className="playlist-page-content">
+                    <div className="search-music-container">
+                        <SearchInput placeholder="Search music..." onChange={(e) => setSearch(e.target.value)} value={search} />
+                        {search.length > 0 && searchResults}
                     </div>
+                    {!loading && (
+                        <>
+                            <h1 className="playlist-title">{playlistData?.name}</h1>
+                            {playlistData?.songs.length > 0 && playlistSongs}
+                            {playlistData?.songs.length === 0 && <NoSongs />}
+                        </>
+                    )}
                 </div>
-            )}
+            </div>
         </>
     )
 }

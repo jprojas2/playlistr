@@ -1,7 +1,7 @@
 class Api::V1::PlaylistsController < Api::V1::ApiController
   before_action :authorize_request
   before_action :set_playlist_collection
-  before_action :set_playlist, only: %i[ show update destroy play reorder ]
+  before_action :set_playlist, only: %i[ show update destroy play reorder remove_song ]
 
   def index
     @playlists = @playlists.includes(:songs)
@@ -40,6 +40,10 @@ class Api::V1::PlaylistsController < Api::V1::ApiController
       playlist_song.update!(song_index: params[:song_indexes].index(playlist_song.song_index))
     end
     head :no_content
+  end
+
+  def remove_song
+    @playlist.playlist_songs.find_by!(song_id: params[:song_id]).destroy!
   end
 
   private

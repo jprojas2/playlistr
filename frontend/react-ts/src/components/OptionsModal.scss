@@ -1,0 +1,10 @@
+.modal.options-modal {
+    max-width: 300px;
+    .modal-body {
+        position: relative;
+        z-index: 0;
+        a.btn {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

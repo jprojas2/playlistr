@@ -24,6 +24,8 @@ Rails.application.routes.draw do
           post :play
           post :favorite
           post :unfavorite
+          post :play_next
+          post :add_to_queue
         end
       end
       resources :artists, param: :eid, only: %i[ index show ]
@@ -32,6 +34,7 @@ Rails.application.routes.draw do
         member do
           post :play
           post :reorder
+          post :remove_song
         end
         resources :playlist_songs, param: :song_index, only: %i[ index create destroy ] do
           member do

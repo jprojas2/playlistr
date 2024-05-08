@@ -31,10 +31,21 @@ class Player < ApplicationRecord
     player_items.create(song: song, song_index: player_items.count)
   end
 
+  def add_song_at(song, song_index)
+    with_keeping_current_song do
+      player_items.where('song_index >= ?', song_index).update_all('song_index = song_index + 1')
+      player_items.create!(song: song, song_index: song_index)
+    end
+  end
+
   def play_song(song)
     clear
     add_song(song)
     play
+  end
+
+  def play_song_next(song)
+    add_song_at(song, playing_index + 1)
   end
 
   def play_playlist(playlist, song_index = 0)
@@ -73,7 +84,7 @@ class Player < ApplicationRecord
   def with_keeping_current_song
     playing_song = player_items.find_by(song_index: playing_index)
     yield
-    update(playing_index: playing_song ? playing_song.reload.song_index : player_items.size)
+    update(playing_index: playing_song ? playing_song.reload.song_index : playing_index)
   end
   
   def refresh_indexes

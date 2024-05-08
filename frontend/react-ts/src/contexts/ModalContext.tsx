@@ -12,7 +12,7 @@ export const ModalProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         modalRef.current.classList.add('opening')
         setTimeout(() => {
             modalRef.current.classList.remove('opening')
-            modalRef.current.getElementsByTagName('input')[0].focus()
+            modalRef.current.getElementsByTagName('input')[0]?.focus()
         }, 1)
     }
 

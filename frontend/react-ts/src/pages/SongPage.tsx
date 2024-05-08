@@ -11,6 +11,9 @@ import EllipsisIcon from '../components/Icons/EllipsisIcon'
 import PauseIcon from '../components/Icons/PauseIcon'
 import useResourceInContext from '../hooks/resourceInContext'
 import BackButton, { backButtonProps } from '../components/BackButton'
+import OptionsModal from '../components/OptionsModal'
+import AddToPlaylistModal from '../components/SongPage/AddToPlaylistModal'
+import { useModal } from '../contexts/ModalContext'
 
 type SongPageProps = {
     songId?: string | null
@@ -22,13 +25,13 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     const [loading, setLoading] = React.useState<boolean>(false)
     const [loadingLyrics, setLoadingLyrics] = React.useState<boolean>(false)
     const [songData, setSongData] = React.useState<any>(props.songData || null)
-    const { playSong, isPlaying, pause } = usePlayer()
+    const { playSong, playSongNext, addSongToQueue, isPlaying, pause } = usePlayer()
     const { id } = useParams()
     const { resourceInContext, setSelectedItem } = useResourceInContext(songData?.name)
+    const { openModal, closeModal } = useModal()
 
     React.useEffect(() => {
         const songId = props.songData?.eid || props.songId || id
-        console.log('songId', songId)
         if (window.location.pathname.includes('browse')) window.history.pushState({}, '', `/browse/songs/${songId}`)
         if (!songData) setLoading(true)
         axios.get(`/api/v1/songs/${songId}`).then((res) => {
@@ -121,7 +124,41 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                                     </span>
                                     <span>{isPlaying(songData.eid) ? 'Pause' : 'Play'}</span>
                                 </a>
-                                <a className="btn btn-2 btn-primary more-button" href="#" target="_blank">
+                                <a
+                                    className="btn btn-2 btn-primary more-button"
+                                    href="#"
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        openModal(
+                                            <OptionsModal
+                                                options={[
+                                                    {
+                                                        name: 'Play',
+                                                        onClick: () => {
+                                                            playSong(songData.eid)
+                                                            closeModal()
+                                                        }
+                                                    },
+                                                    {
+                                                        name: 'Play next',
+                                                        onClick: () => {
+                                                            playSongNext(songData.eid)
+                                                            closeModal()
+                                                        }
+                                                    },
+                                                    {
+                                                        name: 'Add to queue',
+                                                        onClick: () => {
+                                                            addSongToQueue(songData.eid)
+                                                            closeModal()
+                                                        }
+                                                    }
+                                                ]}
+                                                closeModal={closeModal}
+                                            />
+                                        )
+                                    }}
+                                >
                                     <span className="icon">
                                         <EllipsisIcon />
                                     </span>
@@ -160,7 +197,14 @@ const SongPage: React.FC<SongPageProps> = (props) => {
                                     <span>Favorite</span>
                                 </a>
                             )}
-                            <a className="btn btn-2 btn-primary playlist-button" href="#" download>
+                            <a
+                                className="btn btn-2 btn-primary playlist-button"
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    openModal(<AddToPlaylistModal song={songData} closeModal={closeModal} />)
+                                }}
+                            >
                                 <span className="icon">
                                     <PlaylistPlusIcon />
                                 </span>

@@ -1,6 +1,6 @@
 class Api::V1::SongsController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_song, only: %i[ show lyrics play favorite unfavorite]
+  before_action :set_song, only: %i[ show lyrics play favorite unfavorite play_next add_to_queue]
   before_action :persist_song, only: %i[ play]
 
   def index
@@ -35,6 +35,16 @@ class Api::V1::SongsController < Api::V1::ApiController
   rescue => e
     puts e.message
     render json: { error: 'Player not found' }, status: :not_found
+  end
+
+  def play_next
+    @player = @current_user.player
+    @player.play_song_next(@song)
+  end
+
+  def add_to_queue
+    @player = @current_user.player
+    @player.add_song(@song)
   end
   
   private

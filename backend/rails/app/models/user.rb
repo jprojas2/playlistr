@@ -15,4 +15,8 @@ class User < ApplicationRecord
   def to_param
     username
   end
+
+  def player
+    super || create_player
+  end
 end

@@ -186,7 +186,7 @@
                         svg:last-child {
                             transform: scale(1);
                         }
-                        background-color: rgb(255, 180, 180);
+                        background-color: $danger-color;
                     }
                 }
                 .unfavorite-button {
@@ -218,7 +218,7 @@
                         transform: scale(0);
                         opacity: 0;
                     }
-                    background-color: rgb(255, 180, 180);
+                    background-color: $danger-color;
                 }
             }
         }

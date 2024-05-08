@@ -3,7 +3,7 @@ import './FavoritesPage.scss'
 import axios from 'axios'
 import { useModal } from '../contexts/ModalContext'
 import { usePlayer } from '../contexts/PlayerContext'
-import SongPage from './SongPage'
+import useResourceInContext from '../hooks/resourceInContext'
 import SearchInput from '../components/SearchInput'
 import TrashIcon from '../components/Icons/TrashIcon'
 import PlayIcon from '../components/Icons/PlayIcon'
@@ -16,20 +16,26 @@ const FavoritesPage = () => {
     const [loading, setLoading] = React.useState<boolean>(true)
     const [search, setSearch] = React.useState<string>('')
     const [favorites, setFavorites] = React.useState<any[]>([])
-    const [selectedItem, setSelectedItem] = React.useState<any>(null)
     const { openModal, closeModal } = useModal()
     const { playSong, isPlaying, pause } = usePlayer()
 
-    React.useEffect(() => {
-        getFavorites(() => setLoading(false))
-    }, [])
-
-    const getFavorites = (callback: () => void) => {
-        axios.get('http://localhost:3001/api/v1/favorites').then((response) => {
-            setFavorites(response.data)
-            callback()
+    const getFavorites = (): Promise<void> => {
+        return new Promise((resolve, reject) => {
+            axios
+                .get('http://localhost:3001/api/v1/favorites')
+                .then((response) => {
+                    setFavorites(response.data)
+                    resolve()
+                })
+                .catch(reject)
         })
     }
+
+    const { resourceInContext, setSelectedItem } = useResourceInContext('Favorites', getFavorites)
+
+    React.useEffect(() => {
+        getFavorites().then(() => setLoading(false))
+    }, [])
 
     const filteredFavorites = (): any[] => {
         return favorites.filter((favorite): boolean => {
@@ -89,7 +95,7 @@ const FavoritesPage = () => {
     const results = (
         <div className="favorites">
             {filteredFavorites().map((favorite) => (
-                <div key={favorite.id} className="favorite" onClick={() => setSelectedItem(favorite)}>
+                <div key={favorite.id} className="favorite" onClick={() => setSelectedItem({ ...favorite.song, _type: 'song' })}>
                     <div className="favorite-left">
                         <div className="favorite-img">
                             <img src={favorite.song.image_url} alt={favorite.song.name} />
@@ -126,33 +132,22 @@ const FavoritesPage = () => {
         </div>
     )
 
+    if (resourceInContext) return resourceInContext
+
     return (
         <>
-            {selectedItem && (
-                <SongPage
-                    songId={selectedItem.song.eid}
-                    backButton={{
-                        onClose: () => {
-                            getFavorites(() => setSelectedItem(null))
-                        },
-                        text: 'Back to Favorites'
+            <div className="favorites-page">
+                <SearchInput
+                    placeholder="Search favorites..."
+                    value={search}
+                    onChange={(e) => {
+                        setSearch(e.target.value)
                     }}
                 />
-            )}
-            {!selectedItem && (
-                <div className="favorites-page">
-                    <SearchInput
-                        placeholder="Search favorites..."
-                        value={search}
-                        onChange={(e) => {
-                            setSearch(e.target.value)
-                        }}
-                    />
-                    {!loading && filteredFavorites().length > 0 && results}
-                    {!loading && favorites.length === 0 && NoFavorites}
-                    {!loading && favorites.length > 0 && filteredFavorites().length === 0 && NoResults}
-                </div>
-            )}
+                {!loading && filteredFavorites().length > 0 && results}
+                {!loading && favorites.length === 0 && NoFavorites}
+                {!loading && favorites.length > 0 && filteredFavorites().length === 0 && NoResults}
+            </div>
         </>
     )
 }

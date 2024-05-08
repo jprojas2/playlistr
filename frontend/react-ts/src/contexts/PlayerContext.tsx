@@ -30,6 +30,18 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         })
     }
 
+    const playSongNext = (songId: string) => {
+        axios.post(`http://localhost:3001/api/v1/songs/${songId}/play_next`).then((response) => {
+            getPlayerData()
+        })
+    }
+
+    const addSongToQueue = (songId: string) => {
+        axios.post(`http://localhost:3001/api/v1/songs/${songId}/add_to_queue`).then((response) => {
+            getPlayerData()
+        })
+    }
+
     const playPlaylist = (playlistId: string) => {
         axios.post(`http://localhost:3001/api/v1/playlists/${playlistId}/play`).then((response) => {
             getPlayerData()
@@ -48,7 +60,9 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return true
     }
     return (
-        <PlayerContext.Provider value={{ playerData, setPlayerData, play, pause, playSong, playPlaylist, playPlaylistSong, isPlaying }}>
+        <PlayerContext.Provider
+            value={{ playerData, setPlayerData, play, pause, playSong, playSongNext, addSongToQueue, playPlaylist, playPlaylistSong, isPlaying }}
+        >
             {children}
         </PlayerContext.Provider>
     )
