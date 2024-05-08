@@ -2,9 +2,12 @@ import React from 'react'
 import './Player.scss'
 import axios from 'axios'
 import { usePlayer } from '../../contexts/PlayerContext'
+import { useNavigate } from 'react-router-dom'
+import { ROUTES } from '~/resources/routes-constants'
 
 const Player: React.FC = () => {
     const { playerData, setPlayerData } = usePlayer()
+    const Navigate = useNavigate()
 
     React.useEffect(() => {
         axios.get('api/v1/player').then((response) => {
@@ -24,9 +27,30 @@ const Player: React.FC = () => {
                         {!playerData?.current_song && <img src="https://via.placeholder.com/150" alt="Song Art" />}
                     </div>
                     <div className="song-info">
-                        <span className="song-title">{playerData?.current_song?.name}</span>
-                        <span className="song-artist">{playerData?.current_song?.artist?.name}</span>
-                        <span className="song-album">{playerData?.current_song?.album?.name}</span>
+                        <a
+                            className="song-title"
+                            onClick={() => {
+                                Navigate(`${ROUTES.BROWSE_ROUTE}/${ROUTES.BROWSE_SUBROUTES.SONGS_ROUTE}/${playerData?.current_song?.eid}`)
+                            }}
+                        >
+                            {playerData?.current_song?.name}
+                        </a>
+                        <span
+                            className="song-artist"
+                            onClick={() => {
+                                Navigate(`${ROUTES.BROWSE_ROUTE}/${ROUTES.BROWSE_SUBROUTES.ARTISTS_ROUTE}/${playerData?.current_song?.artist?.eid}`)
+                            }}
+                        >
+                            {playerData?.current_song?.artist?.name}
+                        </span>
+                        <span
+                            className="song-album"
+                            onClick={() => {
+                                Navigate(`${ROUTES.BROWSE_ROUTE}/${ROUTES.BROWSE_SUBROUTES.ALBUMS_ROUTE}/${playerData?.current_song?.album?.eid}`)
+                            }}
+                        >
+                            {playerData?.current_song?.album?.name}
+                        </span>
                     </div>
                 </div>
                 <div className="player-body-center">

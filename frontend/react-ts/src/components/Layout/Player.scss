@@ -54,6 +54,10 @@
                     font-size: 1.3rem;
                     font-weight: 300;
                 }
+                > :hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
         .player-body-center {
