@@ -245,6 +245,10 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
         )
     }
 
+    const isSongInPlaylist = (song: any): boolean => {
+        return !!playlistData.songs.find((playlistSong: any) => playlistSong.eid === song.eid)
+    }
+
     const searchResults = (
         <div className="search-results">
             {loadingResults && (
@@ -256,8 +260,9 @@ const PlaylistPage: React.FC<PlaylistPageProps> = (props) => {
                 results.map((result: any, index: number) => (
                     <div
                         key={index}
-                        className="search-result"
-                        onClick={() => {
+                        className={`search-result ${isSongInPlaylist(result) ? 'disabled' : ''}`}
+                        onClick={(e) => {
+                            if (isSongInPlaylist(result)) return
                             addSongItem(result)
                         }}
                     >

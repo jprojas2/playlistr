@@ -2,6 +2,8 @@ class PlaylistSong < ApplicationRecord
   belongs_to :playlist
   belongs_to :song
 
+  validates_uniqueness_of :song_id, scope: :playlist_id
+
   after_destroy :reorder_songs
 
   def to_param

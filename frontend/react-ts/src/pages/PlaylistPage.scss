@@ -166,6 +166,9 @@
                 bottom: 0;
                 position: absolute;
             }
+            &.disabled {
+                color: $gray;
+            }
             @include flexbox(start, start, row, nowrap);
             gap: 1rem;
             padding: 2rem 2rem;
