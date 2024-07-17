@@ -3,7 +3,7 @@
  */
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Sidebar, { sidebarLinks } from '../../../components/Layout/Sidebar'
+import Sidebar, { sidebarLinks } from '../../../components/MainLayout/Sidebar'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 test('renders sidebar', () => {

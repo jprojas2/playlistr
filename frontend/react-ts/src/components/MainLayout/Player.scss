@@ -10,6 +10,7 @@
     height: $player-height;
     border-top: 1px solid black;
     z-index: 10;
+    animation: slideUpWithBounce 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     .progress-bar {
         height: $player-progress-bar-height;
         .progress {

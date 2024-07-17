@@ -5,6 +5,7 @@ export const AuthContext = React.createContext<any>(null)
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [token, setToken] = React.useState(localStorage.getItem('token'))
+    const [user, setUser] = React.useState<any>({})
 
     React.useLayoutEffect(() => {
         if (token) {
@@ -25,6 +26,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
     }, [token])
 
+    React.useEffect(() => {
+        if (token) {
+            axios.get('/api/v1/user').then((res) => {
+                setUser(res.data)
+            })
+        }
+    }, [])
+
     const contextValue = useMemo(
         () => ({
             token,
@@ -33,7 +42,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         [token]
     )
 
-    return <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>
+    return <AuthContext.Provider value={{ ...contextValue, user, setUser }}>{children}</AuthContext.Provider>
 }
 
 export const useAuth = () => useContext(AuthContext)

@@ -3,7 +3,7 @@ import './LoginPage.scss'
 import axios from 'axios'
 import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
-import Background from '~/components/Layout/Background'
+import Background from '~/components/MainLayout/Background'
 
 const LoginPage: React.FC = () => {
     const [email, setEmail] = React.useState('')
@@ -45,7 +45,6 @@ const LoginPage: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Background />
         </>
     )
 }

@@ -1,0 +1,79 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.modal.user-profile-modal {
+    width: 300px;
+    .modal-header {
+        @include flexbox(start, center, row, nowrap);
+        .back {
+            padding-right: 1rem;
+            padding-top: 0.15rem;
+            fill: white;
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        @include flexbox(center, center, column, nowrap);
+        gap: 1.2rem;
+        .user-avatar {
+            @include square(10rem);
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid $black;
+            position: relative;
+            img {
+                @include square(100%);
+            }
+            input {
+                display: none;
+            }
+            .avatar-edit-overlay {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                    background: #00000029;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                svg {
+                    fill: white;
+                    width: 2rem;
+                }
+                span {
+                    color: white;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .user-info {
+            font-size: 1.2rem;
+            @include flexbox(center, center, column, nowrap);
+            .user-name {
+                font-style: normal;
+                margin-bottom: 0.2rem;
+            }
+        }
+        .user-fields {
+            margin-bottom: 1.5rem;
+        }
+        .user-actions {
+            width: 100%;
+            @include flexbox(center, center, column, nowrap);
+            position: relative;
+            z-index: 0;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+            .btn {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}

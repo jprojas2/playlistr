@@ -1,10 +1,12 @@
 @import '../styles/variables.scss';
 @import '../styles/mixins.scss';
+@import '../styles/animations.scss';
 
 .main-wrapper {
     height: 100%;
     display: flex;
     justify-content: center;
+    animation: slideDownWithBounce 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     .main {
         position: relative;
         aspect-ratio: 16/9;

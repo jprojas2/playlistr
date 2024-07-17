@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.scss'
 import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
+import User from './User'
 
 const sidebarLinks = [
     { linkText: 'Browse', pathname: ROUTES.BROWSE_ROUTE },
@@ -23,6 +24,7 @@ const Sidebar: React.FC = () => {
                     </NavLink>
                 ))}
             </div>
+            <User />
         </aside>
     )
 }

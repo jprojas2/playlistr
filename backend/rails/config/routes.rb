@@ -43,6 +43,11 @@ Rails.application.routes.draw do
         end
       end
       resources :users, param: :_username, except: %[i new]
+      resource :user do
+        member do
+          delete :delete_avatar
+        end
+      end
       resources :favorites, only: %i[ index destroy ] do
         collection do
           post :reorder
@@ -54,6 +59,4 @@ Rails.application.routes.draw do
   end
   
   options '*path', to: 'application#cors_preflight_check'
-
-  get '/*a', to: 'application#not_found'
 end

@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.user {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    z-index: 1;
+    background-color: $white;
+    // border: 1px solid $black;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        .user-content {
+            .user-name {
+                text-decoration: underline;
+            }
+        }
+    }
+    // transform: translateX(60%);
+    .user-content {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .user-image {
+        @include square(2rem);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid $black;
+        img {
+            @include square(100%);
+        }
+    }
+    .user-name {
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+}

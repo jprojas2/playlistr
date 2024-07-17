@@ -31,9 +31,9 @@ const RootComponent: React.FC = () => {
                     <Router>
                         <Routes>
                             <Route path="*" element={<NotFoundPage />} />
-                            <Route path={ROUTES.LOGIN_ROUTE} element={<LoginPage />} />
-                            <Route element={<AuthComponent />}>
-                                <Route element={<MainLayout />}>
+                            <Route element={<MainLayout />}>
+                                <Route path={ROUTES.LOGIN_ROUTE} element={<LoginPage />} />
+                                <Route element={<AuthComponent />}>
                                     <Route path={ROUTES.HOMEPAGE_ROUTE} element={<Navigate to="/browse" />} />
                                     <Route path={ROUTES.BROWSE_ROUTE}>
                                         <Route path={`${ROUTES.BROWSE_SUBROUTES.SONGS_ROUTE}/:id`} element={<SongPage />} />

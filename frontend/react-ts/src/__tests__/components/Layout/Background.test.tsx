@@ -3,7 +3,7 @@
  */
 import { render, screen, waitFor } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Background from '../../../components/Layout/Background'
+import Background from '../../../components/MainLayout/Background'
 
 test('renders background', () => {
     render(<Background />)
