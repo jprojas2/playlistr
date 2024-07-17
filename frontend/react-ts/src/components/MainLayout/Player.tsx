@@ -10,7 +10,7 @@ const Player: React.FC = () => {
     const Navigate = useNavigate()
 
     React.useEffect(() => {
-        axios.get('api/v1/player').then((response) => {
+        axios.get('/api/v1/player').then((response) => {
             setPlayerData(response.data)
         })
     }, [])
