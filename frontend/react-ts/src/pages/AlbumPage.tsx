@@ -20,12 +20,11 @@ const AlbumPage: React.FC<AlbumPageProps> = (props) => {
     const [loadingExtraData, setLoadingExtraData] = React.useState<boolean>(false)
     const [albumData, setAlbumData] = React.useState<any>(props.albumData || null)
     const { id } = useParams()
+    const albumId = props.albumData?.eid || props.albumId || id
     const { isPlaying, playSong, pause, playlistData } = usePlayer()
-    const { resourceInContext, setSelectedItem } = useResourceInContext(albumData?.name)
+    const { resourceInContext, setSelectedItem } = useResourceInContext(albumData?.name, `/browse/albums/${albumId}`)
 
     React.useEffect(() => {
-        const albumId = props.albumData?.eid || props.albumId || id
-        if (window.location.href.includes('/browse')) window.history.pushState({}, '', `/browse/albums/${albumId}`)
         if (albumData) setLoadingExtraData(true)
         else setLoading(true)
         setLoading(true)
@@ -35,7 +34,7 @@ const AlbumPage: React.FC<AlbumPageProps> = (props) => {
             setLoadingExtraData(false)
         })
     }, [])
-
+    console.log(props.backButton)
     if (resourceInContext) return resourceInContext
 
     return (

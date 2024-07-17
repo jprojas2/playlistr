@@ -27,12 +27,11 @@ const SongPage: React.FC<SongPageProps> = (props) => {
     const [songData, setSongData] = React.useState<any>(props.songData || null)
     const { playSong, playSongNext, addSongToQueue, isPlaying, pause } = usePlayer()
     const { id } = useParams()
-    const { resourceInContext, setSelectedItem } = useResourceInContext(songData?.name)
+    const songId = props.songData?.eid || props.songId || id
+    const { resourceInContext, setSelectedItem } = useResourceInContext(songData?.name, `/browse/songs/${songId}`)
     const { openModal, closeModal } = useModal()
 
     React.useEffect(() => {
-        const songId = props.songData?.eid || props.songId || id
-        if (window.location.pathname.includes('browse')) window.history.pushState({}, '', `/browse/songs/${songId}`)
         if (!songData) setLoading(true)
         axios.get(`/api/v1/songs/${songId}`).then((res) => {
             setSongData(res.data)

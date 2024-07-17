@@ -21,11 +21,10 @@ const ArtistPage: React.FC<ArtistPageProps> = (props) => {
     const [artistData, setArtistData] = React.useState<any>(props.artistData || null)
     const { id } = useParams()
     const { isPlaying, playSong, pause } = usePlayer()
-    const { resourceInContext, setSelectedItem } = useResourceInContext(artistData?.name)
+    const artistId = props.artistData?.eid || props.artistId || id
+    const { resourceInContext, setSelectedItem } = useResourceInContext(artistData?.name, `/browse/artists/${artistId}`)
 
     React.useEffect(() => {
-        const artistId = props.artistData?.eid || props.artistId || id
-        if (window.location.href.includes('/browse')) window.history.pushState({}, '', `/browse/artists/${artistId}`)
         if (artistData) setLoadingExtraData(true)
         else setLoading(true)
         axios.get(`/api/v1/artists/${artistId}`).then((res) => {

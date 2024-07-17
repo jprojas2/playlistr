@@ -31,7 +31,7 @@ const FavoritesPage = () => {
         })
     }
 
-    const { resourceInContext, setSelectedItem } = useResourceInContext('Favorites', getFavorites)
+    const { resourceInContext, setSelectedItem } = useResourceInContext('Favorites', null, getFavorites)
 
     React.useEffect(() => {
         getFavorites().then(() => setLoading(false))

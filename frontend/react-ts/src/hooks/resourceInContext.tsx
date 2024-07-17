@@ -3,7 +3,7 @@ import AlbumPage from '~/pages/AlbumPage'
 import ArtistPage from '~/pages/ArtistPage'
 import SongPage from '~/pages/SongPage'
 
-const useResourceInContext = (context: string, beforeBack?: Function) => {
+const useResourceInContext = (context: string, url?: string | null, beforeBack?: Function) => {
     const [selectedItem, setSelectedItem] = React.useState<any>(null)
     let resourceInContext: JSX.Element | null = null
 
@@ -11,6 +11,14 @@ const useResourceInContext = (context: string, beforeBack?: Function) => {
         if (beforeBack) beforeBack().then(() => setSelectedItem(null))
         else setSelectedItem(null)
     }
+
+    // React.useEffect(() => {
+    //     if (url) window.history.replaceState(null, '', url)
+    // }, [])
+
+    // React.useEffect(() => {
+    //     if (!selectedItem && url) window.history.replaceState(null, '', url)
+    // }, [selectedItem])
 
     const text = `Back to ${context}`
     if (selectedItem)
