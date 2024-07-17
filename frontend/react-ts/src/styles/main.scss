@@ -1,9 +1,111 @@
 @import './_variables';
 @import './_mixins';
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
 * {
     box-sizing: border-box;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -21,6 +123,61 @@ body {
     color: $main-text-color;
     background-color: $main-background-color;
     font-size: $main-text-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 700;
+    line-height: 1.2em;
+}
+h1,
+.h1 {
+    font-size: 2.5rem;
+}
+h2,
+.h2 {
+    font-size: 2rem;
+}
+h3,
+.h3 {
+    font-size: 1.75rem;
+}
+h4,
+.h4 {
+    font-size: 1.5rem;
+}
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+root {
+    --black: $black;
+    --darker-blue: rgb(5, 5, 29);
+    --dark-blue: rgb(12, 12, 70);
+    --light-blue: rgb(13, 100, 176);
+    --lighter-blue: rgb(180, 220, 255);
+    --gray: rgb(167, 167, 167);
+    --light-gray: rgb(210, 210, 210);
+    --lighter-gray: rgb(243, 243, 243);
+    --off-white: rgb(252, 252, 252);
+    --white: $white;
+
+    --white-a90: rgba(255, 255, 255, 0.9);
 }
 
 code {
@@ -159,6 +316,28 @@ code {
     }
 }
 
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    &:not([role='searchbox']) {
+        width: 100%;
+        padding: 10px;
+        border: unset;
+        border-bottom: 1px solid black;
+        font-size: 1rem;
+        transition: all 0.3s;
+        &::placeholder {
+            font-style: italic;
+        }
+        &:not(:last-child) {
+            margin-bottom: 0.8rem;
+        }
+        &:focus {
+            // border-bottom: 1px solid $primary-color;
+        }
+    }
+}
+
 input::placeholder {
     font-family: 'Inter', sans-serif;
 }
@@ -194,7 +373,6 @@ input::placeholder {
     border-radius: 1.3rem;
     border: 1px solid black;
     box-shadow: 0.4rem 0.4rem 0 #111111;
-    top: 10rem;
     background-color: white;
     position: relative;
     margin: auto;
@@ -215,17 +393,23 @@ input::placeholder {
     width: 100%;
     height: 100%;
     z-index: 11;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
+    transition: opacity 0.2s linear;
 }
 
 .modal-container.open {
     opacity: 1;
-    animation: fadeIn 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: all;
-    .modal {
+    .modal.opening {
         animation: fadeInAndSlideUp 0.2s ease-in-out;
     }
+}
+
+.modal-container.opening {
+    animation: fadeIn 0.2s linear;
 }
 
 .modal-container.closing {
@@ -260,9 +444,13 @@ input::placeholder {
 }
 
 .modal-body {
-    padding: 2rem 1.5rem 1rem;
+    padding: 2rem 2rem 1rem;
     font-size: 1rem;
     font-style: italic;
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
 }
 
 .modal-footer {
