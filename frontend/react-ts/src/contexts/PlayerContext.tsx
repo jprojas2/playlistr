@@ -24,6 +24,18 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         })
     }
 
+    const previous = () => {
+        axios.post('http://localhost:3001/api/v1/player/previous').then((response) => {
+            setPlayerData(response.data)
+        })
+    }
+
+    const next = () => {
+        axios.post('http://localhost:3001/api/v1/player/next').then((response) => {
+            setPlayerData(response.data)
+        })
+    }
+
     const playSong = (songId: string) => {
         axios.post(`http://localhost:3001/api/v1/songs/${songId}/play`).then((response) => {
             getPlayerData()
@@ -48,6 +60,12 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         })
     }
 
+    const playFavorite = (favoriteId: number) => {
+        axios.post(`http://localhost:3001/api/v1/favorites/${favoriteId}/play`).then((response) => {
+            getPlayerData()
+        })
+    }
+
     const playPlaylistSong = (playlistId: string, songIndex: number) => {
         axios.post(`http://localhost:3001/api/v1/playlists/${playlistId}/playlist_songs/${songIndex}/play`).then((response) => {
             getPlayerData()
@@ -59,9 +77,38 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         if (songId) return playerData?.current_song?.eid === songId
         return true
     }
+
+    const getProgress = () => {
+        if (!playerData?.current_song) return 0
+
+        const pausedAt = playerData.paused_at || 0
+        const startedAt = playerData.playing ? new Date(playerData.started_at) : new Date()
+        const now = new Date()
+        const duration = playerData.current_song.duration || 200000
+        const elapsed = now.getTime() - startedAt.getTime() + pausedAt * 1000
+
+        return (elapsed / duration) * 100
+    }
+
     return (
         <PlayerContext.Provider
-            value={{ playerData, setPlayerData, play, pause, playSong, playSongNext, addSongToQueue, playPlaylist, playPlaylistSong, isPlaying }}
+            value={{
+                playerData,
+                setPlayerData,
+                getPlayerData,
+                play,
+                pause,
+                previous,
+                next,
+                playSong,
+                playSongNext,
+                addSongToQueue,
+                playPlaylist,
+                playPlaylistSong,
+                playFavorite,
+                isPlaying,
+                getProgress
+            }}
         >
             {children}
         </PlayerContext.Provider>

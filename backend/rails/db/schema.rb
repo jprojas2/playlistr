@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_19_013223) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_17_204111) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -82,7 +82,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_19_013223) do
     t.integer "user_id", null: false
     t.boolean "playing", default: false, null: false
     t.datetime "started_at"
-    t.integer "paused_at"
+    t.float "paused_at"
     t.integer "playing_index"
     t.index ["user_id"], name: "index_players_on_user_id"
   end

@@ -10,3 +10,4 @@ json.album do
   json.name song.album.name
   json.image_url song.album.image_url
 end if song.album
+json.duration song.duration

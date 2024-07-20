@@ -17,7 +17,7 @@ const FavoritesPage = () => {
     const [search, setSearch] = React.useState<string>('')
     const [favorites, setFavorites] = React.useState<any[]>([])
     const { openModal, closeModal } = useModal()
-    const { playSong, isPlaying, pause } = usePlayer()
+    const { playFavorite, isPlaying, pause } = usePlayer()
 
     const getFavorites = (): Promise<void> => {
         return new Promise((resolve, reject) => {
@@ -121,7 +121,7 @@ const FavoritesPage = () => {
                             className="btn btn-4 btn-black play-song"
                             onClick={(e) => {
                                 e.stopPropagation()
-                                isPlaying(favorite.song.eid) ? pause() : playSong(favorite.song.eid)
+                                isPlaying(favorite.song.eid) ? pause() : playFavorite(favorite.id)
                             }}
                         >
                             {isPlaying(favorite.song.eid) ? <PauseIcon /> : <PlayIcon />}

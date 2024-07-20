@@ -31,20 +31,14 @@ class Api::V1::PlayersController < Api::V1::ApiController
     @player.destroy!
   end
 
-  def play
-    @player.play
+  [:play, :pause, :next, :previous].each do |action|
+    define_method action do
+      @player.send(action)
 
-    render :show
-  rescue
-    render json: { error: 'Player not found' }, status: :not_found
-  end
-
-  def pause
-    @player.pause
-
-    render :show
-  rescue
-    render json: { error: 'Player not found' }, status: :not_found
+      render :show
+    rescue
+      render json: { error: 'Player not found' }, status: :not_found
+    end
   end
 
   private

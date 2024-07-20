@@ -14,8 +14,12 @@ class Player < ApplicationRecord
   end
 
   def next
-    update(playing_index: playing_index + 1,
-      started_at: Time.now, paused_at: 0) if playing_index < player_items.count
+    if playing_index < player_items.count - 1
+      update(playing_index: playing_index + 1,
+        started_at: Time.now, paused_at: 0)
+    else
+      pause
+    end
   end
 
   def previous
@@ -24,7 +28,7 @@ class Player < ApplicationRecord
   end
 
   def pause
-    update(playing: false, paused_at: Time.now - started_at) if playing
+    update(playing: false, paused_at: Time.now - started_at + (paused_at || 0)) if playing
   end
 
   def add_song(song)
@@ -39,9 +43,11 @@ class Player < ApplicationRecord
   end
 
   def play_song(song)
-    clear
-    add_song(song)
-    play
+    with_keeping_song_state(song) do
+      clear
+      add_song(song)
+      play
+    end
   end
 
   def play_song_next(song)
@@ -49,12 +55,27 @@ class Player < ApplicationRecord
   end
 
   def play_playlist(playlist, song_index = 0)
-    clear
-    playlist.songs.each do |song|
-      add_song(song)
+    song_to_be_played = playlist.songs[song_index.to_i]
+    with_keeping_song_state(song_to_be_played) do
+      clear
+      playlist.songs.each do |song|
+        add_song(song)
+      end
+      update(playing_index: song_index)
+      play
     end
-    update(playing_index: song_index)
-    play
+  end
+
+  def play_favorite(favorite)
+    with_keeping_song_state(favorite.song) do
+      clear
+      favorites = user.favorites.includes(:song)
+      favorites.each do |favorite|
+        add_song(favorite.song)
+      end
+      update(playing_index: favorite.favorite_index)
+      play
+    end
   end
 
   def remove_song_at(song_index)
@@ -85,6 +106,15 @@ class Player < ApplicationRecord
     playing_song = player_items.find_by(song_index: playing_index)
     yield
     update(playing_index: playing_song ? playing_song.reload.song_index : playing_index)
+  end
+
+  def with_keeping_song_state song
+    playing_song = player_items.find_by(song_index: playing_index)
+    current_paused_at = paused_at
+    yield
+    if playing_song.song_id == song.id
+      update(paused_at: current_paused_at)
+    end
   end
   
   def refresh_indexes

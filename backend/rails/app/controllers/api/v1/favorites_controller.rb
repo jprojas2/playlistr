@@ -1,6 +1,7 @@
 class Api::V1::FavoritesController < Api::V1::ApiController
   before_action :authorize_request
-  before_action :set_favorite_collection, only: %i[ index reorder ]
+  before_action :set_favorite_collection
+  before_action :set_favorite, only: %i[ play destroy ]
 
   def reorder
     params[:favorites].each_with_index do |favorite, index|
@@ -9,8 +10,11 @@ class Api::V1::FavoritesController < Api::V1::ApiController
     render :index
   end
 
+  def play
+    @current_user.player.play_favorite(@favorite)
+  end
+
   def destroy
-    @favorite = @current_user.favorites.find(params[:id])
     @favorite.destroy
   end
 
@@ -18,6 +22,10 @@ class Api::V1::FavoritesController < Api::V1::ApiController
     # Use callbacks to share common setup or constraints between actions.
     def set_favorite_collection
       @favorites = @current_user.favorites.includes(:song)
+    end
+
+    def set_favorite
+      @favorite = @favorites.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

@@ -29,6 +29,8 @@
             height: 100%;
             gap: 1.5rem;
             align-items: center;
+            flex-basis: 0;
+            flex-grow: 1;
             .song-art {
                 height: $player-song-art-size;
                 aspect-ratio: 1;
@@ -62,7 +64,68 @@
             }
         }
         .player-body-center {
-            display: none;
+            // display: none;
+            display: flex;
+            gap: 1rem;
+            .player-controls {
+                display: flex;
+                gap: 0.6rem;
+                .btn {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 0.5rem;
+                    position: relative;
+                    padding: 0;
+                    @include box-3d-decoration(0.2rem, 0.5rem, white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // transition: transform 0.3s;
+                    svg {
+                        transition: transform 0.3s;
+                    }
+                    &:active svg {
+                        transform: scale(0.9);
+                    }
+                }
+                .btn:first-child svg,
+                .btn:last-child svg {
+                    width: 1rem;
+                }
+                .btn:nth-child(2) {
+                    svg {
+                        width: 0.8rem;
+                        position: absolute;
+                        &:active {
+                            transform: unset;
+                        }
+                    }
+                    svg:nth-child(1) {
+                        opacity: 0;
+                        transform: scale(0.8);
+                    }
+                    svg:nth-child(2) {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    &.playing {
+                        svg:nth-child(1) {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                        svg:nth-child(2) {
+                            opacity: 0;
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .player-body-right {
+            flex-basis: 0;
+            flex-grow: 1;
+            text-align: right;
         }
     }
 }

@@ -52,6 +52,9 @@ Rails.application.routes.draw do
         collection do
           post :reorder
         end
+        member do
+          post :play
+        end
       end
 
       get '/search', to: 'search#index'

@@ -1,24 +1,41 @@
 import React from 'react'
 import './Player.scss'
-import axios from 'axios'
 import { usePlayer } from '../../contexts/PlayerContext'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '~/resources/routes-constants'
+import NextIcon from '../Icons/NextIcon'
+import PreviousIcon from '../Icons/PreviousIcon'
+import PauseIcon from '../Icons/PauseIcon'
+import PlayIcon from '../Icons/PlayIcon'
 
 const Player: React.FC = () => {
-    const { playerData, setPlayerData } = usePlayer()
+    const { playerData, getPlayerData, next, getProgress, play, pause, previous } = usePlayer()
+    const [progress, setProgress] = React.useState<number>(-1)
     const Navigate = useNavigate()
 
     React.useEffect(() => {
-        axios.get('/api/v1/player').then((response) => {
-            setPlayerData(response.data)
-        })
+        getPlayerData()
     }, [])
+
+    React.useEffect(() => {
+        if (progress >= 100 && playerData?.playing) {
+            next()
+            return
+        }
+        const interval = setInterval(() => {
+            if (playerData?.playing) setProgress(getProgress())
+        }, 100)
+        return () => clearInterval(interval)
+    }, [progress])
+
+    React.useEffect(() => {
+        setProgress(getProgress())
+    }, [playerData])
 
     return (
         <div className="main-player">
             <div className="progress-bar">
-                <div className="progress" style={{ width: '50%' }}></div>
+                <div className="progress" style={{ width: progress + '%' }}></div>
             </div>
             <div className="player-body">
                 <div className="player-body-left">
@@ -55,9 +72,21 @@ const Player: React.FC = () => {
                 </div>
                 <div className="player-body-center">
                     <div className="player-controls">
-                        <button className="btn">Previous</button>
-                        <button className="btn">Play</button>
-                        <button className="btn">Next</button>
+                        <button className="btn btn-3d" onClick={() => previous()}>
+                            <PreviousIcon />
+                        </button>
+                        <button
+                            className={`btn btn-black ${playerData?.playing ? 'playing' : ''}`}
+                            onClick={() => {
+                                playerData?.playing ? pause() : play()
+                            }}
+                        >
+                            <PauseIcon />
+                            <PlayIcon />
+                        </button>
+                        <button className="btn" onClick={() => next()}>
+                            <NextIcon />
+                        </button>
                     </div>
                 </div>
                 <div className="player-body-right">

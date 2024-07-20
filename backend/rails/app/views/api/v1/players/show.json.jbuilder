@@ -14,4 +14,5 @@ json.current_song do
     json.eid @player.current_song.album.eid
     json.name @player.current_song.album.name
   end if @player.current_song.album
+  json.duration @player.current_song.duration
 end if @player.current_song
