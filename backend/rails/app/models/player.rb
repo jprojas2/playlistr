@@ -27,6 +27,10 @@ class Player < ApplicationRecord
       started_at: Time.now, paused_at: 0) if playing_index > 0
   end
 
+  def rewind
+    update(started_at: Time.now, paused_at: 0)
+  end
+
   def pause
     update(playing: false, paused_at: Time.now - started_at + (paused_at || 0)) if playing
   end

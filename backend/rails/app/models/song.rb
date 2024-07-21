@@ -7,8 +7,7 @@ class Song < ApplicationRecord
   has_many :playlists, through: :playlist_songs
   has_many :favorites, dependent: :destroy
 
-  attr_accessor :pageviews
-  attr_accessor :path
+  attr_accessor :pageviews, :path, :apple_music_player_url
 
   def self.initialize_by_eid eid
     song = Genius.new.song(eid)
@@ -24,6 +23,13 @@ class Song < ApplicationRecord
     return lyrics if lyrics.present?
     
     self.lyrics = Genius.new.lyrics(eid)
+    save unless new_record?
+  end
+
+  def get_duration
+    return duration if duration.present?
+
+    self.duration = Genius.new.duration(eid)
     save unless new_record?
   end
 end

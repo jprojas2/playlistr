@@ -12,10 +12,12 @@ Rails.application.routes.draw do
     namespace :v1 do
       resource :player do
         member do
+          get :get_duration
           post :play
           post :pause
           post :next
           post :previous
+          post :rewind
         end
       end
       resources :songs, param: :eid, only: %i[ index show ] do

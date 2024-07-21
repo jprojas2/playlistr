@@ -65,6 +65,17 @@ class Genius
     )&.dig("response", "songs")&.map { |song_data| to_song(song_data) } || []
   end
 
+  def duration song_id
+    song = song(song_id)
+    return nil if song.nil?
+
+    player_url = song.apple_music_player_url
+    html = Net::HTTP.get(URI(player_url))
+    doc = Nokogiri::HTML(html)
+    preview_track = doc.css("apple-music-player")[0].attributes["preview_track"]
+    duration = JSON.parse(preview_track.value)["duration"]
+  end
+
   def lyrics song_id
     song = song(song_id)
     return nil if song.nil?
@@ -198,7 +209,8 @@ class Genius
       image_url: song_data['song_art_image_url'],
       thumbnail_url: song_data['song_art_image_thumbnail_url'],
       pageviews: song_data.dig("stats", "pageviews"),
-      path: song_data["path"]
+      path: song_data["path"],
+      apple_music_player_url: song_data["apple_music_player_url"]
     )
     song.artist = to_artist(song_data["primary_artist"]) if song_data.dig("primary_artist", "id")
     song.album = to_album(song_data["album"]) if song_data.dig("album", "id")

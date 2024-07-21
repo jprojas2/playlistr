@@ -31,7 +31,7 @@ class Api::V1::PlayersController < Api::V1::ApiController
     @player.destroy!
   end
 
-  [:play, :pause, :next, :previous].each do |action|
+  [:play, :pause, :next, :previous, :rewind].each do |action|
     define_method action do
       @player.send(action)
 
@@ -39,6 +39,12 @@ class Api::V1::PlayersController < Api::V1::ApiController
     rescue
       render json: { error: 'Player not found' }, status: :not_found
     end
+  end
+
+  def get_duration
+    @player.current_song&.get_duration
+
+    render :show
   end
 
   private
